@@ -1,0 +1,319 @@
+/*General Options*/
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Title Fonts style (font-family: 'Source Serif Pro', serif;)*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap");
+
+/* Subtitle Fonts Style (font-family: 'Source Code Pro', monospace;)*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap");
+
+/* Emphasis Fonts Style (font-family: 'Architects Daughter', cursive;)*/
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/* Text Fonts Style(font-family: 'Oswald', sans-serif;)*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+body {
+  background-color: #eff6e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  height: 8vh;
+  width: 8vh;
+  margin: 0.5rem;
+}
+
+/*Header*/
+
+header {
+  background-color: #124559;
+  height: 18vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+}
+header img {
+  height: 16vh;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+header ul li {
+  width: 20vw;
+  font-family: "Source Serif Pro", serif;
+  font-size: 3vw;
+  text-align: center;
+  color: #eff6e0;
+}
+
+/*Articules*/
+article {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+section {
+  display: flex;
+  height: 100vh;
+}
+
+/*First Article (Introduce)*/
+
+.introduce article {
+  height: 100vh;
+  margin-top: 50vh;
+}
+.introduce_carosusel {
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  margin-top: 18vh;
+  overflow: hidden;
+}
+.introduce_carosusel img {
+  width: 90vw;
+  padding: 0 5vw 0 5vw;
+}
+.introduce_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100vw;
+}
+button.carosusel {
+  background-color: #769979;
+  border-radius: 100%;
+  height: 8vh;
+  width: 8vh;
+  margin-right: 8vh;
+  border: 5px solid #415843;
+}
+button.carosusel:hover {
+  background-color: #415843;
+  border: 5px solid #769979;
+}
+/*Second Article About me*/
+
+.about-Me {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 8vh;
+}
+.about-me {
+  width: 30vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0577a3;
+  border-radius: 5vh;
+  justify-content: center;
+  align-items: center;
+}
+.about-me:hover {
+  width: 32vw;
+  height: 63vh;
+  border: 5px solid #023244;
+}
+#skills {
+  background-color: #2691bb;
+}
+.about-me_img {
+  height: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me_img img {
+  height: 15vh;
+}
+.about-me_img img:hover {
+  height: 18vh;
+}
+.about-me_description {
+  display: flex;
+  justify-content: center;
+  background-color: #abe6fc;
+  width: 90%;
+  height: 50%;
+  border-radius: 2vh;
+  align-items: center;
+  overflow: auto;
+}
+.about-me_description p {
+  font-size: 1.5vw;
+  text-align: center;
+}
+.about-me_buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 12vw;
+  height: 20%;
+}
+button.timeLine {
+  background-color: #023244;
+  border-radius: 3vh;
+  height: 5vh;
+  width: 10vw;
+  border: 5px solid #cedce1;
+  color: #cedce1;
+  font-weight: bold;
+}
+button.timeLine:hover {
+  background-color: #cedce1;
+  border: 5px solid #023244;
+  color: #023244;
+}
+
+button.CV {
+  border-radius: 2.5vh 0 0 2.5vh;
+  height: 5vh;
+  width: 5vw;
+  background-color: #d1f1fd;
+  border: 5px solid #0793c9;
+  color: #03151d;
+  font-weight: bold;
+  margin-right: 0;
+}
+button.CV:hover {
+  background-color: #0793c9;
+  border: 5px solid #d1f1fd;
+  color: #eef4e0;
+}
+button.HV {
+  border-radius: 0 2.5vh 2.5vh 0;
+  height: 5vh;
+  width: 5vw;
+  background-color: #f7fdff;
+  border: 5px solid #08afef;
+  color: #03151d;
+  font-weight: bold;
+  margin-left: 0;
+}
+button.HV:hover {
+  background-color: #08afef;
+  border: 5px solid #eef4e0;
+  color: #eef4e0;
+}
+
+/*Timeline display*/
+
+.timeLine {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75vh;
+  width: 80vw;
+  background-color: #2691bb;
+  border: 10px solid #034057;
+}
+.timeLine_graph {
+  display: flex;
+  height: 90%;
+  width: 55%;
+  background-color: #e6ede7;
+  border: 5px solid #a7bea9;
+}
+.timeLine_graph img {
+  height: 95%;
+  width: 95%;
+}
+
+.timeLine_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+}
+.timeLine_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 100%;
+  background-color: #e6ede7;
+  border: 5px solid #769979;
+  margin-bottom: 1vh;
+}
+.timeLine_img img {
+  height: 18vh;
+  width: 18vh;
+}
+.timeLine_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 40vh;
+  background-color: #aec3b0;
+  border: 5px solid #6b906f;
+  margin-bottom: 2vh;
+}
+.timeLine_button {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button.left,
+button.rigth,
+button.down {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 6vh;
+  background-color: #aec3b0;
+  border: 3px solid #fdfdfd;
+  font-weight: bolder;
+}
+.timeLine_button img {
+  height: 3vh;
+  width: 3vh;
+}
+button.close {
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 6vh;
+  background-color: #03151d;
+  border: 3px solid #eef4e0;
+  color: #eef4e0;
+  font-weight: bolder;
+  position: absolute;
+  margin-bottom: 65vh;
+  margin-left: 75vw;
+}
+button.close:hover {
+  background-color: #eef4e0;
+  border: 3px solid #03151d;
+  color: #03151d;
+}
