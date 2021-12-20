@@ -10,7 +10,7 @@
     <script src="scripts/app.js"></script>
 </head>
 
-<body>
+<body onload="init();">
     <header>
         <img src="media/ico/Ico_Logo-M&Mv1.png" alt="">
         <nav>
@@ -25,12 +25,12 @@
     <main>
         <article class="introduce">
             <div class="introduce_carousel">
-                <img src="media/images/Diapositiva1.PNG" alt="">
+                <img id="introduce_carousel_image"  src="" alt="">
             </div>
             <div class="carousel_buttons">
-                <button class="carousel"></button>
-                <button class="carousel"></button>
-                <button class="carousel"></button>
+                <button class="carousel" onclick="carousel1()"></button>
+                <button class="carousel" onclick="carousel2()"></button>
+                <button class="carousel" onclick= "carousel3()"></button>
             </div>
         </article>
         <article class="about-Me">
