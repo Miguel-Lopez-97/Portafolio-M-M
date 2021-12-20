@@ -25,14 +25,20 @@ let carousel3 = function () {
 
 function timeLine() {
     let changeimagen = document.getElementById("timeLine_graph");
-  this.changeRuteImage = "media/images/Time_line" + number + ".PNG";
+  this.changeRuteImage = "media/images/Time_line/Time_line_" + number + "/Time_line_" + number+".PNG";
   changeimagen.src = this.changeRuteImage;
   console.log(changeimagen.src)
   document.getElementById("timeLineDiv").style.display= "flex"
   }
 
+function Close(x){
+    document.getElementById(x).style.display= "none";
+}
+function Open(x){
+    document.getElementById(x).style.display= "flex";
+}
 function timeLineClose(){
-    document.getElementById("timeLineDiv").style.display= "none";
+    Close("timeLineDiv");
 }
 
 let timeLineDevelopment = function () {
@@ -44,6 +50,24 @@ let timeLineEngineering = function () {
     number=2
     timeLine()
   }
+let timeLineSkills = function () {
+    number=0
+    timeLine()
+  }
+let p_tag = function(){
+    Open("p_main_tag")
+}
+let a_tag = function(){
+    Open("a_main_tag")
+}
+function p_tag_close(){
+    Close("p_main_tag");
+}
+function a_tag_close(){
+    Close("a_main_tag");
+}
+
+
 function time() {
   let timeNow = new Date();
   this.segNow = Math.floor(timeNow.getSeconds() / 2);
