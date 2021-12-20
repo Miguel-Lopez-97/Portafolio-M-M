@@ -121,7 +121,7 @@
             <section class="professional carousel">
                 <div class="professional carousel">
                     <div class="professional_carousel">
-                        <div class="prof_carousel_main prof_carousel_aux">
+                        <div class="prof_carousel_main prof_carousel_aux" onclick="professionalRepository.changeMatrixProfessionalRight()">
                             <div class="main_name">
                                 <h3 id="prof_main_name_-1">Project Name</h3>
                                 <p id="prof_main_key_-1">Keyword project and date</p>
@@ -181,7 +181,7 @@
                                 <button class="close"  onclick="p_tag_close()">X</button>
                             </div>
                         </div>
-                        <div class="prof_carousel_main prof_carousel_aux">
+                        <div class="prof_carousel_main prof_carousel_aux" onclick="professionalRepository.changeMatrixProfessionalLeft()">
                             <div class="main_name">
                                 <h3 id="prof_main_name_1">Project Name</h3>
                                 <p id="prof_main_key_1">Keyword project and date</p>
@@ -205,11 +205,11 @@
                 </div>
                 
                 <div class="carousel_buttons">
-                    <button class="left" id="professional_carousel_left" onclick="player.changeMatrixProfessionalLeft()"><img src="media/ico/Ico_left.png" alt=""></button>
+                    <button class="left" id="professional_carousel_left" onclick="professionalRepository.changeMatrixProfessionalLeft()"><img src="media/ico/Ico_left.png" alt=""></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
-                    <button class="right" id="professional_carousel_right" onclick="player.changeMatrixProfessionalRigth()"><img src="media/ico/Ico_right.png" alt=""></button>
+                    <button class="right" id="professional_carousel_right" onclick="professionalRepository.changeMatrixProfessionalRight()"><img src="media/ico/Ico_right.png" alt=""></button>
                 </div>
                 
             </section>
@@ -265,33 +265,30 @@
                             <div class="main_head">
                                 <div class="head_img">
                                     <div class="main_img">
-                                        <img id="a_main_img" src="media/images/a_img_main_0.png" alt="">
+                                        <img id="a_main_img_0" src="" alt=""   onclick="academicalRepository.a_img_principal_0()">
                                     </div>
                                     <div class="description_links">
-                                        <img id="a_main_imgclass" src="media/ico/Ico_Engineering.png" alt="">
-                                        <button class="tag" id="tag_professional" onclick="a_tag()">Tag</button>
-                                        <a id="a_main_link_deploy" href="https://sleepy-archimedes-03d4ce.netlify.app/"
-                                            target="_blank">
+                                        <img id="a_main_imgclass_0" src="" alt="">
+                                        <button class="tag" id="tag_professional" onclick="a_tag_0()">Tag</button>
+                                        <a id="a_main_link_deploy_0" href=""    target="_blank">
                                             <img src="media/ico/Ico_Netlify.png" alt="">
                                         </a>
-                                        <a id="a_main_link_github"
-                                            href="https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades"
-                                            target="_blank">
+                                        <a id="a_main_link_github_0"    href="" target="_blank">
                                             <img src="media/ico/Ico_GitHub.png" alt="">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="main_name">
-                                    <p id="a_main_name">Project Name</p>
-                                    <p id="a_main_key">project's date</p>
+                                    <p id="a_main_name_0">Project Name</p>
+                                    <p id="a_main_key_0">project's date</p>
                                 </div>
                             </div>
                             <div class="main_description">
                                 <div class="description_text">
-                                    <p id="a_main_text">description's project</p>
+                                    <p id="a_main_text_0">description's project</p>
                                 </div>
                             </div>
-                            <div class="main_tag" id="a_main_tag">
+                            <div class="main_tag" id="a_main_tag_0">
                                 <p>Languages</p>
                                 <div class="tag_progress">
                                     <div class="tag tag_html">
@@ -307,23 +304,77 @@
                                         <p id="p_tag_js"></p>
                                     </div>
                                 </div>
-                                <button class="close" onclick="a_tag_close()">X</button>
+                                <button class="close" onclick="a_tag_close_0()">X</button>
                             </div>
-                            <div class="a_image_principal" id="a_image_principal">
-                                <h2 id="a_main_name">Project Name</h2>
-                                <img src="" alt="">
-                                <button class="close">X</button>
+                            <div class="a_image_principal" id="a_image_principal_0">
+                                <h2 id="a_principal_name_0">Project Name</h2>
+                                <a href="" target="_blank" id="a_principal_link_0"><img id="a_principal_imgclass_0" src="" alt=""></a>
+                                <button class="close" onclick="academicalRepository.a_img_principal_close_0()">X</button>
+                            </div>
+                        </div>
+                        <div class="a_carousel_main">
+                            <div class="main_head">
+                                <div class="head_img">
+                                    <div class="main_img">
+                                        <img id="a_main_img_1" src="media/images/a_img_main_0.png" alt="" onclick="academicalRepository.a_img_principal_1()">
+                                    </div>
+                                    <div class="description_links">
+                                        <img id="a_main_imgclass_1" src="media/ico/Ico_Engineering.png" alt="">
+                                        <button class="tag" id="tag_professional" onclick="a_tag_1()">Tag</button>
+                                        <a id="a_main_link_deploy_1" href="https://sleepy-archimedes-03d4ce.netlify.app/"
+                                            target="_blank">
+                                            <img src="media/ico/Ico_Netlify.png" alt="">
+                                        </a>
+                                        <a id="a_main_link_github_1"
+                                            href="https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades"
+                                            target="_blank">
+                                            <img src="media/ico/Ico_GitHub.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="main_name">
+                                    <p id="a_main_name_1">Project Name</p>
+                                    <p id="a_main_key_1">project's date</p>
+                                </div>
+                            </div>
+                            <div class="main_description">
+                                <div class="description_text">
+                                    <p id="a_main_text_1">description's project</p>
+                                </div>
+                            </div>
+                            <div class="main_tag" id="a_main_tag_1">
+                                <p>Languages</p>
+                                <div class="tag_progress">
+                                    <div class="tag tag_html">
+                                        <p>HTML</p>
+                                        <p id="p_tag_html"></p>
+                                    </div>
+                                    <div class="tag tag_css">
+                                        <p>CSS</p>
+                                        <p id="p_tag_css"></p>
+                                    </div>
+                                    <div class="tag tag_js">
+                                        <p>JS</p>
+                                        <p id="p_tag_js"></p>
+                                    </div>
+                                </div>
+                                <button class="close" onclick="a_tag_close_1()">X</button>
+                            </div>
+                            <div class="a_image_principal" id="a_image_principal_1">
+                                <h2 id="a_principal_name_1">Project Name</h2>
+                                <a href="" target="_blank" id="a_principal_link_1"><img id="a_principal_imgclass_1" src="" alt=""></a>
+                                <button class="close" onclick="academicalRepository.a_img_principal_close_1()">X</button>
                             </div>
                         </div>
                     </div>
                     
                 </div>
                 <div class="carousel_buttons">
-                    <button class="left" id="a_carousel_left"></button>
+                    <button class="left" id="a_carousel_left" onclick="academicalRepository.changeMatrixAcademicalRight()"></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
-                    <button class="right" id="professional_carousel_right"></button>
+                    <button class="right" id="professional_carousel_right" onclick="academicalRepository.changeMatrixAcademicalRight()"></button>
                 </div>
             </section>
 
@@ -368,20 +419,21 @@
                 <div class="s_carousel_main">
                     <div class="main_head">
                         <div class="head_img">
-                            <img id="s_main_img" src="media/ico/Ico_Logo-M&Mv2.png" alt="">
+                            <img id="s_main_img" src="" alt="">
                         </div>
                         <div class="main_name">
                             <p id="s_main_name">Name</p>
                             <p id="s_main_key">career</p>
                         </div>
                     </div>
+                    <div id="s_main_bar"></div>
                     <div class="description_text">
                         <p id="s_main_text">recommendation testimony</p>
                     </div>
                     <div class="description_links">
-                        <a id="s_main_link_github"><img src="media/ico/Ico_GitHub.png" alt=""></a>
-                        <a id="s_main_link_linkedin"><img src="media/ico/Ico_LinkedIn.png" alt=""></a>
-                        <a id="s_main_link_deploy"><img src="media/ico/Ico_Deploy.png" alt=""></a>
+                        <a id="s_main_link_github" href="" target="_blank"><img src="media/ico/Ico_GitHub.png" alt=""></a>
+                        <a id="s_main_link_linkedin"  href="" target="_blank"><img src="media/ico/Ico_LinkedIn.png" alt=""></a>
+                        <a id="s_main_link_deploy"  href="" target="_blank"><img src="media/ico/Ico_Deploy.png" alt=""></a>
                     </div>
                 </div>
             </div>

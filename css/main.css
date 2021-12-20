@@ -505,11 +505,11 @@ section.carousel {
   border-radius: 0 0 0 5vh;
   color: #023244;
   display: flex;
-  font-size: 2vh;
+  font-size: 3vh;
   height: 95%;
   justify-content: center;
   width: 75%;
-  overflow: auto;
+  overflow: hidden;
   text-align: justify;
   padding: 0.5vh;
 }
@@ -609,6 +609,7 @@ section.carousel {
 .prof_carousel_aux:hover{
   height: 55vh;
   width: 25vw;
+  cursor: help;
 }
 .prof_carousel_aux .main_img {
   -moz-border-radius: 1vh 1vh 0 0;
@@ -627,6 +628,10 @@ section.carousel {
   height: auto;
   max-height: 12vh;
   max-width: 100%;
+}
+.prof_carousel_aux .description_text{
+  align-items: flex-start;
+  font-size: 2vh;
 }
 .prof_carousel_aux .description_links img {
   height: 6vh;
@@ -734,6 +739,8 @@ section.carousel {
   max-height: 28vh;
   max-width: 100%;
 }
+.academic_carousel .main_img img:hover{
+  cursor: help;}
 .academic_carousel .description_links {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -766,6 +773,11 @@ section.carousel {
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
+  margin-top: 2vh;
+}
+#a_main_name_1,#a_main_name_0{
+  font-weight: bolder;
+  font-size: 2vw;
 }
 .academic_carousel .description_text{
   width: 100%;
@@ -782,6 +794,21 @@ section.carousel {
 }
 .a_image_principal {
   display: none;
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e6ede7;
+  justify-content: space-between;
+}
+.a_image_principal a img{
+  height: 55vh;
+  max-width: 100%;
+}
+
+.a_image_principal button{
+  margin-left: 35vw;
 }
 /*Social-media*/
 .social-media {
@@ -838,8 +865,14 @@ section.carousel {
   height: 70vh;
   justify-content: space-evenly;
   width: 30vw;
+  overflow: hidden;
 }
-.main_head img {
+.s_carousel_main .main_head .head_img{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
+.s_carousel_main .main_head img {
   height: 15vh;
   width: auto;
 }
@@ -847,6 +880,17 @@ section.carousel {
   align-items: center;
   height: 8vh;
   justify-content: center;
+  width: 100%;
+}
+#s_main_name{
+  font-weight: bolder;
+}
+#s_main_bar{
+  height: 2vh;
+  width: 0%;
+  background-color: #526A1F;
+  display: flex;
+  align-self: flex-start;
 }
 .s_carousel_main .description_text {
   -moz-border-radius: 0;
@@ -856,11 +900,12 @@ section.carousel {
   border-radius: 0;
   height: 40vh;
   width: 95%;
+  font-size: 2.5vh;
 }
 .s_carousel_main .description_links {
   flex-direction: row;
   height: 10vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
 }
 .s_carousel_main .description_links img {
