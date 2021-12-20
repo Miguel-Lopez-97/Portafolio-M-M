@@ -10,20 +10,22 @@
     <script src="scripts/app.js"></script>
 </head>
 
-<body onload="init();">
+<body onload="init();" id="body">
     <header>
-        <img src="media/ico/Ico_Logo-M&Mv1.png" alt="">
+        <a href="#a_introduce"><img src="media/ico/Ico_Logo-M&Mv1.png" alt=""></a>
         <nav>
             <ul>
-                <li>About me</li>
-                <li>Professional developments</li>
-                <li>Academic projects</li>
-                <li>Social medias</li>
+                <li>
+                    <a href="#a_about-Me">About me</a>
+                </li>
+                <li><a href="#a_professional_dev">Professional developments</a></li>
+                <li><a href="#a_academic_dev">Academic projects</a></li>
+                <li><a href="#a_social">Social medias</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <article class="introduce">
+        <article class="introduce" id="a_introduce">
             <div class="introduce_carousel">
                 <img id="introduce_carousel_image"  src="" alt="">
             </div>
@@ -33,7 +35,7 @@
                 <button class="carousel" onclick= "carousel3()"></button>
             </div>
         </article>
-        <article class="about-Me">
+        <article class="about-Me" id="a_about-Me">
             <div class="title">
                 <h1>About me</h1>
                 <h2>Miguel Ángel Moreno López</h2>
@@ -46,7 +48,7 @@
                     <p>Resume CV of Web Development</p>
                 </div>
                 <div class="about-me_buttons">
-                    <button class="timeLine" id="timeLine_Web">Timeline</button>
+                    <button class="timeLine" id="timeLine_Web" onclick="timeLineDevelopment()">Timeline</button>
                     <button class="CV" id="CV_Web">CV</button>
                     <button class="HV" id="HV_Web">HV</button>
                 </div>
@@ -59,7 +61,7 @@
                     <p>Resume of Skills</p>
                 </div>
                 <div class="about-me_buttons">
-                    <button class="timeLine" id="timeLine_Skills">Timeline</button>
+                    <button class="timeLine" id="timeLine_Skills" onclick="timeLineOpen()">Timeline</button>
                 </div>
             </section>
             <section class="about-me" id="engineering">
@@ -70,14 +72,14 @@
                     <p>Resume CV of Engineering and project consultant</p>
                 </div>
                 <div class="about-me_buttons">
-                    <button class="timeLine" id="timeLine_Engineering">Timeline</button>
+                    <button class="timeLine" id="timeLine_Engineering" onclick="timeLineEngineering()">Timeline</button>
                     <button class="CV" id="CV_Engineering">CV</button>
                     <button class="HV" id="HV_Engineering">HV</button>
                 </div>
             </section>
-            <section class="timeLine">
-                <div class="timeLine_graph">
-                    <img src="media/images/Time line.png" alt="">
+            <section class="timeLine" id="timeLineDiv">
+                <div class="timeLine_graph" >
+                    <img src="media/images/Time_line1.png" id="timeLine_graph" alt="">
                 </div>
                 <div class="timeLine_content">
                     <div class="timeLine_img">
@@ -92,10 +94,10 @@
                         <button class="right" id="timeLine_right"><img src="media/ico/Ico_right.png" alt=""></button>
                     </div>
                 </div>
-                <button class="close">X</button>
+                <button class="close" onclick="timeLineClose()">X</button>
             </section>
         </article>
-        <article class="professional-Develps">
+        <article class="professional-Develps" id="a_professional_dev">
             <div class="title">
                 <h1>Repositories</h1>
                 <h2>Professional developments</h2>
@@ -177,7 +179,7 @@
                 
             </section>
         </article>
-        <article class="academic-projects">
+        <article class="academic-projects" id="a_academic_dev">
             <div class="title">
                 <h1>Repositories</h1>
                 <h2>Academic projects</h2>
@@ -291,7 +293,7 @@
             </section>
 
         </article>
-        <article class="social-media">
+        <article class="social-media" id="a_social">
             <div class="title">
                 <h1>Social media</h1>
             </div>

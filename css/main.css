@@ -17,6 +17,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*Header*/
 header {
   align-items: center;
@@ -35,12 +38,20 @@ header ul {
   display: flex;
   list-style: none;
 }
-header ul li {
+header ul li{
+  text-align: center;
+  width: 20vw;}
+header ul li a{
   color: #eff6e0;
   font-family: "Source Serif Pro", serif;
   font-size: 3vw;
-  text-align: center;
-  width: 20vw;
+  text-decoration: none;
+}
+header ul li a:hover{
+  color: #E4F7FE;
+  font-family: "Source Serif Pro", serif;
+  font-size: 3.3vw;
+  text-decoration: underline dotted #E4F7FE;
 }
 /*Articles*/
 article {
@@ -225,14 +236,15 @@ button.HV:hover {
   color: #eef4e0;
 }
 /*Timeline display*/
-.timeLine {
+section.timeLine {
   align-items: center;
   background-color: #2691bb;
   border: 10px solid #034057;
-  display: flex;
+  display: none;
   height: 75vh;
   justify-content: space-evenly;
   width: 80vw;
+  position: absolute;
 }
 .timeLine_graph {
   background-color: #e6ede7;
