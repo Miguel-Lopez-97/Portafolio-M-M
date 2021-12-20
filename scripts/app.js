@@ -55,7 +55,8 @@ let timeLineSkills = function () {
     timeLine()
   }
 let p_tag = function(){
-    Open("p_main_tag")
+    Open("p_main_tag");
+    
 }
 let a_tag = function(){
     Open("a_main_tag")
@@ -80,8 +81,31 @@ function time() {
     mainCarousel();
   }
 }
+
+function professionalMainCarousel(){
+    document.getElementById("prof_main_name_-1").innerHTML="WandaVision"
+    document.getElementById("prof_main_key_-1").innerHTML="CSS-Landing page Nov-21"
+    document.getElementById("prof_main_img_-1").src="media/images/Prof_Carousel/prof_img_main_1.png"
+    document.getElementById("prof_main_text_-1").innerHTML="Wanda Maximoff and Vision are living an idyllic suburban life in the town of Westview, New Jersey, trying to conceal their true natures."
+
+    document.getElementById("prof_main_name_1").innerHTML="Portafolio M&M"
+    document.getElementById("prof_main_key_1").innerHTML="Business page Nov-21"
+    document.getElementById("prof_main_img_1").src="media/images/Prof_Carousel/prof_img_main_2.png"
+    document.getElementById("prof_main_text_1").innerHTML="This is a main page about my work as Web Development"
+
+    document.getElementById("prof_main_name_0").innerHTML="Jurassic Park"
+    document.getElementById("prof_main_key_0").innerHTML="Landing page Nov-21"
+    document.getElementById("prof_main_img_link_0").href="https://sleepy-archimedes-03d4ce.netlify.app/"
+    document.getElementById("prof_main_img_0").src="media/images/Prof_Carousel/prof_img_main_0.png"
+    document.getElementById("prof_main_text_0").innerHTML="This is a tribute page about my favorite saga in all the time"
+    document.getElementById("prof_main_img_github_0").href="https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades"
+                                        
+
+}
+
 function principal() {
   mainCarousel();
+  professionalMainCarousel()
 }
 function init() {
   principal();

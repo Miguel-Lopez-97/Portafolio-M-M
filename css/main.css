@@ -423,7 +423,7 @@ section.carousel {
   align-items: center;
   display: flex;
   height: 80vh;
-  justify-content: center;
+  justify-content: space-around;
   width: 100vw;
 }
 .prof_carousel_main,
@@ -505,9 +505,13 @@ section.carousel {
   border-radius: 0 0 0 5vh;
   color: #023244;
   display: flex;
+  font-size: 2vh;
   height: 95%;
   justify-content: center;
   width: 75%;
+  overflow: auto;
+  text-align: justify;
+  padding: 0.5vh;
 }
 .description_links {
   align-items: center;
@@ -515,7 +519,7 @@ section.carousel {
   flex-direction: column;
   height: 95%;
   justify-content: space-between;
-  width: 22%;
+  width: 20%;
 }
 .description_links img {
   height: 100%;
@@ -597,6 +601,36 @@ section.carousel {
   margin-bottom: 12vh;
   margin-left: 25vw;
   width: 5vh;
+}
+.prof_carousel_aux{
+  height: 50vh;
+  width: 20vw;
+}
+.prof_carousel_aux:hover{
+  height: 55vh;
+  width: 25vw;
+}
+.prof_carousel_aux .main_img {
+  -moz-border-radius: 1vh 1vh 0 0;
+  -ms-border-radius: 1vh 1vh 0 0;
+  -o-border-radius: 1vh 1vh 0 0;
+  -webkit-border-radius: 1vh 1vh 0 0;
+  border-radius: 1vh 1vh 0 0;
+  height: 15vh;
+}
+.prof_carousel_aux .main_img img {
+  -moz-border-radius: 2vh 2vh 0 0;
+  -ms-border-radius: 2vh 2vh 0 0;
+  -o-border-radius: 2vh 2vh 0 0;
+  -webkit-border-radius: 2vh 2vh 0 0;
+  border-radius: 2vh 2vh 0 0;
+  height: auto;
+  max-height: 12vh;
+  max-width: 100%;
+}
+.prof_carousel_aux .description_links img {
+  height: 6vh;
+  width: auto;
 }
 .professional.carousel_buttons {
   height: 8vh;
