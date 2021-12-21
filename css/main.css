@@ -73,6 +73,25 @@ header ul li a:hover {
   font-size: 3.3vw;
   text-decoration: underline dotted #e4f7fe;
 }
+#contact{
+  height: 10vh;
+  width: 10vh;
+  position:fixed;
+  margin-left: 92vw;
+  margin-top: 84vh;
+  background: transparent;
+  border: none
+}
+#contact_img{
+  height: 10vh;
+  width: 10vh;
+  border: 1.5vh solid #769979;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
 /*Articles*/
 article {
   align-items: center;
@@ -984,6 +1003,24 @@ footer {
   height: 6vh;
 }
 @media screen and (max-width: 479px) {
+  #contact{
+    height: 10vh;
+    width: 10vh;
+    position:fixed;
+    margin-left: 80vw;
+    margin-top: 85vh;
+    background: transparent;
+}
+  #contact_img{
+    height: 8vh;
+    width: 8vh;
+    border: 1vh solid #769979;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
   about-me:hover {
     border: 5px solid #023244;
     height: 72vh;
