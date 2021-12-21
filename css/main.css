@@ -11,6 +11,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 /* Text Fonts Style(font-family: 'Oswald', sans-serif;)*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+h1 {
+  color: #124559;
+  font-family: 'Source Code Pro', monospace;
+  font-size: max(28px, 5vw);
+  font-weight: bolder;
+}
+h2 {
+  color: #598392;
+  font-family: 'Architects Daughter', cursive;
+  font-size: max(24px, 3vw);
+  font-weight: bold;
+}
+p{
+  color: #01161E;
+  font-family: 'Oswald', sans-serif;
+  font-weight: normal;
+}
 body {
   align-items: center;
   background-color: #eff6e0;
@@ -82,11 +99,11 @@ article.introduce {
   width: 90vw;
 }
 .carousel_buttons {
-  margin-top: 2vh;
   align-items: flex-start;
   display: flex;
   height: 10vh;
   justify-content: space-around;
+  margin-top: 2vh;
   width: 50vw;
 }
 button.carousel {
@@ -246,9 +263,9 @@ section.timeLine {
   display: none;
   height: 75vh;
   justify-content: space-evenly;
-  width: 80vw;
   position: absolute;
-  top:115vh;
+  top: 115vh;
+  width: 80vw;
 }
 .timeLine_graph {
   background-color: #e6ede7;
@@ -436,8 +453,8 @@ section.carousel {
   -ms-border-radius: 5vh;
   -o-border-radius: 5vh;
   -webkit-border-radius: 5vh;
-  align-self: center;
   align-items: center;
+  align-self: center;
   background-color: #aec3b0;
   border-radius: 5vh;
   color: #172018;
@@ -513,10 +530,10 @@ section.carousel {
   font-size: 3vh;
   height: 95%;
   justify-content: center;
-  width: 75%;
   overflow: hidden;
-  text-align: justify;
   padding: 0.5vh;
+  text-align: justify;
+  width: 75%;
 }
 .description_links {
   align-items: center;
@@ -612,9 +629,9 @@ section.carousel {
   width: 20vw;
 }
 .prof_carousel_aux:hover {
+  cursor: pointer;
   height: 55vh;
   width: 25vw;
-  cursor: pointer;
 }
 .prof_carousel_aux .main_img {
   -moz-border-radius: 1vh 1vh 0 0;
@@ -643,9 +660,9 @@ section.carousel {
   width: auto;
 }
 .professional.carousel_buttons {
+  align-items: flex-start;
   height: 8vh;
   margin-top: 2vh;
-  align-items: flex-start;
   width: 100vw;
 }
 .carousel_buttons button.carousel {
@@ -685,13 +702,13 @@ section.carousel {
   -ms-border-radius: 2vh;
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
+  align-items: center;
   background-color: #e6ede7;
   border-radius: 2vh;
   display: flex;
   height: 20vh;
   padding: 1vh;
   text-align: justify;
-  align-items: center;
   width: 90%;
 }
 .academic_class {
@@ -780,21 +797,21 @@ section.carousel {
 .academic_carousel .main_name {
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
   margin-top: 2vh;
+  width: 100%;
 }
 #a_main_name_1,
 #a_main_name_0 {
-  font-weight: bolder;
   font-size: 2vw;
+  font-weight: bolder;
 }
 .academic_carousel .description_text {
-  width: 100%;
-  border-radius: 0 0 2vh 2vh;
-  -webkit-border-radius: 0 0 2vh 2vh;
   -moz-border-radius: 0 0 2vh 2vh;
   -ms-border-radius: 0 0 2vh 2vh;
   -o-border-radius: 0 0 2vh 2vh;
+  -webkit-border-radius: 0 0 2vh 2vh;
+  border-radius: 0 0 2vh 2vh;
+  width: 100%;
 }
 .academic.carousel_buttons {
   height: 8vh;
@@ -802,20 +819,19 @@ section.carousel {
   width: 100vw;
 }
 .a_image_principal {
-  display: none;
-  width: 40vw;
-  height: 60vh;
-  position: absolute;
   align-items: center;
-  flex-direction: column;
   background-color: #e6ede7;
+  display: none;
+  flex-direction: column;
+  height: 60vh;
   justify-content: space-between;
+  position: absolute;
+  width: 40vw;
 }
 .a_image_principal a img {
   height: 55vh;
   max-width: 100%;
 }
-
 .a_image_principal button {
   margin-left: 35vw;
 }
@@ -873,13 +889,13 @@ section.carousel {
   flex-direction: column;
   height: 70vh;
   justify-content: space-evenly;
-  width: 30vw;
   overflow: hidden;
+  width: 30vw;
 }
 .s_carousel_main .main_head .head_img {
   display: flex;
-  width: 90%;
   justify-content: center;
+  width: 90%;
 }
 .s_carousel_main .main_head img {
   height: 15vh;
@@ -895,11 +911,11 @@ section.carousel {
   font-weight: bolder;
 }
 #s_main_bar {
-  height: 2vh;
-  width: 0%;
+  align-self: flex-start;
   background-color: #526a1f;
   display: flex;
-  align-self: flex-start;
+  height: 2vh;
+  width: 0%;
 }
 .s_carousel_main .description_text {
   -moz-border-radius: 0;
@@ -907,9 +923,9 @@ section.carousel {
   -o-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
+  font-size: 2.5vh;
   height: 40vh;
   width: 95%;
-  font-size: 2.5vh;
 }
 .s_carousel_main .description_links {
   flex-direction: row;
@@ -964,8 +980,17 @@ footer {
 .down {
   height: 6vh;
 }
-
 @media screen and (max-width: 479px) {
+  about-me:hover {
+    border: 5px solid #023244;
+    height: 72vh;
+    width: 95vw;
+  }
+  prof_carousel_aux:hover {
+    height: 35vh;
+    width: 16vw;
+  }
+
   section {
     flex-direction: column;
   }
@@ -977,15 +1002,10 @@ footer {
     flex-direction: column;
   }
   .about-me {
-    width: 90vw;
     margin-bottom: 5vh;
+    width: 90vw;
   }
-  .about-me:hover {
-    border: 5px solid #023244;
-    height: 72vh;
-    width: 95vw;
-  }
-  .about-me_description p {
+  . .about-me_description p {
     font-size: min(16px, 4vw);
   }
   .about-me_buttons {
@@ -993,8 +1013,8 @@ footer {
   }
   button.timeLine,
   .tag {
-    width: 30vw;
     height: 10vh;
+    width: 30vw;
   }
   button.CV,
   button.HV {
@@ -1003,14 +1023,13 @@ footer {
   }
   section.timeLine {
     height: 90vh;
-    width: 90vw;
     position: absolute;
-    top:0vh;
+    top: 0vh;
+    width: 90vw;
   }
   .timeLine_graph {
     display: none;
   }
-
   /*Professional repositories*/
   .repositories {
     flex-direction: column;
@@ -1018,20 +1037,20 @@ footer {
   }
   .professional_img {
     flex-direction: column;
-    width: 90vw;
     margin-bottom: 5vh;
+    width: 90vw;
   }
   .professional_img img {
     height: 90%;
     width: 90%;
   }
   .professional_resume {
-    width: 90vw;
     height: auto;
+    width: 90vw;
   }
   .professional_ico {
-    margin-bottom: 2vh;
     height: 30vh;
+    margin-bottom: 2vh;
   }
   .professional_text {
     height: 40vh;
@@ -1039,18 +1058,14 @@ footer {
   }
   .prof_carousel_main,
   .a_carousel_main {
-    width: 65vw;
     margin-top: 5vh;
+    width: 65vw;
   }
   .prof_carousel_aux {
-    width: 16vw;
     height: 35vh;
-  }
-  .prof_carousel_aux:hover {
     width: 16vw;
-    height: 35vh;
   }
-  .prof_carousel_aux .main_name {
+  . .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
@@ -1060,24 +1075,23 @@ footer {
     display: none;
   }
   .main_tag {
-    width: 60vw;
     font-size: min(12px, 2.2vw);
+    width: 60vw;
   }
   /*Academic Projects*/
   .academic_img {
-    width: 90vw;
     margin-bottom: 2vh;
+    width: 90vw;
   }
-
   .academic_img img {
     max-width: 85vw;
   }
   .academic_resume {
-    width: 90vw;
     height: auto;
     margin-bottom: 5vh;
+    width: 90vw;
   }
-  .academic_text{
+  .academic_text {
     margin-top: 2vh;
   }
   .academic_class {
@@ -1085,31 +1099,31 @@ footer {
   }
   .academic_project {
     flex-direction: row;
-    width: 100%;
+    height: 100%;
     justify-content: space-between;
     margin-bottom: 2vh;
     margin-top: 2vh;
-    height: 100%;
+    width: 100%;
   }
   #a_project_web {
     flex-direction: row-reverse;
   }
   .a_project_text {
     height: 25vh;
-    width: 60%;
-    text-align: center;
     justify-content: center;
+    text-align: center;
+    width: 60%;
   }
-  .a_carousel_main{
+  .a_carousel_main {
     width: 90vw;
   }
-  #a_carousel_main_1{
+  #a_carousel_main_1 {
     display: none;
   }
-  .main_name{
+  .main_name {
     font-size: 4vw;
   }
-  #a_main_name_0{
+  #a_main_name_0 {
     font-size: 6vw;
   }
   .academic .carousel_buttons button.carousel {
@@ -1121,8 +1135,8 @@ footer {
     flex-wrap: nowrap;
   }
   .links {
-    width: 90vw;
     margin-bottom: 2vh;
+    width: 90vw;
   }
   .s_carousel_main {
     width: 70vw;
