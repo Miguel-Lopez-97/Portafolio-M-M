@@ -16,6 +16,7 @@ body {
   background-color: #eff6e0;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -38,20 +39,21 @@ header ul {
   display: flex;
   list-style: none;
 }
-header ul li{
+header ul li {
   text-align: center;
-  width: 20vw;}
-header ul li a{
+  width: 20vw;
+}
+header ul li a {
   color: #eff6e0;
   font-family: "Source Serif Pro", serif;
   font-size: 3vw;
   text-decoration: none;
 }
-header ul li a:hover{
-  color: #E4F7FE;
+header ul li a:hover {
+  color: #e4f7fe;
   font-family: "Source Serif Pro", serif;
   font-size: 3.3vw;
-  text-decoration: underline dotted #E4F7FE;
+  text-decoration: underline dotted #e4f7fe;
 }
 /*Articles*/
 article {
@@ -80,7 +82,8 @@ article.introduce {
   width: 90vw;
 }
 .carousel_buttons {
-  align-items: center;
+  margin-top: 2vh;
+  align-items: flex-start;
   display: flex;
   height: 10vh;
   justify-content: space-around;
@@ -245,6 +248,7 @@ section.timeLine {
   justify-content: space-evenly;
   width: 80vw;
   position: absolute;
+  top:115vh;
 }
 .timeLine_graph {
   background-color: #e6ede7;
@@ -420,9 +424,9 @@ section.carousel {
 }
 .professional_carousel,
 .academic_carousel {
-  align-items: center;
+  align-items: flex-end;
   display: flex;
-  height: 80vh;
+  height: 75vh;
   justify-content: space-around;
   width: 100vw;
 }
@@ -432,6 +436,7 @@ section.carousel {
   -ms-border-radius: 5vh;
   -o-border-radius: 5vh;
   -webkit-border-radius: 5vh;
+  align-self: center;
   align-items: center;
   background-color: #aec3b0;
   border-radius: 5vh;
@@ -602,14 +607,14 @@ section.carousel {
   margin-left: 25vw;
   width: 5vh;
 }
-.prof_carousel_aux{
+.prof_carousel_aux {
   height: 50vh;
   width: 20vw;
 }
-.prof_carousel_aux:hover{
+.prof_carousel_aux:hover {
   height: 55vh;
   width: 25vw;
-  cursor: help;
+  cursor: pointer;
 }
 .prof_carousel_aux .main_img {
   -moz-border-radius: 1vh 1vh 0 0;
@@ -629,7 +634,7 @@ section.carousel {
   max-height: 12vh;
   max-width: 100%;
 }
-.prof_carousel_aux .description_text{
+.prof_carousel_aux .description_text {
   align-items: flex-start;
   font-size: 2vh;
 }
@@ -639,7 +644,8 @@ section.carousel {
 }
 .professional.carousel_buttons {
   height: 8vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
+  align-items: flex-start;
   width: 100vw;
 }
 .carousel_buttons button.carousel {
@@ -739,19 +745,21 @@ section.carousel {
   max-height: 28vh;
   max-width: 100%;
 }
-.academic_carousel .main_img img:hover{
-  cursor: help;}
+.academic_carousel .main_img img:hover {
+  cursor: pointer;
+}
 .academic_carousel .description_links {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   height: 90%;
-  justify-items:  center;
+  justify-items: center;
   width: 50%;
 }
 .academic_carousel .description_links img,
 .academic_carousel .description_links a img {
   height: 10vh;
+  width: 10vh;
 }
 #a_main_imgclass {
   grid-column-start: 1;
@@ -775,11 +783,12 @@ section.carousel {
   width: 100%;
   margin-top: 2vh;
 }
-#a_main_name_1,#a_main_name_0{
+#a_main_name_1,
+#a_main_name_0 {
   font-weight: bolder;
   font-size: 2vw;
 }
-.academic_carousel .description_text{
+.academic_carousel .description_text {
   width: 100%;
   border-radius: 0 0 2vh 2vh;
   -webkit-border-radius: 0 0 2vh 2vh;
@@ -802,12 +811,12 @@ section.carousel {
   background-color: #e6ede7;
   justify-content: space-between;
 }
-.a_image_principal a img{
+.a_image_principal a img {
   height: 55vh;
   max-width: 100%;
 }
 
-.a_image_principal button{
+.a_image_principal button {
   margin-left: 35vw;
 }
 /*Social-media*/
@@ -867,7 +876,7 @@ section.carousel {
   width: 30vw;
   overflow: hidden;
 }
-.s_carousel_main .main_head .head_img{
+.s_carousel_main .main_head .head_img {
   display: flex;
   width: 90%;
   justify-content: center;
@@ -882,13 +891,13 @@ section.carousel {
   justify-content: center;
   width: 100%;
 }
-#s_main_name{
+#s_main_name {
   font-weight: bolder;
 }
-#s_main_bar{
+#s_main_bar {
   height: 2vh;
   width: 0%;
-  background-color: #526A1F;
+  background-color: #526a1f;
   display: flex;
   align-self: flex-start;
 }
@@ -954,4 +963,168 @@ footer {
 }
 .down {
   height: 6vh;
+}
+
+@media screen and (max-width: 479px) {
+  section {
+    flex-direction: column;
+  }
+  .about-Me {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .title {
+    flex-direction: column;
+  }
+  .about-me {
+    width: 90vw;
+    margin-bottom: 5vh;
+  }
+  .about-me:hover {
+    border: 5px solid #023244;
+    height: 72vh;
+    width: 95vw;
+  }
+  .about-me_description p {
+    font-size: min(16px, 4vw);
+  }
+  .about-me_buttons {
+    width: 80vw;
+  }
+  button.timeLine,
+  .tag {
+    width: 30vw;
+    height: 10vh;
+  }
+  button.CV,
+  button.HV {
+    height: 10vh;
+    width: 15vw;
+  }
+  section.timeLine {
+    height: 90vh;
+    width: 90vw;
+    position: absolute;
+    top:0vh;
+  }
+  .timeLine_graph {
+    display: none;
+  }
+
+  /*Professional repositories*/
+  .repositories {
+    flex-direction: column;
+    height: auto;
+  }
+  .professional_img {
+    flex-direction: column;
+    width: 90vw;
+    margin-bottom: 5vh;
+  }
+  .professional_img img {
+    height: 90%;
+    width: 90%;
+  }
+  .professional_resume {
+    width: 90vw;
+    height: auto;
+  }
+  .professional_ico {
+    margin-bottom: 2vh;
+    height: 30vh;
+  }
+  .professional_text {
+    height: 40vh;
+    margin-bottom: 2vh;
+  }
+  .prof_carousel_main,
+  .a_carousel_main {
+    width: 65vw;
+    margin-top: 5vh;
+  }
+  .prof_carousel_aux {
+    width: 16vw;
+    height: 35vh;
+  }
+  .prof_carousel_aux:hover {
+    width: 16vw;
+    height: 35vh;
+  }
+  .prof_carousel_aux .main_name {
+    display: none;
+  }
+  .prof_carousel_aux .main_description {
+    display: none;
+  }
+  .professional .carousel_buttons button.carousel {
+    display: none;
+  }
+  .main_tag {
+    width: 60vw;
+    font-size: min(12px, 2.2vw);
+  }
+  /*Academic Projects*/
+  .academic_img {
+    width: 90vw;
+    margin-bottom: 2vh;
+  }
+
+  .academic_img img {
+    max-width: 85vw;
+  }
+  .academic_resume {
+    width: 90vw;
+    height: auto;
+    margin-bottom: 5vh;
+  }
+  .academic_text{
+    margin-top: 2vh;
+  }
+  .academic_class {
+    flex-direction: column;
+  }
+  .academic_project {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    height: 100%;
+  }
+  #a_project_web {
+    flex-direction: row-reverse;
+  }
+  .a_project_text {
+    height: 25vh;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+  }
+  .a_carousel_main{
+    width: 90vw;
+  }
+  #a_carousel_main_1{
+    display: none;
+  }
+  .main_name{
+    font-size: 4vw;
+  }
+  #a_main_name_0{
+    font-size: 6vw;
+  }
+  .academic .carousel_buttons button.carousel {
+    display: none;
+  }
+  /*Social-media*/
+  .social-media {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .links {
+    width: 90vw;
+    margin-bottom: 2vh;
+  }
+  .s_carousel_main {
+    width: 70vw;
+  }
 }

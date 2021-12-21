@@ -41,15 +41,21 @@ function timeLineClose() {
 let timeLineDevelopment = function () {
     number = 1
     timeLine()
+    if(screen.width<=480){
+    document.getElementById("timeLineDiv").style.top = "115vh"}
 }
 
 let timeLineEngineering = function () {
     number = 2
     timeLine()
+    if(screen.width<=480){
+        document.getElementById("timeLineDiv").style.top = "270vh"}
 }
 let timeLineSkills = function () {
     number = 0
     timeLine()
+    if(screen.width<=480){
+        document.getElementById("timeLineDiv").style.top = "192vh"}
 }
 let p_tag = function () {
     Open("p_main_tag");
