@@ -13,21 +13,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 h1 {
   color: #124559;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-size: max(28px, 5vw);
   font-weight: bolder;
 }
 h2 {
   color: #598392;
-  font-family: 'Architects Daughter', cursive;
+  font-family: "Architects Daughter", cursive;
   font-size: max(24px, 3vw);
   font-weight: bold;
 }
-p{
-  color: #01161E;
-  font-family: 'Oswald', sans-serif;
-  font-weight: normal;
+p {
+  color: #01161e;
+  font-family: "Oswald", sans-serif;
   font-size: max(16px, 1.5vw);
+  font-weight: normal;
 }
 body {
   align-items: center;
@@ -73,24 +73,27 @@ header ul li a:hover {
   font-size: 3.3vw;
   text-decoration: underline dotted #e4f7fe;
 }
-#contact{
-  height: 10vh;
-  width: 10vh;
-  position:fixed;
-  margin-left: 92vw;
-  margin-top: 84vh;
+#contact {
   background: transparent;
-  border: none
-}
-#contact_img{
+  border: none;
   height: 10vh;
+  margin-left: 90vw;
+  margin-top: 84vh;
+  position: fixed;
   width: 10vh;
-  border: 1.5vh solid #769979;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
+}
+#contact_img {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1.5vh solid #769979;
+  height: 10vh;
+  width: 10vh;
+}
+#contact_img:hover {
+  border: 2vh solid #6b906f;
 }
 /*Articles*/
 article {
@@ -205,7 +208,7 @@ button.carousel:hover {
   width: 90%;
 }
 .about-me_description p {
-  font-size: max(2vw,18px);
+  font-size: max(2vw, 18px);
   text-align: center;
 }
 .about-me_buttons {
@@ -524,7 +527,7 @@ section.carousel {
   text-align: center;
   width: 80%;
 }
-.prof_main_overlay p{
+.prof_main_overlay p {
   color: white;
   font-size: 3vh;
 }
@@ -549,7 +552,7 @@ section.carousel {
   border-radius: 0 0 0 5vh;
   color: #023244;
   display: flex;
-  font-size: max(18px,3vh);
+  font-size: max(18px, 3vh);
   height: 95%;
   justify-content: center;
   overflow: hidden;
@@ -675,7 +678,7 @@ section.carousel {
 }
 .prof_carousel_aux .description_text {
   align-items: flex-start;
-  font-size: max(16px,2vh);
+  font-size: max(16px, 2vh);
 }
 .prof_carousel_aux .description_links img {
   height: 6vh;
@@ -945,7 +948,7 @@ section.carousel {
   -o-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  font-size: max(15px,min(2vw,3vh));
+  font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
   width: 95%;
 }
@@ -962,6 +965,55 @@ section.carousel {
   -webkit-border-radius: 1vh;
   border-radius: 1vh;
   height: 8vh;
+}
+/*Form*/
+.contact button.close {
+  left: 55vw;
+  top: 5vh;
+}
+section.contact {
+  align-items: center;
+  background-color: #2691bb;
+  border: 1vh solid #034057;
+  display: none;
+  height: 70vh;
+  justify-content: space-evenly;
+  left: 20vw;
+  position: fixed;
+  top: 25vh;
+  width: 60vw;
+}
+.contact-img {
+  align-items: center;
+  display: flex;
+  height: 95%;
+  justify-content: center;
+  width: 45%;
+}
+.contact-img img {
+  width: 90%;
+}
+.contact-contact {
+  width: 50%;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: space-evenly;
+  width: 100%;
+}
+form input,
+form textarea {
+  border: 1vh solid #034057;
+  width: 95%;
+}
+form button.tag {
+  height: 8vh;
+  margin-top: 1vh;
+  padding: 1vh;
+  width: 15vw;
 }
 /*Footer*/
 footer {
@@ -1003,30 +1055,34 @@ footer {
   height: 6vh;
 }
 @media screen and (max-width: 479px) {
-  #contact{
-    height: 10vh;
-    width: 10vh;
-    position:fixed;
-    margin-left: 80vw;
-    margin-top: 85vh;
-    background: transparent;
-}
-  #contact_img{
-    height: 8vh;
-    width: 8vh;
-    border: 1vh solid #769979;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-  }
   about-me:hover {
     border: 5px solid #023244;
     height: 72vh;
     width: 95vw;
   }
+  prof_carousel_aux:hover {
+    height: 35vh;
+    width: 16vw;
+  }
 
+  #contact {
+    background: transparent;
+    height: 10vh;
+    margin-left: 80vw;
+    margin-top: 85vh;
+    position: fixed;
+    width: 10vh;
+  }
+  #contact_img {
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1vh solid #769979;
+    height: 8vh;
+    width: 8vh;
+  }
   section {
     flex-direction: column;
   }
@@ -1101,11 +1157,7 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-  .prof_carousel_aux:hover {
-    height: 35vh;
-    width: 16vw;
-  }
-  .prof_carousel_aux .main_name {
+  . .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
@@ -1180,5 +1232,16 @@ footer {
   }
   .s_carousel_main {
     width: 70vw;
+  }
+  /*Form*/
+  .contact button.close {
+    left: 45vw;
+    top: 2vh;
+  }
+  form h3 {
+    display: none;
+  }
+  form button.tag {
+    width: 45vw;
   }
 }

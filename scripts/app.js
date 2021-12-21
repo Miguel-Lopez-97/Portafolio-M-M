@@ -76,6 +76,12 @@ function a_tag_close_0() {
 function a_tag_close_1() {
     Close("a_main_tag_1");
 }
+function contact_Close() {
+    Close("contact-section");
+}
+let contact_Open = function () {
+    Open("contact-section")
+}
 
 function time() {
     let timeNow = new Date();
