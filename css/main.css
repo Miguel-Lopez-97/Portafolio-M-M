@@ -27,6 +27,7 @@ p{
   color: #01161E;
   font-family: 'Oswald', sans-serif;
   font-weight: normal;
+  font-size: max(16px, 1.5vw);
 }
 body {
   align-items: center;
@@ -185,7 +186,7 @@ button.carousel:hover {
   width: 90%;
 }
 .about-me_description p {
-  font-size: 1.5vw;
+  font-size: max(2vw,18px);
   text-align: center;
 }
 .about-me_buttons {
@@ -497,14 +498,16 @@ section.carousel {
 }
 .prof_main_overlay {
   align-items: center;
-  color: white;
   display: flex;
-  font-size: 3vh;
   justify-content: center;
   opacity: 0;
   position: absolute;
   text-align: center;
   width: 80%;
+}
+.prof_main_overlay p{
+  color: white;
+  font-size: 3vh;
 }
 .main_img:hover .prof_main_overlay {
   opacity: 1;
@@ -527,7 +530,7 @@ section.carousel {
   border-radius: 0 0 0 5vh;
   color: #023244;
   display: flex;
-  font-size: 3vh;
+  font-size: max(18px,3vh);
   height: 95%;
   justify-content: center;
   overflow: hidden;
@@ -653,7 +656,7 @@ section.carousel {
 }
 .prof_carousel_aux .description_text {
   align-items: flex-start;
-  font-size: 2vh;
+  font-size: max(16px,2vh);
 }
 .prof_carousel_aux .description_links img {
   height: 6vh;
@@ -923,7 +926,7 @@ section.carousel {
   -o-border-radius: 0;
   -webkit-border-radius: 0;
   border-radius: 0;
-  font-size: 2.5vh;
+  font-size: max(15px,min(2vw,3vh));
   height: 40vh;
   width: 95%;
 }
@@ -986,10 +989,6 @@ footer {
     height: 72vh;
     width: 95vw;
   }
-  prof_carousel_aux:hover {
-    height: 35vh;
-    width: 16vw;
-  }
 
   section {
     flex-direction: column;
@@ -1005,7 +1004,7 @@ footer {
     margin-bottom: 5vh;
     width: 90vw;
   }
-  . .about-me_description p {
+  .about-me_description p {
     font-size: min(16px, 4vw);
   }
   .about-me_buttons {
@@ -1065,7 +1064,11 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-  . .prof_carousel_aux .main_name {
+  .prof_carousel_aux:hover {
+    height: 35vh;
+    width: 16vw;
+  }
+  .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
