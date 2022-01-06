@@ -488,7 +488,7 @@ section.carousel {
   width: 35vw;
 }
 .main_name {
-  align-items: center;
+  align-items:center;
   display: flex;
   flex-direction: column;
   height: 10%;
@@ -767,6 +767,7 @@ section.carousel {
 }
 .a_carousel_main .main_head {
   height: 50%;
+  width: 90%;
 }
 .a_carousel_main .head_img {
   display: flex;
@@ -917,10 +918,16 @@ section.carousel {
   overflow: hidden;
   width: 30vw;
 }
-.s_carousel_main .main_head .head_img {
+.s_carousel_main .main_head{
   display: flex;
   justify-content: center;
   width: 90%;
+  flex-direction: column;
+}
+.s_carousel_main .main_head .head_img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .s_carousel_main .main_head img {
   height: 15vh;
@@ -951,6 +958,7 @@ section.carousel {
   font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
   width: 95%;
+  overflow: auto;
 }
 .s_carousel_main .description_links {
   flex-direction: row;
@@ -1060,10 +1068,6 @@ footer {
     height: 72vh;
     width: 95vw;
   }
-  prof_carousel_aux:hover {
-    height: 35vh;
-    width: 16vw;
-  }
 
   #contact {
     background: transparent;
@@ -1157,7 +1161,12 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-  . .prof_carousel_aux .main_name {
+  
+  .prof_carousel_aux:hover {
+    height: 35vh;
+    width: 16vw;
+  }
+  .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
@@ -1215,6 +1224,8 @@ footer {
   .main_name {
     font-size: 4vw;
   }
+  .academic_carousel .main_name {
+    flex-direction: column;}
   #a_main_name_0 {
     font-size: 6vw;
   }
@@ -1231,7 +1242,15 @@ footer {
     width: 90vw;
   }
   .s_carousel_main {
-    width: 70vw;
+    width: 80vw;
+    height: 80vh;
+  }
+  .s_carousel_main .main_head{
+    width: 100%;
+    justify-content: center;
+  }
+  .description_text {
+    align-items: flex-start;
   }
   /*Form*/
   .contact button.close {
