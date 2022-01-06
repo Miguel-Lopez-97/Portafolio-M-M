@@ -3,10 +3,10 @@ let numberChangeIntroduce = 1;
 let number = 1;
 
 function mainCarousel() {
-  let imagenMainCarosusel = document.getElementById("introduce_carousel_image");
-  this.changeRuteImage =
+  let imageMainCarousel = document.getElementById("introduce_carousel_image");
+  this.changeRouteImage =
     "media/images/Diapositiva" + numberChangeIntroduce + ".PNG";
-  imagenMainCarosusel.src = this.changeRuteImage;
+  imageMainCarousel.src = this.changeRouteImage;
 }
 
 let carousel1 = function () {
@@ -23,14 +23,14 @@ let carousel3 = function () {
 };
 
 function timeLine() {
-  let changeimagen = document.getElementById("timeLine_graph");
-  this.changeRuteImage =
+  let changeImage = document.getElementById("timeLine_graph");
+  this.changeRouteImage =
     "media/images/Time_line/Time_line_" +
     number +
     "/Time_line_" +
     number +
     ".PNG";
-  changeimagen.src = this.changeRuteImage;
+  changeImage.src = this.changeRouteImage;
   document.getElementById("timeLineDiv").style.display = "flex";
 }
 
@@ -150,7 +150,7 @@ function professionalMainCarousel() {
   this.y = 1;
   this.z = 2;
 
-  this.cargeMatrixProfessional = function (x, y, z) {
+  this.loadMatrixProfessional = function (x, y, z) {
     document.getElementById("prof_main_name_-1").innerHTML =
       this.dataMatrix[x][0];
     document.getElementById("prof_main_key_-1").innerHTML =
@@ -195,7 +195,7 @@ function professionalMainCarousel() {
     } else {
       this.z--;
     }
-    this.cargeMatrixProfessional(this.x, this.y, this.z);
+    this.loadMatrixProfessional(this.x, this.y, this.z);
   };
   this.changeMatrixProfessionalLeft = function () {
     if (this.x == this.dataMatrix.length - 1) {
@@ -213,7 +213,7 @@ function professionalMainCarousel() {
     } else {
       this.z++;
     }
-    this.cargeMatrixProfessional(this.x, this.y, this.z);
+    this.loadMatrixProfessional(this.x, this.y, this.z);
   };
 }
 
@@ -267,7 +267,7 @@ function academicMainCarousel() {
   this.x = 0;
   this.y = 1;
 
-  this.cargeMatrixAcademical = function (x, y) {
+  this.loadMatrixAcademical = function (x, y) {
     document.getElementById("a_main_img_0").src = this.dataMatrix[x][3];
     document.getElementById("a_main_imgclass_0").src = this.dataMatrix[x][6];
     document.getElementById("a_main_link_deploy_0").href =
@@ -300,7 +300,7 @@ function academicMainCarousel() {
     } else {
       this.y--;
     }
-    this.cargeMatrixAcademical(this.x, this.y);
+    this.loadMatrixAcademical(this.x, this.y);
   };
   this.changeMatrixAcademicalRight = function () {
     if (this.x == this.dataMatrix.length - 1) {
@@ -314,7 +314,7 @@ function academicMainCarousel() {
       this.y++;
     }
 
-    this.cargeMatrixAcademical(this.x, this.y);
+    this.loadMatrixAcademical(this.x, this.y);
   };
 
   this.a_img_principal_0 = function () {
@@ -383,7 +383,7 @@ function socialMainCarousel() {
     ],
   ];
 
-  this.cargeMatrixSocial = function (x) {
+  this.loadMatrixSocial = function (x) {
     document.getElementById("s_main_img").src = this.dataMatrix[x][0];
     document.getElementById("s_main_name").innerHTML = this.dataMatrix[x][1];
     document.getElementById("s_main_key").innerHTML = this.dataMatrix[x][2];
@@ -423,7 +423,7 @@ function time1() {
       numberSocial++;
     } else {
       numberSocial = 0;
-      socialRecomendation.cargeMatrixSocial(numberSocial);
+      socialRecommendation.loadMatrixSocial(numberSocial);
     }
   }
 }
@@ -440,7 +440,7 @@ function time2() {
       "opacity 0.5s";
   } else {
     this.widthValue = 0 + "%";
-    socialRecomendation.cargeMatrixSocial(numberSocial);
+    socialRecommendation.loadMatrixSocial(numberSocial);
     document.getElementById("s_main_bar").style.width = this.widthValue;
     document.getElementById("s_carousel_main").style.opacity = 1;
   }
@@ -448,21 +448,21 @@ function time2() {
 
 let professionalRepository;
 let academicalRepository;
-let socialRecomendation;
+let socialRecommendation;
 
 function principal() {
   mainCarousel();
   professionalMainCarousel();
-  professionalRepository.cargeMatrixProfessional(0, 1, 2);
+  professionalRepository.loadMatrixProfessional(0, 1, 2);
   academicMainCarousel();
-  academicalRepository.cargeMatrixAcademical(0, 1);
+  academicalRepository.loadMatrixAcademical(0, 1);
   socialMainCarousel();
-  socialRecomendation.cargeMatrixSocial(0);
+  socialRecommendation.loadMatrixSocial(0);
 }
 function init() {
   professionalRepository = new professionalMainCarousel();
   academicalRepository = new academicMainCarousel();
-  socialRecomendation = new socialMainCarousel();
+  socialRecommendation = new socialMainCarousel();
   principal();
   setInterval(function () {
     time();
