@@ -175,7 +175,6 @@ button.carousel:hover {
 }
 .about-me:hover {
   border: 5px solid #023244;
-  height: 72vh;
   width: 32vw;
 }
 #skills {
@@ -329,7 +328,6 @@ section.timeLine {
   width: 90%;
 }
 .timeLine_img:hover {
-  height: 22vh;
   width: 22vh;
 }
 .timeLine_text {
@@ -1065,7 +1063,6 @@ footer {
 @media screen and (max-width: 480px) {
   about-me:hover {
     border: 5px solid #023244;
-    height: 72vh;
     width: 95vw;
   }
 
