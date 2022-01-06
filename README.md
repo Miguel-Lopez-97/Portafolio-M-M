@@ -36,4 +36,4 @@ _El despliegue de este proyecto se hizo en [**netlify**](https://miguelmorenopor
 
 * **Miguel López** - *Front-end & Back-end* - [**Miguel-Lopez-97**](https://github.com/Miguel-Lopez-97)
 
-¡También puedes mirar la lista de todos los [contribuyentes](https://github.com/Miguel-Lopez-97/Juego-de-Tetris/graphs/contributors) quienes han participado en este proyecto.
+¡También puedes mirar la lista de todos los [contribuyentes](https://github.com/Miguel-Lopez-97/Portafolio-M-M/graphs/contributors) quienes han participado en este proyecto.
