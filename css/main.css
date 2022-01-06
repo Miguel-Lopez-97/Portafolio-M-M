@@ -488,7 +488,7 @@ section.carousel {
   width: 35vw;
 }
 .main_name {
-  align-items:center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 10%;
@@ -918,7 +918,7 @@ section.carousel {
   overflow: hidden;
   width: 30vw;
 }
-.s_carousel_main .main_head{
+.s_carousel_main .main_head {
   display: flex;
   justify-content: center;
   width: 90%;
@@ -1062,7 +1062,7 @@ footer {
 .down {
   height: 6vh;
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   about-me:hover {
     border: 5px solid #023244;
     height: 72vh;
@@ -1161,7 +1161,7 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-  
+
   .prof_carousel_aux:hover {
     height: 35vh;
     width: 16vw;
@@ -1225,7 +1225,8 @@ footer {
     font-size: 4vw;
   }
   .academic_carousel .main_name {
-    flex-direction: column;}
+    flex-direction: column;
+  }
   #a_main_name_0 {
     font-size: 6vw;
   }
@@ -1245,7 +1246,7 @@ footer {
     width: 80vw;
     height: 80vh;
   }
-  .s_carousel_main .main_head{
+  .s_carousel_main .main_head {
     width: 100%;
     justify-content: center;
   }
@@ -1262,5 +1263,146 @@ footer {
   }
   form button.tag {
     width: 45vw;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  .title {
+    align-items: center;
+    display: flex;
+    height: 14vh;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  button.timeLine,
+  .tag {
+    height: 6vh;
+    width: 30vw;
+  }
+  button.CV,
+  button.HV {
+    height: 6vh;
+    width: 6vw;
+  }
+  /*Professional repositories*/
+  .repositories {
+    flex-direction: column;
+    height: auto;
+  }
+  .professional_img {
+    flex-direction: column;
+    margin-bottom: 5vh;
+    width: 90vw;
+    height: 70vh;
+  }
+  .professional_img img {
+    height: 90%;
+    width: 90%;
+  }
+  .professional_resume {
+    height: auto;
+    width: 90vw;
+  }
+  .professional_ico {
+    height: 30vh;
+    margin-bottom: 2vh;
+  }
+  .professional_text {
+    height: 40vh;
+    margin-bottom: 2vh;
+  }
+  .prof_carousel_main,
+  .a_carousel_main {
+    margin-top: 5vh;
+    width: 55vw;
+  }
+  .prof_carousel_aux {
+    height: 35vh;
+    width: 18vw;
+  }
+
+  .prof_carousel_aux:hover {
+    height: 35vh;
+    width: 18vw;
+  }
+  .prof_carousel_aux .main_name {
+    width: 15vw;
+  }
+  .prof_carousel_aux .main_name p {
+    display: none;
+  }
+  .prof_carousel_aux .main_description {
+    display: none;
+  }
+  .professional .carousel_buttons button.carousel {
+    display: none;
+  }
+  .main_tag {
+    font-size: min(12px, 2.2vw);
+    width: 60vw;
+  }
+  /*Academic Projects*/
+  .academic_img {
+    margin-bottom: 3vh;
+    width: 90vw;
+  }
+  .academic_img img {
+    max-width: 85vw;
+  }
+  .academic_resume {
+    height: auto;
+    margin-bottom: 5vh;
+    width: 90vw;
+  }
+  .academic_text {
+    margin-top: 2vh;
+  }
+  .academic_class {
+    flex-direction: column;
+  }
+  .academic_project {
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+  #a_project_web {
+    flex-direction: row-reverse;
+  }
+  .a_project_text {
+    height: 25vh;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+  }
+  .a_carousel_main {
+    width: 40vw;
+  }
+  /*Social-media*/
+  .social-media {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .links {
+    margin-bottom: 2vh;
+    width: 90vw;
+  }
+  .s_carousel_main {
+    margin-top: 5vh;
+    width: 50vw;
+    height: 80vh;
+  }
+  .s_carousel_main .main_head {
+    width: 100%;
+    justify-content: center;
+  }
+  .description_text {
+    align-items: center;
   }
 }

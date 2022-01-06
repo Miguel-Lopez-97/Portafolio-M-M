@@ -106,7 +106,7 @@ function time() {
 function professionalMainCarousel() {
   this.dataMatrix = [
     [
-      ["WandaVision"],
+      ["Wanda Vision"],
       ["CSS-Landing page Nov-21"],
       [
         "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xoOQ8v1X-xyIT3K34FT2OQBMUkGwGI2P-0qRTU0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-705874",
