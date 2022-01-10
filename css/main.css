@@ -159,6 +159,19 @@ button.carousel:hover {
   justify-content: space-around;
   width: 100vw;
 }
+.resume {
+  align-items: center;
+  background-color: #aec3b0;
+  display: flex;
+  height: 70vh;
+  justify-content: space-around;
+  margin: 3vh;
+  text-align: center;
+  width: 95vw;
+}
+.resume p{
+  margin: 5vw;
+}
 .about-me {
   -moz-border-radius: 5vh;
   -ms-border-radius: 5vh;
@@ -824,10 +837,18 @@ section.carousel {
   margin-top: 2vh;
   width: 100%;
 }
+
 #a_main_name_1,
 #a_main_name_0 {
-  font-size: 2vw;
+  font-size: 2.2vw;
+  font-weight: bold;
+  text-align: center;
+}
+#a_main_key_1,
+#a_main_key_0 {
+  font-size: 1.6vw;
   font-weight: bolder;
+  text-align: center;
 }
 .academic_carousel .description_text {
   -moz-border-radius: 0 0 2vh 2vh;
@@ -871,7 +892,7 @@ section.carousel {
   flex-direction: column;
   justify-content: center;
   padding: 2vh;
-  width: 50vw;
+  width: 60vw;
 }
 .Social_profile {
   align-items: center;
@@ -911,10 +932,10 @@ section.carousel {
   border-radius: 5vh 5vh 0 0;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 75vh;
   justify-content: space-evenly;
   overflow: hidden;
-  width: 30vw;
+  width: 33vw;
 }
 .s_carousel_main .main_head {
   display: flex;
@@ -928,12 +949,12 @@ section.carousel {
   width: 100%;
 }
 .s_carousel_main .main_head img {
-  height: 15vh;
+  height: 10vh;
   width: auto;
 }
 .s_carousel_main .main_head .main_name {
   align-items: center;
-  height: 8vh;
+  height: auto;
   justify-content: center;
   width: 100%;
 }
@@ -1098,6 +1119,10 @@ footer {
     margin-bottom: 5vh;
     width: 90vw;
   }
+  .about-me:hover {
+    border: 5px solid #023244;
+    width: 90vw;
+  }
   .about-me_description p {
     font-size: min(16px, 4vw);
   }
@@ -1120,8 +1145,11 @@ footer {
     top: 0vh;
     width: 90vw;
   }
-  .timeLine_graph {
+  .timeLine_graph{
     display: none;
+  }
+  .timeLine_content {
+    width: 90vw;
   }
   /*Professional repositories*/
   .repositories {
@@ -1284,6 +1312,12 @@ footer {
   button.HV {
     height: 6vh;
     width: 6vw;
+  }
+  .timeLine_graph{
+    width: 45vw;
+  }
+  .timeLine_content {
+    width: 45vw;
   }
   /*Professional repositories*/
   .repositories {

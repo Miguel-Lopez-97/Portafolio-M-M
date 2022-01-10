@@ -48,23 +48,25 @@ let timeLineDevelopment = function () {
   number = 1;
   timeLine();
   if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "115vh";
+    document.getElementById("timeLineDiv").style.top = "185vh";
   }
+  else{document.getElementById("timeLineDiv").style.top = "195vh"}
 };
 
 let timeLineEngineering = function () {
   number = 2;
   timeLine();
   if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "270vh";
-  }
+    document.getElementById("timeLineDiv").style.top = "340vh";}
+  else{document.getElementById("timeLineDiv").style.top = "195vh"}
 };
 let timeLineSkills = function () {
   number = 0;
   timeLine();
   if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "192vh";
+    document.getElementById("timeLineDiv").style.top = "262vh";
   }
+  else{document.getElementById("timeLineDiv").style.top = "195vh"}
 };
 let p_tag = function () {
   Open("p_main_tag");
@@ -158,7 +160,7 @@ function professionalMainCarousel() {
     document.getElementById("prof_main_img_-1").src = this.dataMatrix[x][3];
     document.getElementById("prof_main_text_-1").innerHTML =
       this.dataMatrix[x][4];
-
+      
     document.getElementById("prof_main_name_0").innerHTML =
       this.dataMatrix[y][0];
     document.getElementById("prof_main_key_0").innerHTML =
