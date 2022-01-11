@@ -36,6 +36,7 @@ function timeLine() {
 
 function Close(x) {
   document.getElementById(x).style.display = "none";
+  body.style.overflowY = 'scroll';
 }
 function Open(x) {
   document.getElementById(x).style.display = "flex";
@@ -47,6 +48,7 @@ function timeLineClose() {
 let timeLineDevelopment = function () {
   number = 1;
   timeLine();
+  body.style.overflowY = 'hidden'
   if (screen.width <= 480) {
     document.getElementById("timeLineDiv").style.top = "185vh";
   }
@@ -56,6 +58,7 @@ let timeLineDevelopment = function () {
 let timeLineEngineering = function () {
   number = 2;
   timeLine();
+  body.style.overflowY = 'hidden'
   if (screen.width <= 480) {
     document.getElementById("timeLineDiv").style.top = "340vh";}
   else{document.getElementById("timeLineDiv").style.top = "195vh"}
@@ -63,6 +66,7 @@ let timeLineEngineering = function () {
 let timeLineSkills = function () {
   number = 0;
   timeLine();
+  body.style.overflowY = 'hidden'
   if (screen.width <= 480) {
     document.getElementById("timeLineDiv").style.top = "262vh";
   }
