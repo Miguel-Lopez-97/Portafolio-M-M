@@ -47,30 +47,21 @@ function timeLineClose() {
 
 let timeLineDevelopment = function () {
   number = 1;
+  var y = window.scrollY;
   timeLine();
-  body.style.overflowY = 'hidden'
-  if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "185vh";
-  }
-  else{document.getElementById("timeLineDiv").style.top = "195vh"}
+  body.style.overflowY = 'hidden';
 };
 
 let timeLineEngineering = function () {
   number = 2;
+  var y = window.scrollY;
   timeLine();
-  body.style.overflowY = 'hidden'
-  if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "340vh";}
-  else{document.getElementById("timeLineDiv").style.top = "195vh"}
+  body.style.overflowY = 'hidden';
 };
 let timeLineSkills = function () {
   number = 0;
   timeLine();
-  body.style.overflowY = 'hidden'
-  if (screen.width <= 480) {
-    document.getElementById("timeLineDiv").style.top = "262vh";
-  }
-  else{document.getElementById("timeLineDiv").style.top = "195vh"}
+  body.style.overflowY = 'hidden';
 };
 let p_tag = function () {
   Open("p_main_tag");
