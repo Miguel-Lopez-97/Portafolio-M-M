@@ -102,7 +102,7 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 5vh;
-  width: 100vw;
+  width: 95vw;
 }
 section {
   display: flex;
@@ -169,7 +169,7 @@ button.carousel:hover {
   text-align: center;
   width: 95vw;
 }
-.resume p{
+.resume p {
   margin: 5vw;
 }
 .about-me {
@@ -296,11 +296,11 @@ section.timeLine {
   background-color: #2691bb;
   border: 10px solid #034057;
   display: none;
-  height: 75vh;
+  height: 78vh;
   justify-content: space-evenly;
-  position: absolute;
-  top: 115vh;
-  width: 80vw;
+  position: fixed;
+  top: 18vh;
+  width: 95vw;
 }
 .timeLine_graph {
   background-color: #e6ede7;
@@ -766,6 +766,9 @@ section.carousel {
 .academic_resume img {
   height: 20vh;
 }
+.academic_carousel {
+  justify-content: space-evenly;
+}
 .a_carousel_main {
   -moz-border-radius: 5vh;
   -ms-border-radius: 5vh;
@@ -774,7 +777,7 @@ section.carousel {
   border-radius: 5vh;
   display: flex;
   height: 70vh;
-  width: 45vw;
+  width: 40vw;
 }
 .a_carousel_main .main_head {
   height: 50%;
@@ -837,7 +840,6 @@ section.carousel {
   margin-top: 2vh;
   width: 100%;
 }
-
 #a_main_name_1,
 #a_main_name_0 {
   font-size: 2.2vw;
@@ -892,7 +894,7 @@ section.carousel {
   flex-direction: column;
   justify-content: center;
   padding: 2vh;
-  width: 60vw;
+  width: 50vw;
 }
 .Social_profile {
   align-items: center;
@@ -935,13 +937,13 @@ section.carousel {
   height: 75vh;
   justify-content: space-evenly;
   overflow: hidden;
-  width: 33vw;
+  width: 30vw;
 }
 .s_carousel_main .main_head {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   width: 90%;
-  flex-direction: column;
 }
 .s_carousel_main .main_head .head_img {
   display: flex;
@@ -976,8 +978,8 @@ section.carousel {
   border-radius: 0;
   font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
-  width: 95%;
   overflow: auto;
+  width: 95%;
 }
 .s_carousel_main .description_links {
   flex-direction: row;
@@ -1086,6 +1088,14 @@ footer {
     border: 5px solid #023244;
     width: 95vw;
   }
+  about-me:hover {
+    border: 5px solid #023244;
+    width: 90vw;
+  }
+  prof_carousel_aux:hover {
+    height: 35vh;
+    width: 16vw;
+  }
 
   #contact {
     background: transparent;
@@ -1119,11 +1129,7 @@ footer {
     margin-bottom: 5vh;
     width: 90vw;
   }
-  .about-me:hover {
-    border: 5px solid #023244;
-    width: 90vw;
-  }
-  .about-me_description p {
+  . .about-me_description p {
     font-size: min(16px, 4vw);
   }
   .about-me_buttons {
@@ -1140,12 +1146,13 @@ footer {
     width: 15vw;
   }
   section.timeLine {
-    height: 90vh;
-    position: absolute;
+    height: 98vh;
+    position: fixed;
     top: 0vh;
-    width: 90vw;
+    width: 95vw;
+    width: 95vw;
   }
-  .timeLine_graph{
+  .timeLine_graph {
     display: none;
   }
   .timeLine_content {
@@ -1186,12 +1193,7 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-
-  .prof_carousel_aux:hover {
-    height: 35vh;
-    width: 16vw;
-  }
-  .prof_carousel_aux .main_name {
+  . .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
@@ -1268,12 +1270,12 @@ footer {
     width: 90vw;
   }
   .s_carousel_main {
-    width: 80vw;
     height: 80vh;
+    width: 80vw;
   }
   .s_carousel_main .main_head {
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
   .description_text {
     align-items: flex-start;
@@ -1291,6 +1293,11 @@ footer {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
+  prof_carousel_aux:hover {
+    height: 35vh;
+    width: 18vw;
+  }
+
   .title {
     align-items: center;
     display: flex;
@@ -1302,7 +1309,6 @@ footer {
   h2 {
     text-align: center;
   }
-
   button.timeLine,
   .tag {
     height: 6vh;
@@ -1313,7 +1319,7 @@ footer {
     height: 6vh;
     width: 6vw;
   }
-  .timeLine_graph{
+  .timeLine_graph {
     width: 45vw;
   }
   .timeLine_content {
@@ -1326,9 +1332,9 @@ footer {
   }
   .professional_img {
     flex-direction: column;
+    height: 70vh;
     margin-bottom: 5vh;
     width: 90vw;
-    height: 70vh;
   }
   .professional_img img {
     height: 90%;
@@ -1355,12 +1361,7 @@ footer {
     height: 35vh;
     width: 18vw;
   }
-
-  .prof_carousel_aux:hover {
-    height: 35vh;
-    width: 18vw;
-  }
-  .prof_carousel_aux .main_name {
+  . .prof_carousel_aux .main_name {
     width: 15vw;
   }
   .prof_carousel_aux .main_name p {
@@ -1425,13 +1426,13 @@ footer {
     width: 90vw;
   }
   .s_carousel_main {
+    height: 80vh;
     margin-top: 5vh;
     width: 50vw;
-    height: 80vh;
   }
   .s_carousel_main .main_head {
-    width: 100%;
     justify-content: center;
+    width: 100%;
   }
   .description_text {
     align-items: center;
