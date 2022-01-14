@@ -44,19 +44,20 @@ header {
   align-items: center;
   background-color: #124559;
   display: flex;
-  height: 18vh;
+  height: 10vh;
   justify-content: space-around;
   position: fixed;
   width: 100vw;
   z-index: 1;
 }
 header img {
-  height: 16vh;
+  height: 8vh;
 }
 header ul {
   align-items: center;
   display: flex;
   list-style: none;
+  height: 10vh;
 }
 header ul li {
   text-align: center;
@@ -65,7 +66,7 @@ header ul li {
 header ul li a {
   color: #eff6e0;
   font-family: "Source Serif Pro", serif;
-  font-size: 3vw;
+  font-size: 2vw;
   text-decoration: none;
 }
 header ul li a:hover {
@@ -75,18 +76,19 @@ header ul li a:hover {
   -webkit-transition: all 0.3s;
   color: #e4f7fe;
   font-family: "Source Serif Pro", serif;
-  font-size: 3.3vw;
+  font-size: 2.3vw;
   text-decoration: underline dotted #e4f7fe;
   transition: all 0.3s;
 }
 #contact {
   background: transparent;
   border: none;
-  height: 10vh;
-  margin-left: 90vw;
-  margin-top: 84vh;
+  height: 7vh;
+  margin-left: 92vw;
+  margin-top: 1.5vh;
   position: fixed;
-  width: 10vh;
+  width: 7vh;
+  z-index: 3;
 }
 #contact_img {
   -moz-border-radius: 50%;
@@ -94,16 +96,16 @@ header ul li a:hover {
   -o-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 1.5vh solid #769979;
-  height: 10vh;
-  width: 10vh;
+  border: 0.5vh solid #769979;
+  height: 6vh;
+  width: 6vh;
 }
 #contact_img:hover {
   -moz-transition: 0.1s;
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  border: 2vh solid #6b906f;
+  border: 0.7vh solid #6b906f;
   transition: 0.1s;
 }
 /*Articles*/
@@ -112,20 +114,24 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 5vh;
+  margin-top: 3vh;
   width: 95vw;
 }
 section {
   display: flex;
   justify-content: space-around;
+  margin-top: 2vh;
+}
+article div:first-child{
+  margin-top: 0;
 }
 /*First Article (Introduce)*/
 article.introduce {
-  margin-top: 18vh;
+  margin-top: 12vh;
 }
 .introduce_carousel {
   display: flex;
-  height: 70vh;
+  height: 80vh;
   justify-content: space-around;
   width: 100vw;
 }
@@ -135,7 +141,7 @@ article.introduce {
 .carousel_buttons {
   align-items: flex-start;
   display: flex;
-  height: 10vh;
+  height: auto;
   justify-content: space-around;
   margin-top: 2vh;
   width: 50vw;
@@ -171,7 +177,7 @@ button.carousel:hover {
 .title {
   align-items: center;
   display: flex;
-  height: 15vh;
+  height: auto;
   justify-content: space-around;
   width: 100vw;
 }
@@ -197,7 +203,7 @@ button.carousel:hover {
   border-radius: 5vh;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 80vh;
   justify-content: center;
   width: 30.5vw;
 }
@@ -225,7 +231,7 @@ button.carousel:hover {
 }
 .about-me:hover {
   border: 0.5vw solid #023244;
-  height: 68vh;
+  height: 78vh;
   width: 29.5vw;
 }
 #skills {
@@ -349,10 +355,10 @@ section.timeLine {
   background-color: #2691bb;
   border: 10px solid #034057;
   display: none;
-  height: 78vh;
+  height: 80vh;
   justify-content: space-evenly;
   position: fixed;
-  top: 18vh;
+  top: 10vh;
   width: 95vw;
 }
 .timeLine_graph {
@@ -805,7 +811,6 @@ section.carousel {
 .professional.carousel_buttons {
   align-items: flex-start;
   height: 8vh;
-  margin-top: 2vh;
   width: 100vw;
 }
 .carousel_buttons button.carousel {
@@ -883,7 +888,7 @@ section.carousel {
   -webkit-border-radius: 5vh;
   border-radius: 5vh;
   display: flex;
-  height: 70vh;
+  height: 75vh;
   width: 40vw;
 }
 .a_carousel_main .main_head {
@@ -946,7 +951,6 @@ section.carousel {
 .academic_carousel .main_name {
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 2vh;
   width: 100%;
 }
 #a_main_name_1,
@@ -971,7 +975,7 @@ section.carousel {
 }
 .academic.carousel_buttons {
   height: 8vh;
-  margin-top: 5vh;
+  margin-top: 2vh;
   width: 100vw;
 }
 .a_image_principal {
@@ -1158,39 +1162,42 @@ footer {
   align-items: center;
   background-color: #124559;
   display: flex;
-  height: 18vh;
+  height: 10vh;
   justify-content: space-around;
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 100%;
 }
 .footer_img {
   align-items: center;
   display: flex;
-  height: 18vh;
+  height: 9vh;
   justify-content: center;
   width: 25vw;
 }
 .footer_img img {
-  height: 16vh;
+  height: 9vh;
 }
 .footer_text {
   align-items: center;
   color: #eef4e0;
   display: flex;
-  flex-direction: column;
-  height: 18vh;
+  height: auto;
   text-align: center;
   width: 70vw;
 }
 .up {
-  font-size: 5vh;
-  height: 12vh;
+  font-size: 4vh;
+  height: auto;
 }
 .footer_text ul {
   list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
 }
 .down {
-  height: 6vh;
+  height: 3vh;
 }
 @media screen and (max-width: 480px) {
   about-me:hover {
@@ -1295,7 +1302,6 @@ footer {
   }
   .prof_carousel_main,
   .a_carousel_main {
-    margin-top: 5vh;
     width: 65vw;
   }
   .prof_carousel_aux {
@@ -1463,7 +1469,6 @@ footer {
   }
   .prof_carousel_main,
   .a_carousel_main {
-    margin-top: 5vh;
     width: 55vw;
   }
   .prof_carousel_aux {
