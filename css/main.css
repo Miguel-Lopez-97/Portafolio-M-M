@@ -3,6 +3,7 @@
   margin: 0%;
   padding: 0%;
 }
+
 /* Title Fonts style (font-family: 'Source Serif Pro', serif;)*/
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap");
 /* Subtitle Fonts Style (font-family: 'Source Code Pro', monospace;)*/
@@ -11,27 +12,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
 /* Text Fonts Style(font-family: 'Oswald', sans-serif;)*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+:root{
+  --colorBackgroundBlueLight: #cedce1;
+  --colorBackgroundGreen:#526a1f;
+  --colorBackgroundGreenLightly:#aec3b0;
+  --colorBackgroundMain:#eff6e0;
+  --colorBlackText:#01161e;
+  --colorBlueDark:#0577a380;
+  --colorBlueGreenDark:#023244;
+  --colorBlueLight:#2691bb;
+  --colorBackgroundBlue:#abe6fc;
+  --colorBlueSubTitle:#598392;
+  --colorBlueTitle:#124559;
+  --colorButtonBackgroundBlueLight:#d1f1fd;
+  --colorButtonBackgroundWhite:#f7fdff;
+  --colorButtonBlue:#034057;
+  --colorButtonBlueBorder:#0793c9;
+  --colorButtonBlueLightBorder:#08afef;
+  --colorButtonGreen:#769979;
+  --colorButtonGreenBorder:#415843;
+  --colorButtonGreenHover:#6b906f;
+  --colorButtonText:#03151d;
+  --colorCSS:#543c7c;
+  --colorCSSHover:#4b366f;
+  --colorGreenBlackText:#172018;
+  --colorHTML:#e34c26;
+  --colorHTMLHover:#b73818;
+  --colorJavaScript:#f1e05a;
+  --colorJavaScriptHover:#e9d114;
+  --colorList:#e4f7fe;
+  --colorWhiteGreen:#eef4e0;
+}
+
+::-webkit-scrollbar {
+  background-color: var(--colorButtonBlueBorder);
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--colorTextBlack);
+  background-color: var(--colorBackgroundMain);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorButtonBlue);
+  border-radius: 10px;
+}
+
 h1 {
-  color: #124559;
+  color: var(--colorBlueTitle);
   font-family: "Source Code Pro", monospace;
   font-size: max(28px, 5vw);
   font-weight: bolder;
 }
 h2 {
-  color: #598392;
+  color: var(--colorBlueSubTitle);
   font-family: "Architects Daughter", cursive;
   font-size: max(24px, 3vw);
   font-weight: bold;
 }
 p {
-  color: #01161e;
+  color: var(--colorBlackText);
   font-family: "Oswald", sans-serif;
   font-size: max(16px, 1.5vw);
   font-weight: normal;
 }
 body {
   align-items: center;
-  background-color: #eff6e0;
+  background-color: var(--colorBackgroundMain);
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -42,7 +90,7 @@ html {
 /*Header*/
 header {
   align-items: center;
-  background-color: #124559;
+  background-color: var(--colorBlueTitle);
   display: flex;
   height: 10vh;
   justify-content: space-around;
@@ -64,7 +112,7 @@ header ul li {
   width: 20vw;
 }
 header ul li a {
-  color: #eff6e0;
+  color: var(--colorBackgroundMain);
   font-family: "Source Serif Pro", serif;
   font-size: 2vw;
   text-decoration: none;
@@ -74,10 +122,10 @@ header ul li a:hover {
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   -webkit-transition: all 0.3s;
-  color: #e4f7fe;
+  color: var(--colorList);
   font-family: "Source Serif Pro", serif;
   font-size: 2.3vw;
-  text-decoration: underline dotted #e4f7fe;
+  text-decoration: underline dotted var(--colorList);
   transition: all 0.3s;
 }
 #contact {
@@ -96,7 +144,7 @@ header ul li a:hover {
   -o-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 0.5vh solid #769979;
+  border: 0.5vh solid var(--colorButtonGreen);
   height: 6vh;
   width: 6vh;
 }
@@ -105,7 +153,7 @@ header ul li a:hover {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  border: 0.7vh solid #6b906f;
+  border: 0.7vh solid var(--colorButtonGreenHover);
   transition: 0.1s;
 }
 /*Articles*/
@@ -151,9 +199,9 @@ button.carousel {
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   -webkit-border-radius: 100%;
-  background-color: #769979;
+  background-color: var(--colorButtonGreen);
   border-radius: 100%;
-  border: 5px solid #415843;
+  border: 5px solid var(--colorButtonGreenBorder);
   height: 8vh;
   width: 8vh;
 }
@@ -162,8 +210,8 @@ button.carousel:hover {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #415843;
-  border: 5px solid #769979;
+  background-color: var(--colorButtonGreenBorder)
+  border: 5px solid var(--colorButtonGreen);
   transition: 0.1s;
 }
 /*Second Article About me*/
@@ -183,7 +231,7 @@ button.carousel:hover {
 }
 .resume {
   align-items: center;
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   display: flex;
   height: 70vh;
   justify-content: space-around;
@@ -208,34 +256,34 @@ button.carousel:hover {
   width: 30.5vw;
 }
 #Web-develop {
-  background: -moz-linear-gradient(    90deg,    rgba(5, 119, 163, 0.5) 0%,    rgba(38, 145, 187, 1) 100%  );
-  background: -webkit-linear-gradient(    90deg,    rgba(5, 119, 163, 0.5) 0%,    rgba(38, 145, 187, 1) 100%  );
-  background: linear-gradient(    90deg,    rgba(5, 119, 163, 0.5) 0%,    rgba(38, 145, 187, 1) 100%  );
+  background: -moz-linear-gradient(    90deg,    var(--colorBlueDark) 0%,    var(--colorBlueLight) 100%  );
+  background: -webkit-linear-gradient(    90deg,    var(--colorBlueDark) 0%,    var(--colorBlueLight) 100%  );
+  background: linear-gradient(    90deg,    var(--colorBlueDark) 0%,  var(--colorBlueLight) 100%  );
 }
 #engineering {
   background: -moz-linear-gradient(
     90deg,
-    rgba(38, 145, 187, 1) 0%,    
-    rgba(5, 119, 163, 0.5) 100%
+    var(--colorBlueLight) 0%,    
+    var(--colorBlueDark) 100%
   );
   background: -webkit-linear-gradient(
     90deg,
-    rgba(38, 145, 187, 1) 0%,
-    rgba(5, 119, 163, 0.5) 100%
+    var(--colorBlueLight) 0%,
+    var(--colorBlueDark) 100%
   );
   background: linear-gradient(
     90deg,
-    rgba(38, 145, 187, 1) 0%,
-    rgba(5, 119, 163, 0.5) 100%
+    var(--colorBlueLight) 0%,
+    var(--colorBlueDark) 100%
   );
 }
 .about-me:hover {
-  border: 0.5vw solid #023244;
+  border: 0.5vw solid var(--colorBlueGreenDark);
   height: 78vh;
   width: 29.5vw;
 }
 #skills {
-  background-color: #2691bb;
+  background-color: var(--colorBlueLight);
 }
 .about-me_img {
   align-items: center;
@@ -260,7 +308,7 @@ button.carousel:hover {
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
   align-items: center;
-  background-color: #abe6fc;
+  background-color: var(--colorBackgroundBlue);
   border-radius: 2vh;
   display: flex;
   height: 50%;
@@ -287,10 +335,10 @@ button.timeLine,
   -ms-border-radius: 3vh;
   -o-border-radius: 3vh;
   -webkit-border-radius: 3vh;
-  background-color: #023244;
+  background-color: var(--colorBlueGreenDark);
   border-radius: 3vh;
-  border: 5px solid #cedce1;
-  color: #cedce1;
+  border: 5px solid var(--colorBackgroundBlueLight);
+  color: var(--colorBackgroundBlueLight);
   font-weight: bold;
   height: 5vh;
   width: 10vw;
@@ -301,9 +349,9 @@ button.tag:hover {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #cedce1;
-  border: 5px solid #023244;
-  color: #023244;
+  background-color: var(--colorBackgroundBlueLight);
+  border: 5px solid var(--colorBlueGreenDark);
+  color: var(--colorBlueGreenDark);
   transition: 0.1s;
 }
 button.CV {
@@ -311,10 +359,10 @@ button.CV {
   -ms-border-radius: 2.5vh 0 0 2.5vh;
   -o-border-radius: 2.5vh 0 0 2.5vh;
   -webkit-border-radius: 2.5vh 0 0 2.5vh;
-  background-color: #d1f1fd;
+  background-color: var(--colorButtonBackgroundBlueLight);
   border-radius: 2.5vh 0 0 2.5vh;
-  border: 5px solid #0793c9;
-  color: #03151d;
+  border: 5px solid var(--colorButtonBlueBorder);
+  color: var(--colorButtonText);
   font-weight: bold;
   height: 5vh;
   margin-right: 0;
@@ -325,9 +373,9 @@ button.CV:hover {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #0793c9;
-  border: 5px solid #d1f1fd;
-  color: #eef4e0;
+  background-color: var(--colorButtonBlueBorder);
+  border: 5px solid var(--colorButtonBackgroundBlueLight);
+  color: var(--colorWhiteGreen);
   transition: 0.1s;
 }
 button.HV {
@@ -335,25 +383,25 @@ button.HV {
   -ms-border-radius: 0 2.5vh 2.5vh 0;
   -o-border-radius: 0 2.5vh 2.5vh 0;
   -webkit-border-radius: 0 2.5vh 2.5vh 0;
-  background-color: #f7fdff;
+  background-color: var(--colorButtonBackgroundWhite);
   border-radius: 0 2.5vh 2.5vh 0;
-  border: 5px solid #08afef;
-  color: #03151d;
+  border: 5px solid var(--colorButtonBlueLightBorder);
+  color: var(--colorButtonText);
   font-weight: bold;
   height: 5vh;
   margin-left: 0;
   width: 5vw;
 }
 button.HV:hover {
-  background-color: #08afef;
-  border: 5px solid #eef4e0;
-  color: #eef4e0;
+  background-color: var(--colorButtonBlueLightBorder);
+  border: 5px solid var(--colorWhiteGreen);
+  color: var(--colorWhiteGreen);
 }
 /*Timeline display*/
 section.timeLine {
   align-items: center;
-  background-color: #2691bb;
-  border: 10px solid #034057;
+  background-color: var(--colorBlueLight);
+  border: 10px solid var(--colorButtonBlue);
   display: none;
   height: 80vh;
   justify-content: space-evenly;
@@ -362,8 +410,8 @@ section.timeLine {
   width: 95vw;
 }
 .timeLine_graph {
-  background-color: #e6ede7;
-  border: 5px solid #a7bea9;
+  background-color: var(--colorWhiteGreen);
+  border: 5px solid var(--colorBackgroundGreenLightly);
   display: flex;
   height: 90%;
   width: 55%;
@@ -386,9 +434,9 @@ section.timeLine {
   -o-border-radius: 100%;
   -webkit-border-radius: 100%;
   align-items: center;
-  background-color: #e6ede7;
+  background-color: var(--colorWhiteGreen);
   border-radius: 100%;
-  border: 5px solid #769979;
+  border: 5px solid var(--colorButtonGreen);
   display: flex;
   height: 20vh;
   justify-content: center;
@@ -409,8 +457,8 @@ section.timeLine {
 }
 .timeLine_text {
   align-items: center;
-  background-color: #aec3b0;
-  border: 5px solid #6b906f;
+  background-color: var(--colorBackgroundGreenLightly);
+  border: 5px solid var(--colorButtonGreenHover);
   display: flex;
   height: 40vh;
   justify-content: center;
@@ -431,9 +479,9 @@ button.down {
   -o-border-radius: 50%;
   -webkit-border-radius: 50%;
   align-items: center;
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   border-radius: 50%;
-  border: 3px solid #fdfdfd;
+  border: 3px solid var(--colorButtonBackgroundWhite);
   display: flex;
   font-weight: bolder;
   height: 6vh;
@@ -447,9 +495,9 @@ button.down:hover {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #6b906f;
+  background-color: var(--colorButtonGreenHover);
   border-radius: 50%;
-  border: 3px solid #aec3b0;
+  border: 3px solid var(--colorBackgroundGreenLightly);
   transition: 0.1s;
 }
 button img {
@@ -462,10 +510,10 @@ button.close {
   -o-border-radius: 50%;
   -webkit-border-radius: 50%;
   align-items: center;
-  background-color: #03151d;
+  background-color: var(--colorButtonText);
   border-radius: 50%;
-  border: 3px solid #eef4e0;
-  color: #eef4e0;
+  border: 3px solid var(--colorWhiteGreen);
+  color: var(--colorWhiteGreen);
   display: flex;
   font-weight: bolder;
   height: 6vh;
@@ -482,9 +530,9 @@ button.close:hover {
   -ms-transition: 0.1ms;
   -o-transition: 0.1ms;
   -webkit-transition: 0.1ms;
-  background-color: #eef4e0;
-  border: 3px solid #03151d;
-  color: #03151d;
+  background-color: var(--colorWhiteGreen);
+  border: 3px solid var(--colorButtonText);
+  color: var(--colorButtonText);
   transition: 0.1ms;
 }
 /*Professional repositories*/
@@ -497,7 +545,7 @@ button.close:hover {
 }
 .professional_img {
   align-items: center;
-  background-color: #2691bb;
+  background-color: var(--colorBlueLight);
   display: flex;
   height: 90%;
   justify-content: center;
@@ -509,7 +557,7 @@ button.close:hover {
 }
 .professional_resume {
   align-items: center;
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   display: flex;
   flex-direction: column;
   height: 90%;
@@ -528,7 +576,7 @@ button.close:hover {
 }
 .professional_text {
   align-items: center;
-  background-color: #e6ede7;
+  background-color: var(--colorWhiteGreen);
   display: flex;
   height: 50%;
   padding: 1vw;
@@ -563,9 +611,9 @@ section.carousel {
   -webkit-border-radius: 5vh;
   align-items: center;
   align-self: center;
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   border-radius: 5vh;
-  color: #172018;
+  color: var(--colorGreenBlackText);
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -586,7 +634,7 @@ section.carousel {
   -o-border-radius: 5vh 5vh 0 0;
   -webkit-border-radius: 5vh 5vh 0 0;
   align-items: center;
-  background-color: #023244;
+  background-color: var(--colorBlueGreenDark);
   border-radius: 5vh 5vh 0 0;
   display: flex;
   height: 35vh;
@@ -639,8 +687,8 @@ section.carousel {
   -o-border-radius: 0 0 0 5vh;
   -webkit-border-radius: 0 0 0 5vh;
   align-items: center;
-  background-color: #e6ede7;
-  color: #023244;
+  background-color: var(--colorWhiteGreen);
+  color: var(--colorBlueGreenDark);
   display: flex;
   font-size: max(18px, 3vh);
   height: 85%;
@@ -671,10 +719,10 @@ section.carousel {
   -o-border-radius: 5vh;
   -webkit-border-radius: 5vh;
   align-items: center;
-  background-color: #e6ede7;
+  background-color: var(--colorWhiteGreen);
   border-radius: 5vh;
-  border: 5px solid #415843;
-  color: #023244;
+  border: 5px solid var(--colorButtonGreenBorder);
+  color:var(--colorBlueGreenDark);
   display: none;
   flex-direction: column;
   font-weight: bolder;
@@ -685,11 +733,11 @@ section.carousel {
 }
 .tag_progress {
   align-items: center;
-  color: #e6ede7;
+  color: var(--colorWhiteGreen);
   display: flex;
   height: 10vh;
   justify-content: space-evenly;
-  text-shadow: 2px 2px 2px #023244;
+  text-shadow: 2px 2px 2px var(--colorBlueGreenDark);
   width: 90%;
 }
 .tag {
@@ -704,7 +752,7 @@ section.carousel {
   -ms-border-radius: 0 0 0 4vh;
   -o-border-radius: 0 0 0 4vh;
   -webkit-border-radius: 0 0 0 4vh;
-  background-color: #e34c26;
+  background-color: var(--colorHTML);
   border-radius: 0 0 0 4vh;
   display: flex;
   width: 20.8%;
@@ -714,11 +762,11 @@ section.carousel {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #b73818;
+  background-color: var(--colorHTMLHover);
   transition: 0.1s;
 }
 .tag_css {
-  background-color: #543c7c;
+  background-color: var(--colorCSS);
   display: flex;
   width: 30.6%;
 }
@@ -727,7 +775,7 @@ section.carousel {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #4b366f;
+  background-color: var(--colorCSSHover);
   transition: 0.1s;
 }
 .tag_js {
@@ -735,7 +783,7 @@ section.carousel {
   -ms-border-radius: 0 0 4vh 0;
   -o-border-radius: 0 0 4vh 0;
   -webkit-border-radius: 0 0 4vh 0;
-  background-color: #f1e05a;
+  background-color: var(--colorJavaScript);
   border-radius: 0 0 4vh 0;
   display: flex;
   width: 48.6%;
@@ -745,7 +793,7 @@ section.carousel {
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
   -webkit-transition: 0.1s;
-  background-color: #e9d114;
+  background-color: var(--colorJavaScriptHover);
   transition: 0.1s;
 }
 .main_tag button.close {
@@ -768,7 +816,7 @@ section.carousel {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
-  border: 0.5vw solid #023244;
+  border: 0.5vw solid var(--colorBlueGreenDark);
   cursor: pointer;
   height: 55vh;
   transition: all 0.5s;
@@ -823,7 +871,7 @@ section.carousel {
 }
 .academic_img {
   align-items: center;
-  background-color: #2691bb;
+  background-color: var(--colorBlueLight);
   display: flex;
   height: 70vh;
   justify-content: center;
@@ -836,8 +884,8 @@ section.carousel {
 }
 .academic_resume {
   align-items: center;
-  background-color: #aec3b0;
-  color: #01161e;
+  background-color: var(--colorBackgroundGreenLightly);
+  color: var(--colorBlackText);
   display: flex;
   flex-direction: column;
   height: 70vh;
@@ -851,7 +899,7 @@ section.carousel {
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
   align-items: center;
-  background-color: #e6ede7;
+  background-color: var(--colorWhiteGreen);
   border-radius: 2vh;
   display: flex;
   height: 20vh;
@@ -980,7 +1028,7 @@ section.carousel {
 }
 .a_image_principal {
   align-items: center;
-  background-color: #e6ede7;
+  background-color: var(--colorWhiteGreen);
   display: none;
   flex-direction: column;
   height: 60vh;
@@ -1002,7 +1050,7 @@ section.carousel {
   flex-wrap: wrap;
 }
 .links {
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1023,8 +1071,8 @@ section.carousel {
 }
 .Social_profile_text {
   align-items: center;
-  background-color: #e6ede7;
-  color: #01161e;
+  background-color: var(--colorWhiteGreen);
+  color: var(--colorBlackText);
   display: flex;
   display: flex;
   font-size: max(16px, 2vh);
@@ -1043,7 +1091,7 @@ section.carousel {
   -o-border-radius: 5vh 5vh 0 0;
   -webkit-border-radius: 5vh 5vh 0 0;
   align-items: center;
-  background-color: #aec3b0;
+  background-color: var(--colorBackgroundGreenLightly);
   border-radius: 5vh 5vh 0 0;
   display: flex;
   flex-direction: column;
@@ -1078,7 +1126,7 @@ section.carousel {
 }
 #s_main_bar {
   align-self: flex-start;
-  background-color: #526a1f;
+  background-color: var(--colorBackgroundGreen) ;
   display: flex;
   height: 2vh;
   width: 0%;
@@ -1115,8 +1163,8 @@ section.carousel {
 }
 section.contact {
   align-items: center;
-  background-color: #2691bb;
-  border: 1vh solid #034057;
+  background-color: var(--colorBlueLight);
+  border: 1vh solid  var(--colorButtonBlue);
   display: none;
   height: 70vh;
   justify-content: space-evenly;
@@ -1148,7 +1196,7 @@ form {
 }
 form input,
 form textarea {
-  border: 1vh solid #034057;
+  border: 1vh solid  var(--colorButtonBlue);
   width: 95%;
 }
 form button.tag {
@@ -1160,7 +1208,7 @@ form button.tag {
 /*Footer*/
 footer {
   align-items: center;
-  background-color: #124559;
+  background-color: var(--colorBlueTitle);
   display: flex;
   height: 10vh;
   justify-content: space-around;
@@ -1179,7 +1227,7 @@ footer {
 }
 .footer_text {
   align-items: center;
-  color: #eef4e0;
+  color: var(--colorWhiteGreen);
   display: flex;
   height: auto;
   text-align: center;
@@ -1201,11 +1249,11 @@ footer {
 }
 @media screen and (max-width: 480px) {
   about-me:hover {
-    border: 5px solid #023244;
+    border: 5px solid var(--colorBlueGreenDark);
     width: 95vw;
   }
   about-me:hover {
-    border: 5px solid #023244;
+    border: 5px solid var(--colorBlueGreenDark);
     width: 90vw;
   }
   prof_carousel_aux:hover {
@@ -1227,7 +1275,7 @@ footer {
     -o-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    border: 1vh solid #769979;
+    border: 1vh solid var(--colorButtonGreen);
     height: 8vh;
     width: 8vh;
   }
@@ -1245,7 +1293,7 @@ footer {
     margin-bottom: 5vh;
     width: 90vw;
   }
-  . .about-me_description p {
+  .about-me_description p {
     font-size: min(16px, 4vw);
   }
   .about-me_buttons {
@@ -1308,7 +1356,7 @@ footer {
     height: 35vh;
     width: 16vw;
   }
-  . .prof_carousel_aux .main_name {
+  .prof_carousel_aux .main_name {
     display: none;
   }
   .prof_carousel_aux .main_description {
@@ -1475,7 +1523,7 @@ footer {
     height: 35vh;
     width: 18vw;
   }
-  . .prof_carousel_aux .main_name {
+  .prof_carousel_aux .main_name {
     width: 15vw;
   }
   .prof_carousel_aux .main_name p {
