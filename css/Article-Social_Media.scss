@@ -1,0 +1,113 @@
+/*Social-media*/
+.social-media {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .links {
+    background-color: var(--colorBackgroundGreenLightly);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2vh;
+    width: 50vw;
+  }
+  .Social_profile {
+    align-items: center;
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    justify-content: space-around;
+    padding: 2vh;
+  }
+  #social_github {
+    flex-direction: row-reverse;
+  }
+  .Social_profile_text {
+    align-items: center;
+    background-color: var(--colorWhiteGreen);
+    color: var(--colorBlackText);
+    display: flex;
+    display: flex;
+    font-size: max(16px, 2vh);
+    height: 20vh;
+    justify-content: center;
+    padding: 1vh;
+    text-align: justify;
+    width: 70%;
+  }
+  .social-media img {
+    height: 20vh;
+  }
+  .s_carousel_main {
+    -moz-border-radius: 5vh 5vh 0 0;
+    -ms-border-radius: 5vh 5vh 0 0;
+    -o-border-radius: 5vh 5vh 0 0;
+    -webkit-border-radius: 5vh 5vh 0 0;
+    align-items: center;
+    background-color: var(--colorBackgroundGreenLightly);
+    border-radius: 5vh 5vh 0 0;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    justify-content: space-evenly;
+    overflow: hidden;
+    width: 30vw;
+  }
+  .s_carousel_main .main_head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+  .s_carousel_main .main_head .head_img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .s_carousel_main .main_head img {
+    height: 10vh;
+    width: auto;
+  }
+  .s_carousel_main .main_head .main_name {
+    align-items: center;
+    height: auto;
+    justify-content: center;
+    width: 100%;
+  }
+  #s_main_name {
+    font-weight: bolder;
+  }
+  #s_main_bar {
+    align-self: flex-start;
+    background-color: var(--colorBackgroundGreen) ;
+    display: flex;
+    height: 2vh;
+    width: 0%;
+  }
+  .s_carousel_main .description_text {
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: max(15px, min(2vw, 3vh));
+    height: 40vh;
+    overflow: auto;
+    width: 95%;
+  }
+  .s_carousel_main .description_links {
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .s_carousel_main .description_links img {
+    -moz-border-radius: 1vh;
+    -ms-border-radius: 1vh;
+    -o-border-radius: 1vh;
+    -webkit-border-radius: 1vh;
+    border-radius: 1vh;
+    height: 8vh;
+  }

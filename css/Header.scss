@@ -1,0 +1,70 @@
+/*Header*/
+header {
+    align-items: center;
+    background-color: var(--colorBlueTitle);
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    padding: 2vh;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+  }
+  header img {
+    height: 8vh;
+  }
+  header ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    height: 10vh;
+  }
+  header ul li {
+    text-align: center;
+    width: 20vw;
+  }
+  header ul li a {
+    color: var(--colorBackgroundMain);
+    font-family: "Source Serif Pro", serif;
+    font-size: 2vw;
+    text-decoration: none;
+  }
+  header ul li a:hover {
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    color: var(--colorList);
+    font-family: "Source Serif Pro", serif;
+    font-size: 2.3vw;
+    text-decoration: underline dotted var(--colorList);
+    transition: all 0.3s;
+  }
+  #contact {
+    background: transparent;
+    border: none;
+    height: 7vh;
+    margin-left: 92vw;
+    margin-top: 1.5vh;
+    position: fixed;
+    width: 7vh;
+    z-index: 3;
+  }
+  #contact_img {
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 0.5vh solid var(--colorButtonGreen);
+    height: 6vh;
+    width: 6vh;
+  }
+  #contact_img:hover {
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    -webkit-transition: 0.1s;
+    border: 0.7vh solid var(--colorButtonGreenHover);
+    transition: 0.1s;
+  }

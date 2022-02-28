@@ -6,19 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Miguel Lopez</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="scripts/app.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
 </head>
 
 <body onload="init();" id="body">
     <header>
-        <a href="#a_introduce"><img loading="lazy" src="media/ico/Ico_Logo-M&Mv1.png"  alt=""></a>
+        <a href="#a_introduce">
+            <img loading="lazy" src="media/ico/Ico_Logo-M&Mv1.png" alt="">
+        </a>
         <nav>
             <ul>
-                <li>
-                    <a href="#a_about-Me">About me</a>
-                </li>
+                <li><a href="#a_about-Me">About me</a></li>
                 <li><a href="#a_professional_dev">Professional developments</a></li>
                 <li><a href="#a_academic_dev">Academic projects</a></li>
                 <li><a href="#a_social">Social medias</a></li>
@@ -26,7 +26,9 @@
         </nav>
     </header>
     <main>
-        <button id="contact" onclick="contact_Open()"><img id="contact_img"  loading="lazy" src="media/ico/Ico_Contact.png" alt=""></button>
+        <button id="contact" onclick="contact_Open()">
+            <img id="contact_img" loading="lazy" src="media/ico/Ico_Contact.png" alt="">
+        </button>
         <article class="introduce" id="a_introduce">
             <div class="introduce_carousel">
                 <img id="introduce_carousel_image" loading="lazy" src="" alt="">
@@ -43,8 +45,8 @@
                 <h2>Miguel Ángel Moreno López</h2>
             </div>
             <div class="resume">
-                    <p>Resume languages that I use, some of my experience in gitHub, and called my principal
-                        projects.</p>
+                <p>Resume languages that I use, some of my experience in gitHub, and called my principal
+                    projects.</p>
             </div>
             <section class="about-me" id="Web-develop">
                 <div class="about-me_img">
@@ -95,9 +97,12 @@
                         <p id="resume_event">Resume of event</p>
                     </div>
                     <div class="timeLine_button">
-                        <button class="left" id="timeLine_left"><img loading="lazy" src="media/ico/Ico_left.png" alt=""></button>
-                        <button class="left" id="timeLine_down"><img loading="lazy" src="media/ico/Ico_down.png" alt=""></button>
-                        <button class="right" id="timeLine_right"><img loading="lazy" src="media/ico/Ico_right.png" alt=""></button>
+                        <button class="left" id="timeLine_left"><img loading="lazy" src="media/ico/Ico_left.png"
+                                alt=""></button>
+                        <button class="left" id="timeLine_down"><img loading="lazy" src="media/ico/Ico_down.png"
+                                alt=""></button>
+                        <button class="right" id="timeLine_right"><img loading="lazy" src="media/ico/Ico_right.png"
+                                alt=""></button>
                     </div>
                 </div>
                 <button class="close" onclick="timeLineClose()">X</button>
@@ -128,8 +133,7 @@
                 <div class="professional carousel">
                     <div class="professional_carousel">
                         <div class="prof_carousel_main prof_carousel_aux"
-                            onclick="professionalRepository.changeMatrixProfessionalRight()"
-                            >
+                            onclick="professionalRepository.changeMatrixProfessionalRight()">
                             <div class="main_name">
                                 <h3 id="prof_main_name_-1">Project Name</h3>
                                 <p id="prof_main_key_-1">Keyword project and date</p>
@@ -196,7 +200,8 @@
                                 <p id="prof_main_key_1">Keyword project and date</p>
                             </div>
                             <div class="main_img">
-                                <img id="prof_main_img_1" loading="lazy" src="media/images/Prof_Carousel/prof_img_main_2.png" alt="">
+                                <img id="prof_main_img_1" loading="lazy"
+                                    src="media/images/Prof_Carousel/prof_img_main_2.png" alt="">
                             </div>
                             <div class="main_description">
                                 <div class="description_text">
@@ -208,23 +213,19 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    
-                </div>
-                
+                    </div>                    
+                </div>                
                 <div class=" carousel_buttons">
                                         <button class="left" id="professional_carousel_left"
                                             onclick="professionalRepository.changeMatrixProfessionalLeft()"><img
-                                            loading="lazy" src="media/ico/Ico_left.png" alt=""></button>
+                                                src="media/ico/Ico_left.png" alt=""></button>
                                         <button class="carousel"></button>
                                         <button class="carousel"></button>
                                         <button class="carousel"></button>
                                         <button class="right" id="professional_carousel_right"
                                             onclick="professionalRepository.changeMatrixProfessionalRight()"><img
-                                            loading="lazy" src="media/ico/Ico_right.png" alt=""></button>
+                                                src="media/ico/Ico_right.png" alt=""></button>
                                 </div>
-
             </section>
         </article>
         <article class="academic-projects" id="a_academic_dev">
@@ -269,10 +270,8 @@
                     </div>
                 </div>
             </section>
-
             <section class="academic carousel">
                 <div class="academic carousel">
-
                     <div class="academic_carousel">
                         <div class="a_carousel_main" id="a_carousel_main_0">
                             <div class="main_head">
@@ -323,7 +322,7 @@
                             <div class="a_image_principal" id="a_image_principal_0">
                                 <h2 id="a_principal_name_0">Project Name</h2>
                                 <a href="" target="_blank" id="a_principal_link_0"><img id="a_principal_imgclass_0"
-                                    loading="lazy" src="" alt=""></a>
+                                        loading="lazy" src="" alt=""></a>
                                 <button class="close"
                                     onclick="academicalRepository.a_img_principal_close_0()">X</button>
                             </div>
@@ -336,7 +335,8 @@
                                             onclick="academicalRepository.a_img_principal_1()">
                                     </div>
                                     <div class="description_links">
-                                        <img id="a_main_imgclass_1" loading="lazy" src="media/ico/Ico_Engineering.png" alt="">
+                                        <img id="a_main_imgclass_1" loading="lazy" src="media/ico/Ico_Engineering.png"
+                                            alt="">
                                         <button class="tag" id="tag_professional" onclick="a_tag_1()">Tag</button>
                                         <a id="a_main_link_deploy_1"
                                             href="https://sleepy-archimedes-03d4ce.netlify.app/" target="_blank">
@@ -380,27 +380,25 @@
                             <div class="a_image_principal" id="a_image_principal_1">
                                 <h2 id="a_principal_name_1">Project Name</h2>
                                 <a href="" target="_blank" id="a_principal_link_1"><img id="a_principal_imgclass_1"
-                                    loading="lazy" src="" alt=""></a>
+                                        loading="lazy" src="" alt=""></a>
                                 <button class="close"
                                     onclick="academicalRepository.a_img_principal_close_1()">X</button>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="carousel_buttons">
                     <button class="left" id="a_carousel_left"
-                        onclick="academicalRepository.changeMatrixAcademicalRight()"><img loading="lazy" src="media/ico/Ico_left.png"
+                        onclick="academicalRepository.changeMatrixAcademicalRight()"><img src="media/ico/Ico_left.png"
                             alt=""></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
                     <button class="carousel"></button>
                     <button class="right" id="professional_carousel_right"
-                        onclick="academicalRepository.changeMatrixAcademicalRight()"><img loading="lazy" rc="media/ico/Ico_right.png"
+                        onclick="academicalRepository.changeMatrixAcademicalRight()"><img rc="media/ico/Ico_right.png"
                             alt=""></button>
                 </div>
             </section>
-
         </article>
         <article class="social-media" id="a_social">
             <div class="title">
@@ -410,7 +408,7 @@
                 <div class="Social_profile" id="social_linkedin">
                     <div class="Social_profile_img">
                         <a href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez" target="_blank">
-                            <img  loading="lazy" src="media/ico/Ico_LinkedIn.png" alt="">
+                            <img loading="lazy" src="media/ico/Ico_LinkedIn.png" alt="">
                         </a>
                     </div>
                     <div class="Social_profile_text">
@@ -455,12 +453,12 @@
                         <p id="s_main_text">recommendation testimony</p>
                     </div>
                     <div class="description_links">
-                        <a id="s_main_link_github" href="" target="_blank"><img loading="lazy" src="media/ico/Ico_GitHub.png"
-                                alt=""></a>
-                        <a id="s_main_link_linkedin" href="" target="_blank"><img loading="lazy" src="media/ico/Ico_LinkedIn.png"
-                                alt=""></a>
-                        <a id="s_main_link_deploy" href="" target="_blank"><img loading="lazy" src="media/ico/Ico_Deploy.png"
-                                alt=""></a>
+                        <a id="s_main_link_github" href="" target="_blank"><img loading="lazy"
+                                src="media/ico/Ico_GitHub.png" alt=""></a>
+                        <a id="s_main_link_linkedin" href="" target="_blank"><img loading="lazy"
+                                src="media/ico/Ico_LinkedIn.png" alt=""></a>
+                        <a id="s_main_link_deploy" href="" target="_blank"><img loading="lazy"
+                                src="media/ico/Ico_Deploy.png" alt=""></a>
                     </div>
                 </div>
             </div>
