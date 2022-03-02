@@ -12,23 +12,23 @@
 </head>
 
 <body onload="init();" id="body">
-    <header>
-        <a href="#a_introduce">
+    <button id="contact" onclick="contact_Open()">
+        <img id="contact_img" loading="lazy" src="media/ico/Ico_Contact.png" alt="">
+    </button>
+    <header id="headerDoc">
+        <a href="#a_introduce" onclick="menuFlex()">
             <img loading="lazy" src="media/ico/Ico_Logo-M&Mv1.png" alt="">
         </a>
         <nav>
-            <ul>
-                <li><a href="#a_about-Me">About me</a></li>
-                <li><a href="#a_professional_dev">Professional developments</a></li>
-                <li><a href="#a_academic_dev">Academic projects</a></li>
-                <li><a href="#a_social">Social medias</a></li>
+            <ul id="navDoc">
+                <li><a href="#a_about-Me" onclick="menuFlex()">About me</a></li>
+                <li><a href="#a_professional_dev" onclick="menuFlex()">Proyectos Profesionales</a></li>
+                <li><a href="#a_academic_dev" onclick="menuFlex()">Proyectos Académicos</a></li>
+                <li><a href="#a_social" onclick="menuFlex()">Redes Sociales</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <button id="contact" onclick="contact_Open()">
-            <img id="contact_img" loading="lazy" src="media/ico/Ico_Contact.png" alt="">
-        </button>
         <article class="introduce" id="a_introduce">
             <div class="introduce_carousel">
                 <img id="introduce_carousel_image" loading="lazy" src="" alt="">

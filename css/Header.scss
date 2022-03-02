@@ -3,21 +3,16 @@ header {
     align-items: center;
     background-color: var(--colorBlueTitle);
     display: flex;
-    height: 10vh;
     justify-content: space-around;
-    padding: 2vh;
     position: fixed;
     width: 100vw;
     z-index: 1;
-  }
-  header img {
-    height: 8vh;
   }
   header ul {
     align-items: center;
     display: flex;
     list-style: none;
-    height: 10vh;
+    height: 90%;
   }
   header ul li {
     text-align: center;
@@ -38,14 +33,11 @@ header {
     font-family: "Source Serif Pro", serif;
     font-size: 2.3vw;
     text-decoration: underline dotted var(--colorList);
-    transition: all 0.3s;
   }
   #contact {
     background: transparent;
     border: none;
     height: 7vh;
-    margin-left: 92vw;
-    margin-top: 1.5vh;
     position: fixed;
     width: 7vh;
     z-index: 3;
@@ -67,4 +59,121 @@ header {
     -webkit-transition: 0.1s;
     border: 0.7vh solid var(--colorButtonGreenHover);
     transition: 0.1s;
+  }
+
+  @media screen and (max-width: 576px){
+    header {
+      height: auto;
+      min-height: 40px;
+      padding: 2vh;
+      z-index: 2;
+    }
+    header ul {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 0;
+      width: 80vw;
+    }
+    header ul li {
+      text-align: center;
+      width: 80vw;
+    }
+    header ul li a {
+      font-size: 6vw;
+    }
+    header ul li a:hover {
+      font-size: 6.5vw;
+    }
+
+    header img {
+      height: 30px;
+    }
+    #contact {
+      margin-left: 60vw;
+      margin-top: 3vh;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    header {
+      height: auto;
+      min-height: 50px;
+      padding: 2vh;
+    }
+    header ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100vh;
+      width: 80vw;
+    }
+    header ul li {
+      text-align: center;
+      width: 80vw;
+    }
+    header ul li a {
+      font-size: 6vw;
+    }
+    header ul li a:hover {
+      font-size: 6.5vw;
+    }
+    header img {
+      height: 40px;
+    }
+    #contact {
+      margin-left: 70vw;
+      margin-top: 4vh;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px){
+    header {
+      height: 10vh;
+      padding: 1vh;
+    }
+    header img {
+      height: 8vh;
+    }
+    #contact {
+      margin-left: 95vw;
+      margin-top: 3vh;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1200px){
+    header {
+      height: 10vh;
+      padding: 2vh;
+    }
+    header img {
+      height: 9vh;
+    }
+    #contact {
+      margin-left: 92vw;
+      margin-top: 3vh;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1400px){
+    header {
+      height: 12vh;
+      padding: 2vh;
+    }
+    header img {
+      height: 10vh;
+    }
+    #contact {
+      margin-left: 92vw;
+      margin-top: 4vh;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    header {
+      height: 15vh;
+      padding: 2vh;
+    }
+    header img {
+      height: 13vh;
+    }
+    #contact {
+      margin-left: 95vw;
+      margin-top: 5vh;
+    }
   }

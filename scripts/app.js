@@ -1,6 +1,29 @@
 //
 let numberChangeIntroduce = 1;
 let number = 1;
+let menuFlag = false;
+
+function menuFlex() {
+  if (window.screen.width < 769) {
+    let menuObject = document.getElementById("headerDoc");
+    let navObject = document.getElementById("navDoc");
+    if (menuFlag===false){
+          menuObject.style.zIndex ="4";
+          navObject.style.display ="flex";
+          navObject.style.height ="100vh";
+          body.style.overflowY = 'hidden';
+          menuFlag=true
+    }
+    else{
+          menuObject.style.zIndex ="2";
+          navObject.style.display ="none";
+          navObject.style.height ="0vh";
+          body.style.overflowY = 'scroll';
+          menuFlag=false
+    }}
+else{
+  null
+}}
 
 function mainCarousel() {
   let imageMainCarousel = document.getElementById("introduce_carousel_image");
