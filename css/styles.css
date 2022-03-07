@@ -82,18 +82,31 @@ h1 {
   color: var(--colorBlueTitle);
   font-family: "Source Code Pro", monospace;
   font-weight: bolder;
+  font-size: 4rem;
+  text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
 h2 {
   color: var(--colorBlueSubTitle);
   font-family: "Architects Daughter", cursive;
+  text-shadow: 2px 4px 0px var(--colorBlueLight);
+  text-decoration: underline wavy var(--colorBlueTitle);
   font-weight: bold;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: var(--colorBlackText);
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 p {
   color: var(--colorBlackText);
   font-family: "Oswald", sans-serif;
   font-weight: normal;
+  font-size: 1.2rem;
 }
 
 /*Articles*/
@@ -194,18 +207,6 @@ section {
 @media screen and (min-width: 1400px) {
   body {
     font-size: 32px;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.5rem;
   }
 
   /*Articles*/
@@ -593,6 +594,7 @@ button.carousel:hover {
   align-items: center;
   background-color: var(--colorBackgroundGreenLightly);
   display: flex;
+  flex-direction: column;
   height: 70vh;
   justify-content: space-around;
   margin: 3vh;
@@ -601,8 +603,35 @@ button.carousel:hover {
   box-shadow: 1rem 1rem var(--colorButtonGreenBorder);
 }
 
-.resume p {
-  margin: 5vw;
+.resumeText {
+  display: flex;
+  width: 90%;
+}
+
+.resumeImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.resumeImages figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 15vh;
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
+}
+
+.resumeImages figure:hover {
+  filter: brightness(1.25);
+  -webkit-filter: brightness(1.25);
+}
+
+.resumeImages figure img {
+  width: auto;
+  height: 15vh;
 }
 
 .about-me {
@@ -949,6 +978,7 @@ button.close:hover {
 .academic_img {
   align-items: center;
   background-color: var(--colorBlueLight);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorBlueGreenDark);
   display: flex;
   height: 70vh;
   justify-content: center;
@@ -964,6 +994,7 @@ button.close:hover {
 .academic_resume {
   align-items: center;
   background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
   color: var(--colorBlackText);
   display: flex;
   flex-direction: column;
@@ -1084,14 +1115,24 @@ button.close:hover {
   grid-row-start: 1;
 }
 
-#a_main_link_deploy {
+#a_main_link_deploy_0, #a_main_link_deploy_1 {
   grid-column-start: 1;
   grid-row-start: 2;
 }
 
-#a_main_link_github {
+#a_main_link_deploy_0 img:hover, #a_main_link_deploy_1 img:hover {
+  filter: brightness(5);
+  -webkit-filter: brightness(5);
+}
+
+#a_main_link_github_0, #a_main_link_github_1 {
   grid-column-start: 2;
   grid-row-start: 2;
+}
+
+#a_main_link_github_0 img:hover, #a_main_link_github_1 img:hover {
+  filter: brightness(5);
+  -webkit-filter: brightness(5);
 }
 
 .academic_carousel .main_name {
@@ -1161,6 +1202,7 @@ button.close:hover {
 .professional_img {
   align-items: center;
   background-color: var(--colorBlueLight);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorBlueGreenDark);
   display: flex;
   height: 90%;
   justify-content: center;
@@ -1175,6 +1217,7 @@ button.close:hover {
 .professional_resume {
   align-items: center;
   background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
   display: flex;
   flex-direction: column;
   height: 90%;
@@ -1194,6 +1237,11 @@ button.close:hover {
   height: 25vh;
 }
 
+.professional_ico img:hover {
+  filter: brightness(5);
+  -webkit-filter: brightness(5);
+}
+
 .professional_text {
   align-items: center;
   background-color: var(--colorWhiteGreen);
@@ -1206,8 +1254,9 @@ button.close:hover {
 
 section.carousel {
   display: flex;
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
   flex-direction: column;
-  justify-content: center;
+  margin-top: 10vh;
 }
 
 .carousel {
@@ -1215,16 +1264,15 @@ section.carousel {
   display: flex;
   height: 80vh;
   justify-content: center;
-  width: 100vw;
 }
 
 .professional_carousel,
 .academic_carousel {
   align-items: flex-end;
   display: flex;
-  height: 75vh;
+  height: 68vh;
   justify-content: space-around;
-  width: 100vw;
+  width: 95vw;
 }
 
 .prof_carousel_main,
@@ -1237,19 +1285,20 @@ section.carousel {
   align-self: center;
   background-color: var(--colorBackgroundGreenLightly);
   border-radius: 5vh;
+  box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
   color: var(--colorGreenBlackText);
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 62vh;
   justify-content: space-evenly;
-  width: 35vw;
+  width: 40vw;
 }
 
 .main_name {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 10%;
+  height: auto;
   text-align: center;
   width: 95%;
 }
@@ -1263,7 +1312,7 @@ section.carousel {
   background-color: var(--colorBlueGreenDark);
   border-radius: 5vh 5vh 0 0;
   display: flex;
-  height: 35vh;
+  height: 25vh;
   justify-content: center;
   width: 95%;
 }
@@ -1275,7 +1324,7 @@ section.carousel {
   -webkit-border-radius: 2vh 2vh 0 0;
   border-radius: 2vh 2vh 0 0;
   height: auto;
-  max-height: 28vh;
+  max-height: 24.5vh;
   max-width: 100%;
   position: relative;
 }
@@ -1340,9 +1389,14 @@ section.carousel {
   width: 20%;
 }
 
-.description_links img {
+.professional_carousel .description_links img {
   height: 100%;
   width: 100%;
+}
+
+.professional_carousel .description_links img:hover {
+  filter: brightness(5);
+  -webkit-filter: brightness(5);
 }
 
 .description_links button {
@@ -1465,6 +1519,7 @@ section.carousel {
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
   border-radius: 2vh;
+  box-shadow: 0.2rem 0.2rem 0 0 var(--colorButtonGreenBorder), 0.35rem 0.35rem 0 0 #8caa8f, 0.5rem 0.5rem 0 0 #b9cbbb, 0.65rem 0.65rem 0 0 #dbe4dc, 0.65rem 0.65rem 0 0 #f1f5f2, 0.2rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0);
   height: 50vh;
   width: 20vw;
 }
@@ -1478,6 +1533,10 @@ section.carousel {
   border-bottom: 0.5vw solid var(--colorBlueGreenDark);
   cursor: pointer;
   transition: all 0.5s;
+}
+
+.prof_carousel_aux .main_name p {
+  display: none;
 }
 
 .prof_carousel_aux .main_img {
@@ -1521,8 +1580,7 @@ section.carousel {
 
 .professional.carousel_buttons {
   align-items: flex-start;
-  height: 8vh;
-  width: 100vw;
+  width: 90%;
 }
 
 .carousel_buttons button.carousel {
@@ -1539,16 +1597,17 @@ section.carousel {
 
 .links {
   background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 4vh;
   padding: 2vh;
-  width: 50vw;
+  width: 40vw;
 }
 
 .Social_profile {
   align-items: center;
-  display: flex;
   display: flex;
   flex-direction: row;
   height: 20vh;
@@ -1586,10 +1645,12 @@ section.carousel {
   align-items: center;
   background-color: var(--colorBackgroundGreenLightly);
   border-radius: 5vh 5vh 0 0;
+  box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   height: 75vh;
   justify-content: space-evenly;
+  margin-top: 4vh;
   overflow: hidden;
   width: 30vw;
 }
@@ -1636,6 +1697,8 @@ section.carousel {
   -ms-border-radius: 0;
   -o-border-radius: 0;
   -webkit-border-radius: 0;
+  display: flex;
+  flex-direction: column;
   border-radius: 0;
   font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
@@ -1643,7 +1706,12 @@ section.carousel {
   width: 95%;
 }
 
+.s_carousel_main .description_text p {
+  font-size: 1rem;
+}
+
 .s_carousel_main .description_links {
+  display: flex;
   flex-direction: row;
   height: 10vh;
   justify-content: space-evenly;

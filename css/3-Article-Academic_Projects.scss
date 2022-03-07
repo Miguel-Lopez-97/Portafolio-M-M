@@ -5,6 +5,7 @@
 .academic_img {
   align-items: center;
   background-color: var(--colorBlueLight);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorBlueGreenDark);
   display: flex;
   height: 70vh;
   justify-content: center;
@@ -18,6 +19,7 @@
 .academic_resume {
   align-items: center;
   background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
   color: var(--colorBlackText);
   display: flex;
   flex-direction: column;
@@ -121,13 +123,21 @@
   grid-column-start: 2;
   grid-row-start: 1;
 }
-#a_main_link_deploy {
+#a_main_link_deploy_0, #a_main_link_deploy_1{
   grid-column-start: 1;
   grid-row-start: 2;
 }
-#a_main_link_github {
+#a_main_link_deploy_0 img:hover, #a_main_link_deploy_1 img:hover{
+  filter: brightness(5);
+  -webkit-filter: brightness(5);
+}
+#a_main_link_github_0, #a_main_link_github_1{
   grid-column-start: 2;
   grid-row-start: 2;
+}
+#a_main_link_github_0 img:hover,#a_main_link_github_1 img:hover {
+  filter: brightness(5); 
+  -webkit-filter: brightness(5);
 }
 .academic_carousel .main_name {
   flex-direction: row;

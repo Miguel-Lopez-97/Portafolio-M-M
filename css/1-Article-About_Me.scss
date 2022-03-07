@@ -54,6 +54,7 @@ article.introduce {
     align-items: center;
     background-color: var(--colorBackgroundGreenLightly);
     display: flex;
+    flex-direction: column;
     height: 70vh;
     justify-content: space-around;
     margin: 3vh;
@@ -61,8 +62,31 @@ article.introduce {
     width: 100%;
     box-shadow: 1rem 1rem var(--colorButtonGreenBorder);
   }
-  .resume p {
-    margin: 5vw;
+  .resumeText {
+    display: flex;
+    width: 90%;
+  }
+  .resumeImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 90%;
+  }
+  .resumeImages figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 15vh;
+    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0,0,0,0);
+    }
+  .resumeImages figure:hover{
+    filter: brightness(1.25);
+    -webkit-filter: brightness(1.25);
+}
+  .resumeImages figure img{
+    width: auto;
+    height: 15vh;
   }
   .about-me {
     -moz-border-radius: 5vh;

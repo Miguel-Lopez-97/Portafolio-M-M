@@ -6,15 +6,16 @@
   }
   .links {
     background-color: var(--colorBackgroundGreenLightly);
+    box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 4vh;
     padding: 2vh;
-    width: 50vw;
+    width: 40vw;
   }
   .Social_profile {
     align-items: center;
-    display: flex;
     display: flex;
     flex-direction: row;
     height: 20vh;
@@ -48,10 +49,12 @@
     align-items: center;
     background-color: var(--colorBackgroundGreenLightly);
     border-radius: 5vh 5vh 0 0;
+    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0,0,0,0);  
     display: flex;
     flex-direction: column;
     height: 75vh;
     justify-content: space-evenly;
+    margin-top: 4vh;
     overflow: hidden;
     width: 30vw;
   }
@@ -91,13 +94,19 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
     -webkit-border-radius: 0;
+    display: flex;
+    flex-direction: column;
     border-radius: 0;
     font-size: max(15px, min(2vw, 3vh));
     height: 40vh;
     overflow: auto;
     width: 95%;
   }
+  .s_carousel_main .description_text p{
+    font-size: 1rem;
+  }
   .s_carousel_main .description_links {
+    display: flex;
     flex-direction: row;
     height: 10vh;
     justify-content: space-evenly;

@@ -9,6 +9,7 @@
   .professional_img {
     align-items: center;
     background-color: var(--colorBlueLight);
+    box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorBlueGreenDark);
     display: flex;
     height: 90%;
     justify-content: center;
@@ -21,6 +22,7 @@
   .professional_resume {
     align-items: center;
     background-color: var(--colorBackgroundGreenLightly);
+    box-shadow: -0.5rem 0.5rem 0 0.5rem var(--colorButtonGreenBorder);
     display: flex;
     flex-direction: column;
     height: 90%;
@@ -33,10 +35,17 @@
     height: 35%;
     justify-content: center;
     width: 90%;
-  }
+}
+
   .professional_ico img {
     height: 25vh;
   }
+  
+  .professional_ico img:hover{ 
+    filter: brightness(5); 
+    -webkit-filter: brightness(5);
+  }
+
   .professional_text {
     align-items: center;
     background-color: var(--colorWhiteGreen);
@@ -48,23 +57,23 @@
   }
   section.carousel {
     display: flex;
+    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0,0,0,0);
     flex-direction: column;
-    justify-content: center;
+    margin-top: 10vh;
   }
   .carousel {
     align-items: center;
     display: flex;
     height: 80vh;
     justify-content: center;
-    width: 100vw;
   }
   .professional_carousel,
   .academic_carousel {
     align-items: flex-end;
     display: flex;
-    height: 75vh;
+    height: 68vh;
     justify-content: space-around;
-    width: 100vw;
+    width: 95vw;
   }
   .prof_carousel_main,
   .a_carousel_main {
@@ -76,18 +85,19 @@
     align-self: center;
     background-color: var(--colorBackgroundGreenLightly);
     border-radius: 5vh;
+    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0,0,0,0);  
     color: var(--colorGreenBlackText);
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 62vh;
     justify-content: space-evenly;
-    width: 35vw;
+    width: 40vw;
   }
   .main_name {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: auto;
     text-align: center;
     width: 95%;
   }
@@ -100,7 +110,7 @@
     background-color: var(--colorBlueGreenDark);
     border-radius: 5vh 5vh 0 0;
     display: flex;
-    height: 35vh;
+    height: 25vh;
     justify-content: center;
     width: 95%;
   }
@@ -111,7 +121,7 @@
     -webkit-border-radius: 2vh 2vh 0 0;
     border-radius: 2vh 2vh 0 0;
     height: auto;
-    max-height: 28vh;
+    max-height: 24.5vh;
     max-width: 100%;
     position: relative;
   }
@@ -169,10 +179,15 @@
     justify-content: space-between;
     width: 20%;
   }
-  .description_links img {
+  .professional_carousel .description_links img {
     height: 100%;
     width: 100%;
   }
+  .professional_carousel .description_links img:hover {
+    filter: brightness(5); 
+    -webkit-filter: brightness(5);
+  }
+
   .description_links button {
     width: 90%;
   }
@@ -281,7 +296,8 @@
     -o-border-radius: 2vh;
     -webkit-border-radius: 2vh;
     border-radius: 2vh;
-    height: 50vh;
+    box-shadow: 0.2rem 0.2rem 0 0 var(--colorButtonGreenBorder), 0.35rem 0.35rem 0 0 #8caa8f, 0.5rem 0.5rem 0 0 #b9cbbb, 0.65rem 0.65rem 0 0 #dbe4dc, 0.65rem 0.65rem 0 0 #f1f5f2, 0.2rem 0.2rem 0.5rem 0.2rem rgba(0,0,0,0);    
+   height: 50vh;
     width: 20vw;
   }
   .prof_carousel_aux:hover {
@@ -294,6 +310,9 @@
     cursor: pointer;
     transition: all 0.5s;
   }
+  .prof_carousel_aux .main_name p{
+    display: none;
+  }
   .prof_carousel_aux .main_img {
     -moz-border-radius: 1vh 1vh 0 0;
     -ms-border-radius: 1vh 1vh 0 0;
@@ -302,6 +321,7 @@
     border-radius: 1vh 1vh 0 0;
     height: 20vh;
   }
+  
   .prof_carousel_aux .main_img img {
     -moz-border-radius: 2vh 2vh 0 0;
     -ms-border-radius: 2vh 2vh 0 0;
@@ -330,8 +350,7 @@
   }
   .professional.carousel_buttons {
     align-items: flex-start;
-    height: 8vh;
-    width: 100vw;
+    width: 90%;
   }
   .carousel_buttons button.carousel {
     height: 5vh;

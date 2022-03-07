@@ -7,23 +7,23 @@ function menuFlex() {
   if (window.screen.width < 769) {
     let menuObject = document.getElementById("headerDoc");
     let navObject = document.getElementById("navDoc");
-    if (menuFlag===false){
-          menuObject.style.zIndex ="4";
-          navObject.style.display ="flex";
-          navObject.style.height ="100vh";
-          body.style.overflowY = 'hidden';
-          menuFlag=true
+    if (menuFlag === false) {
+      menuObject.style.zIndex = "4";
+      navObject.style.display = "flex";
+      navObject.style.height = "100vh";
+      body.style.overflowY = "hidden";
+      menuFlag = true;
+    } else {
+      menuObject.style.zIndex = "2";
+      navObject.style.display = "none";
+      navObject.style.height = "0vh";
+      body.style.overflowY = "scroll";
+      menuFlag = false;
     }
-    else{
-          menuObject.style.zIndex ="2";
-          navObject.style.display ="none";
-          navObject.style.height ="0vh";
-          body.style.overflowY = 'scroll';
-          menuFlag=false
-    }}
-else{
-  null
-}}
+  } else {
+    null;
+  }
+}
 
 function mainCarousel() {
   let imageMainCarousel = document.getElementById("introduce_carousel_image");
@@ -59,7 +59,7 @@ function timeLine() {
 
 function Close(x) {
   document.getElementById(x).style.display = "none";
-  body.style.overflowY = 'scroll';
+  body.style.overflowY = "scroll";
 }
 function Open(x) {
   document.getElementById(x).style.display = "flex";
@@ -72,19 +72,19 @@ let timeLineDevelopment = function () {
   number = 1;
   var y = window.scrollY;
   timeLine();
-  body.style.overflowY = 'hidden';
+  body.style.overflowY = "hidden";
 };
 
 let timeLineEngineering = function () {
   number = 2;
   var y = window.scrollY;
   timeLine();
-  body.style.overflowY = 'hidden';
+  body.style.overflowY = "hidden";
 };
 let timeLineSkills = function () {
   number = 0;
   timeLine();
-  body.style.overflowY = 'hidden';
+  body.style.overflowY = "hidden";
 };
 let p_tag = function () {
   Open("p_main_tag");
@@ -178,7 +178,7 @@ function professionalMainCarousel() {
     document.getElementById("prof_main_img_-1").src = this.dataMatrix[x][3];
     document.getElementById("prof_main_text_-1").innerHTML =
       this.dataMatrix[x][4];
-      
+
     document.getElementById("prof_main_name_0").innerHTML =
       this.dataMatrix[y][0];
     document.getElementById("prof_main_key_0").innerHTML =
