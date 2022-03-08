@@ -1,7 +1,5 @@
 /*First Article (Introduce)*/
-article.introduce {
-    margin-top: 15vh;
-  }
+
   .introduce_carousel {
     display: flex;
     height: 75vh;
@@ -408,15 +406,32 @@ article.introduce {
   }
 
   @media screen and (max-width: 576px){
-
+    article.introduce {
+      margin-top: 12vh;
+    }
   }
   @media screen and (min-width: 576px) and (max-width: 768px){
-   }
+    article.introduce {
+      margin-top: 14vh;
+    } 
+  }
   @media screen and (min-width: 768px) and (max-width: 992px){
-   }
+    article.introduce {
+      margin-top: 14vh;
+    } 
+  }
   @media screen and (min-width: 992px) and (max-width: 1200px){
-    }
+    article.introduce {
+      margin-top: 15vh;
+    }  
+  }
   @media screen and (min-width: 1200px) and (max-width: 1400px){
-    }
+    article.introduce {
+      margin-top: 17vh;
+    }  
+  }
   @media screen and (min-width: 1400px) {
+    article.introduce {
+      margin-top: 20vh;
+    }
 }

@@ -37,10 +37,14 @@
   background-color: var(--colorWhiteGreen);
   border-radius: 2vh;
   display: flex;
+  flex-direction: column;
   height: 20vh;
   padding: 1vh;
   text-align: justify;
   width: 90%;
+}
+.a_project_text p:last-child{
+  font-size: 0.7rem;
 }
 .academic_class {
   display: flex;

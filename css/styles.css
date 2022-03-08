@@ -82,31 +82,31 @@ h1 {
   color: var(--colorBlueTitle);
   font-family: "Source Code Pro", monospace;
   font-weight: bolder;
-  font-size: 4rem;
+  font-size: 3rem;
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
 h2 {
   color: var(--colorBlueSubTitle);
   font-family: "Architects Daughter", cursive;
-  text-shadow: 2px 4px 0px var(--colorBlueLight);
+  text-shadow: 0px 4px 0px var(--colorBlueLight);
   text-decoration: underline wavy var(--colorBlueTitle);
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 
 h3 {
   color: var(--colorBlackText);
   font-family: "Oswald", sans-serif;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 p {
   color: var(--colorBlackText);
   font-family: "Oswald", sans-serif;
   font-weight: normal;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 /*Articles*/
@@ -122,7 +122,7 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-  body {
+  html {
     font-size: 14px;
   }
 
@@ -139,7 +139,7 @@ section {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  body {
+  html {
     font-size: 16px;
   }
 
@@ -156,7 +156,7 @@ section {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  body {
+  html {
     font-size: 18px;
   }
 
@@ -173,7 +173,7 @@ section {
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  body {
+  html {
     font-size: 20px;
   }
 
@@ -188,8 +188,8 @@ section {
     margin-top: 5vh;
   }
 }
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-  body {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+  html {
     font-size: 24px;
   }
 
@@ -204,9 +204,25 @@ section {
     margin-top: 5vh;
   }
 }
-@media screen and (min-width: 1400px) {
-  body {
-    font-size: 32px;
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: max(32px, 1vw);
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 
   /*Articles*/
@@ -532,10 +548,6 @@ form button.tag {
 }
 
 /*First Article (Introduce)*/
-article.introduce {
-  margin-top: 15vh;
-}
-
 .introduce_carousel {
   display: flex;
   height: 75vh;
@@ -970,6 +982,36 @@ button.close:hover {
   transition: 0.1ms;
 }
 
+@media screen and (max-width: 576px) {
+  article.introduce {
+    margin-top: 12vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  article.introduce {
+    margin-top: 14vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  article.introduce {
+    margin-top: 14vh;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  article.introduce {
+    margin-top: 15vh;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  article.introduce {
+    margin-top: 17vh;
+  }
+}
+@media screen and (min-width: 1400px) {
+  article.introduce {
+    margin-top: 20vh;
+  }
+}
 /*Academic Projects*/
 .academic-projects {
   display: flex;
@@ -1013,10 +1055,15 @@ button.close:hover {
   background-color: var(--colorWhiteGreen);
   border-radius: 2vh;
   display: flex;
+  flex-direction: column;
   height: 20vh;
   padding: 1vh;
   text-align: justify;
   width: 90%;
+}
+
+.a_project_text p:last-child {
+  font-size: 0.7rem;
 }
 
 .academic_class {
@@ -1701,17 +1748,19 @@ section.carousel {
   -o-border-radius: 0;
   -webkit-border-radius: 0;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   border-radius: 0;
   font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
-  overflow: auto;
   width: 95%;
 }
 
 .s_carousel_main .description_text p {
   font-size: 1rem;
-  padding: 2vw;
+  width: 95%;
+  height: 95%;
+  overflow-y: scroll;
+  padding-right: 1vw;
 }
 
 .s_carousel_main .description_links {
