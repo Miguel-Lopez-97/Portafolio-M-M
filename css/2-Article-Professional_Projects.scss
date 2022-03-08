@@ -171,6 +171,13 @@
     text-align: justify;
     width: 75%;
   }
+  .prof_carousel_main .description_text p{
+    font-size: 0.8rem;
+    width: 95%;
+    height: 95%;
+    overflow-y: scroll;
+    padding-right: 1vw;
+  }
   .description_links {
     align-items: center;
     display: flex;
@@ -345,8 +352,12 @@
     height: 50%;
     width: auto;
   }
-  .prof_carousel_aux p {
-    font-size: max(12px, 1vw);
+  .prof_carousel_aux .description_text p{
+    font-size: 0.5rem;
+    width: 95%;
+    height: 95%;
+    overflow-y: scroll;
+    padding-right: 1vw;
   }
   .professional.carousel_buttons {
     align-items: flex-start;

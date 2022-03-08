@@ -1123,11 +1123,11 @@ button.close:hover {
 }
 
 .academic_carousel .main_img img {
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  -webkit-border-radius: 5%;
+  border-radius: 5%;
   height: 90%;
   max-height: 28vh;
   max-width: 100%;
@@ -1430,6 +1430,14 @@ section.carousel {
   width: 75%;
 }
 
+.prof_carousel_main .description_text p {
+  font-size: 0.8rem;
+  width: 95%;
+  height: 95%;
+  overflow-y: scroll;
+  padding-right: 1vw;
+}
+
 .description_links {
   align-items: center;
   display: flex;
@@ -1624,8 +1632,12 @@ section.carousel {
   width: auto;
 }
 
-.prof_carousel_aux p {
-  font-size: max(12px, 1vw);
+.prof_carousel_aux .description_text p {
+  font-size: 0.5rem;
+  width: 95%;
+  height: 95%;
+  overflow-y: scroll;
+  padding-right: 1vw;
 }
 
 .professional.carousel_buttons {

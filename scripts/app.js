@@ -126,44 +126,44 @@ function time() {
 function professionalMainCarousel() {
   this.dataMatrix = [
     [
-      ["Wanda Vision"],
-      ["CSS-Landing page Nov-21"],
+      ["Flores del Tambo ToDoList"],
+      ["CRUD page Nov-21"],
       [
-        "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xoOQ8v1X-xyIT3K34FT2OQBMUkGwGI2P-0qRTU0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-705874",
+        "https://todolistfloresdeltambo.herokuapp.com/"
       ],
-      ["media/images/Prof_Carousel/prof_img_main_1.png"],
+      ["media/images/Prof_Carousel/P_ToDoList.png"],
       [
-        "Wanda Maximoff and Vision are living an idyllic suburban life in the town of Westview, New Jersey, trying to conceal their true natures.",
+        "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas"
       ],
-      ["https://www.justwatch.com/co/serie/bruja-escarlata-y-vision"],
+      ["https://github.com/Miguel-Lopez-97/TodoListFloresDelTambo"],
     ],
     [
       ["Portfolio M&M"],
       ["Business page Nov-21"],
       ["https://miguelmorenoportafolio.netlify.app/"],
-      ["media/images/Prof_Carousel/prof_img_main_2.png"],
-      ["This is a main page about my work as Web Development"],
+      ["media/images/Prof_Carousel/P_Portafolio.png"],
+      ["Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS"],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
     ],
     [
-      ["Jurassic Park"],
-      ["Landing page Nov-21"],
-      ["https://sleepy-archimedes-03d4ce.netlify.app/"],
-      ["media/images/Prof_Carousel/prof_img_main_0.png"],
-      ["This is a tribute page about my favorite saga in all the time"],
+      ["Pokédex"],
+      ["React App Nov-21"],
+      ["https://miguel-lopez-pokedex-api.netlify.app/"],
+      ["media/images/Prof_Carousel/P_Pokedex.png"],
+      ["Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades"],
       [
-        "https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades",
+        "https://github.com/Miguel-Lopez-97/Pokedex",
       ],
     ],
     [
-      ["Hangman Game"],
-      ["Game page with JS Nov-21"],
-      ["https://juegoahorcadodiplo99.netlify.app"],
-      ["media/images/Prof_Carousel/prof_img_main_3.png"],
+      ["Kyrio's Pizza"],
+      ["Market Place ReactJS Nov-21"],
+      ["https://miguel-lopez-market-place.netlify.app/"],
+      ["media/images/Prof_Carousel/P_Market_Place_pizza.png"],
       [
-        "Hangman games for home This project is a hangman game developed for the home games company",
+        "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante"
       ],
-      ["https://github.com/Miguel-Lopez-97/Juego-del-Ahorcado"],
+      ["https://github.com/Miguel-Lopez-97/kyrios-pizza"],
     ],
   ];
   this.x = 0;
@@ -235,38 +235,41 @@ function professionalMainCarousel() {
     }
     this.loadMatrixProfessional(this.x, this.y, this.z);
   };
+  this.changeMatrixProfessional = function (a,b,c) {
+    this.loadMatrixProfessional(a, b, c);
+  };
 }
 
 function academicMainCarousel() {
   this.dataMatrix = [
     [
-      ["WandaVision"],
-      ["CSS-Landing page Nov-21"],
+      ["Calabozos"],
+      ["JV-Canvas Game Nov-21"],
       [
-        "https://www.disneyplus.com/series/wandavision/4SrN28ZjDLwH?irclickid=xoOQ8v1X-xyIT3K34FT2OQBMUkGwGI2P-0qRTU0&irgwc=1&cid=DSS-Affiliate-Impact-Content-JustWatch%20GmbH-705874",
+        "https://miguel-lopez-97.github.io/Juego_Calabozos/",
       ],
-      ["media/images/Prof_Carousel/prof_img_main_1.png"],
+      ["media/images/Academic_Carousel/P_Canvas_Game.png"],
       [
-        "Wanda Maximoff and Vision are living an idyllic suburban life in the town of Westview, New Jersey, trying to conceal their true natures.",
+        "En este proyecto desarrolle la lógica con JS para simular un juego de mazmorras hecho en Canvas",
       ],
-      ["https://www.justwatch.com/co/serie/bruja-escarlata-y-vision"],
-      ["media/ico/Ico_Engineering.png"],
+      ["https://github.com/Miguel-Lopez-97/Juego_Calabozos"],
+      ["media/ico/Ico_Web-development.png"],
     ],
     [
-      ["Portfolio M&M"],
-      ["Business page Nov-21"],
-      ["https://miguelmorenoportafolio.netlify.app/"],
-      ["media/images/Prof_Carousel/prof_img_main_2.png"],
-      ["This is a main page about my work as Web Development"],
-      ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
-      ["media/ico/Ico_Engineering.png"],
+      ["Hackathon-Benatural"],
+      ["Market Place Feb-22"],
+      [null],
+      ["media/images/Academic_Carousel/P_BeNatural.png"],
+      ["Elaborado con React en el frontend y Java y SQL en el backend,trabaje como lider de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente"],
+      ["https://github.com/Miguel-Lopez-97/hackathon-benatural"],
+      ["media/ico/Ico_Web-development.png"],
     ],
     [
       ["Jurassic Park"],
       ["Landing page Nov-21"],
-      ["https://sleepy-archimedes-03d4ce.netlify.app/"],
-      ["media/images/Prof_Carousel/prof_img_main_0.png"],
-      ["This is a tribute page about my favorite saga in all the time"],
+      ["https://miguel-lopez-jurassic-world-landingpage.netlify.app/"],
+      ["media/images/Academic_Carousel/P_Jurassic_Park.png"],
+      ["Esta es mi primera pagina web de mi saga favorita, uso de CSS y HTML"],
       [
         "https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades",
       ],
@@ -278,11 +281,55 @@ function academicMainCarousel() {
       ["https://juegoahorcadodiplo99.netlify.app"],
       ["media/images/Prof_Carousel/prof_img_main_3.png"],
       [
-        "Hangman games for home This project is a hangman game developed for the home games company",
+        "Este Juego del Ahorcado realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, asi como manejar una página web dinámica",
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-del-Ahorcado"],
-      ["media/ico/Ico_Teaching.png"],
+      ["media/ico/Ico_Web-development.png"],
     ],
+    [
+      ["Rick and Morty"],
+      ["React Project Api JS Ene-22"],
+      ["https://miguel-lopez-api-ricky-and-morty.netlify.app/"],
+      ["media/images/Academic_Carousel/P_Rick_Morty_API.png"],
+      [
+        "Esta es mi primer aplicativo con el uso de ReactJS, en el cual hay renderizado de componentes de manera dinámica a partir del consumo de una API externa, asi como navegación interna y otras funcionalidades"
+      ],
+      ["https://github.com/Miguel-Lopez-97/rick-and-morty"],
+      ["media/ico/Ico_Web-development.png"],
+    ],
+    [
+      ["Tetris Game"],
+      ["Game page with JS Nov-21"],
+      ["https://miguel-lopez-valentina-rippe-tetris-game.netlify.app/"],
+      ["media/images/Academic_Carousel/P_Tetris.png"],
+      [
+        "Este Juego del Tetris realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, asi como manejar una página web dinámica",
+      ],
+      ["https://github.com/Miguel-Lopez-97/Juego-de-Tetris"],
+      ["media/ico/Ico_Web-development.png"],
+    ],
+    [
+      ["To Do List App"],
+      ["React App Ene-22"],
+      ["https://miguel-lopez-todo-list.netlify.app/"],
+      ["media/images/Academic_Carousel/P_ToDoList.png"],
+      [
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos de un CRUD aplicados en una lista de tareas diarias asi como el manejo global de estados (Redux) y comunicación entre componentes"
+      ],
+      ["https://github.com/Miguel-Lopez-97/toDo-list"],
+      ["media/ico/Ico_Web-development.png"],
+    ],
+    [
+      ["App Weather"],
+      ["React App Ene-22"],
+      ["https://miguel-lopez-weather-app.netlify.app/"],
+      ["media/images/Academic_Carousel/P_App_Weather.png"],
+      [
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos del consumo de API, asi como el manejo global de estados y comunicación entre componentes"
+      ],
+      ["https://github.com/Miguel-Lopez-97/Api-Clima"],
+      ["media/ico/Ico_Web-development.png"],
+    ]
   ];
   this.x = 0;
   this.y = 1;
@@ -335,6 +382,9 @@ function academicMainCarousel() {
     }
 
     this.loadMatrixAcademical(this.x, this.y);
+  };
+  this.changeMatrixAcademical = function (a,b) {
+    this.loadMatrixAcademical(a,b);
   };
 
   this.a_img_principal_0 = function () {
