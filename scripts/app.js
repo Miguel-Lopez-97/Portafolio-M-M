@@ -135,6 +135,7 @@ function professionalMainCarousel() {
         "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas",
       ],
       ["https://github.com/Miguel-Lopez-97/TodoListFloresDelTambo"],
+      ["3%","17%","80%"]
     ],
     [
       ["Portfolio M&M"],
@@ -145,6 +146,7 @@ function professionalMainCarousel() {
         "Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS",
       ],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
+      ["35%","44%","21%"]
     ],
     [
       ["Pokédex"],
@@ -155,6 +157,7 @@ function professionalMainCarousel() {
         "Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades",
       ],
       ["https://github.com/Miguel-Lopez-97/Pokedex"],
+      ["3%","21%","76%"]
     ],
     [
       ["Kyrio's Pizza"],
@@ -165,6 +168,7 @@ function professionalMainCarousel() {
         "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante",
       ],
       ["https://github.com/Miguel-Lopez-97/kyrios-pizza"],
+      ["1%","40%","59%"]
     ],
   ];
   this.x = 0;
@@ -195,6 +199,10 @@ function professionalMainCarousel() {
       this.dataMatrix[y][4];
     document.getElementById("prof_main_img_github_0").href =
       this.dataMatrix[y][5];
+    document.getElementById("d_tag_html").style.width=this.dataMatrix[y][6][0];
+    document.getElementById("d_tag_css").style.width=this.dataMatrix[y][6][1];
+    document.getElementById("d_tag_js").style.width=this.dataMatrix[y][6][2];
+    console.log(this.dataMatrix[y][6][0])
 
     document.getElementById("prof_main_name_1").innerHTML =
       this.dataMatrix[z][0];

@@ -1580,7 +1580,6 @@ section.carousel {
   background-color: var(--colorHTML);
   border-radius: 0 0 0 4vh;
   display: flex;
-  width: 20.8%;
 }
 
 .tag_html:hover {
@@ -1595,7 +1594,6 @@ section.carousel {
 .tag_css {
   background-color: var(--colorCSS);
   display: flex;
-  width: 30.6%;
 }
 
 .tag_css:hover {
@@ -1615,7 +1613,6 @@ section.carousel {
   background-color: var(--colorJavaScript);
   border-radius: 0 0 4vh 0;
   display: flex;
-  width: 48.6%;
 }
 
 .tag_js:hover {
