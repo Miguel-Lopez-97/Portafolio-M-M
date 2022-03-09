@@ -131,8 +131,8 @@
   .about-me:hover {
     filter: brightness(1.1);
     -webkit-filter: brightness(1.1);
-}
-    .about-me_img {
+  }
+  .about-me_img {
     align-items: center;
     display: flex;
     height: 28%;
@@ -144,8 +144,8 @@
   .about-me_img img:hover {
     height: 18vh;
     animation-name: rote;
-  animation-duration: 0.6s;
-  animation-iteration-count: infinite;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
   }
   @keyframes rote{
     0% {

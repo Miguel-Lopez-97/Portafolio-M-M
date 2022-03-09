@@ -115,10 +115,10 @@ let contact_Open = function () {
 function time() {
   let timeNow = new Date();
   this.segNow = Math.floor(timeNow.getSeconds() / 2);
-  if (segNow == 29 && numberChangeIntroduce < 3) {
+  if (segNow===29 && numberChangeIntroduce < 3) {
     numberChangeIntroduce++;
     mainCarousel();
-  } else if (segNow == 29 && numberChangeIntroduce == 3) {
+  } else if (segNow===29 && numberChangeIntroduce===3) {
     numberChangeIntroduce = 1;
     mainCarousel();
   }
@@ -212,17 +212,17 @@ function professionalMainCarousel() {
   
   };
   this.changeMatrixProfessionalRight = function () {
-    if (this.x == 0) {
+    if (this.x===0) {
       this.x = this.dataMatrix.length - 1;
     } else {
       this.x--;
     }
-    if (this.y == 0) {
+    if (this.y===0) {
       this.y = this.dataMatrix.length - 1;
     } else {
       this.y--;
     }
-    if (this.z == 0) {
+    if (this.z===0) {
       this.z = this.dataMatrix.length - 1;
     } else {
       this.z--;
@@ -230,17 +230,17 @@ function professionalMainCarousel() {
     this.loadMatrixProfessional(this.x, this.y, this.z);
   };
   this.changeMatrixProfessionalLeft = function () {
-    if (this.x == this.dataMatrix.length - 1) {
+    if (this.x===this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
     }
-    if (this.y == this.dataMatrix.length - 1) {
+    if (this.y===this.dataMatrix.length - 1) {
       this.y = 0;
     } else {
       this.y++;
     }
-    if (this.z == this.dataMatrix.length - 1) {
+    if (this.z===this.dataMatrix.length - 1) {
       this.z = 0;
     } else {
       this.z++;
@@ -377,12 +377,12 @@ function academicMainCarousel() {
   };
 
   this.changeMatrixAcademicalLeft = function () {
-    if (this.x == 0) {
+    if (this.x===0) {
       this.x = this.dataMatrix.length - 1;
     } else {
       this.x--;
     }
-    if (this.y == 0) {
+    if (this.y===0) {
       this.y = this.dataMatrix.length - 1;
     } else {
       this.y--;
@@ -390,12 +390,12 @@ function academicMainCarousel() {
     this.loadMatrixAcademical(this.x, this.y);
   };
   this.changeMatrixAcademicalRight = function () {
-    if (this.x == this.dataMatrix.length - 1) {
+    if (this.x===this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
     }
-    if (this.y == this.dataMatrix.length - 1) {
+    if (this.y===this.dataMatrix.length - 1) {
       this.y = 0;
     } else {
       this.y++;
@@ -478,21 +478,21 @@ function socialMainCarousel() {
     document.getElementById("s_main_name").innerHTML = this.dataMatrix[x][1];
     document.getElementById("s_main_key").innerHTML = this.dataMatrix[x][2];
     document.getElementById("s_main_text").innerHTML = this.dataMatrix[x][3];
-    if (this.dataMatrix[x][4] == "N/A") {
+    if (this.dataMatrix[x][4]==="N/A") {
       Close("s_main_link_github");
     } else {
       document.getElementById("s_main_link_github").href =
         this.dataMatrix[x][4];
       Open("s_main_link_github");
     }
-    if (this.dataMatrix[x][5] == "N/A") {
+    if (this.dataMatrix[x][5]==="N/A") {
       Close("s_main_link_linkedin");
     } else {
       document.getElementById("s_main_link_linkedin").href =
         this.dataMatrix[x][5];
       Open("s_main_link_linkedin");
     }
-    if (this.dataMatrix[x][6] == "N/A") {
+    if (this.dataMatrix[x][6]==="N/A") {
       Close("s_main_link_deploy");
     } else {
       document.getElementById("s_main_link_deploy").href =
@@ -504,16 +504,15 @@ function socialMainCarousel() {
 let numberSocial = 0;
 function time1() {
   this.timeNow = new Date();
-  this.segNow = Math.floor(this.timeNow.getSeconds() / 2);
-  if (segNow == 28) {
+  this.segNow = this.timeNow.getSeconds();
+  if (segNow===58) {
     if (numberSocial < socialRecommendation.dataMatrix.length) {
       this.widthValue = 0 + "%";
       document.getElementById("s_main_bar").style.width = this.widthValue;
       document.getElementById("s_carousel_main").style.opacity = 0;
       numberSocial++;
-    } else {
+    } if(numberSocial === socialRecommendation.dataMatrix.length) {
       numberSocial = 0;
-      socialRecommendation.loadMatrixSocial(numberSocial);
     }
   }
 }
@@ -522,13 +521,13 @@ function time2() {
   this.timeNow = new Date();
   this.segNow =
     this.timeNow.getSeconds() * 1000 + this.timeNow.getMilliseconds();
-  if (segNow < 58000) {
+  if (segNow < 57800) {
     this.width = 0.0018 * segNow;
     this.widthValue = this.width + "%";
     document.getElementById("s_main_bar").style.width = this.widthValue;
     document.getElementById("s_carousel_main").style.transition =
       "opacity 0.5s";
-  } else {
+  } if (segNow > 58800) {
     this.widthValue = 0 + "%";
     socialRecommendation.loadMatrixSocial(numberSocial);
     document.getElementById("s_main_bar").style.width = this.widthValue;
@@ -557,7 +556,7 @@ function init() {
   setInterval(function () {
     time();
     time1();
-  }, 2000);
+  }, 500);
   setInterval(function () {
     time2();
   }, 100);
