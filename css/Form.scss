@@ -1,0 +1,50 @@
+/*Form*/
+.contact button.close {
+    left: 55vw;
+    top: 5vh;
+  }
+  section.contact {
+    align-items: center;
+    background-color: var(--colorBlueLight);
+    border: 1vh solid  var(--colorButtonBlue);
+    display: none;
+    height: 70vh;
+    justify-content: space-evenly;
+    left: 20vw;
+    position: fixed;
+    top: 25vh;
+    width: 60vw;
+  }
+  .contact-img {
+    align-items: center;
+    display: flex;
+    height: 95%;
+    justify-content: center;
+    width: 45%;
+  }
+  .contact-img img {
+    width: 90%;
+  }
+  .contact-contact {
+    width: 50%;
+  }
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 95%;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  form input,
+  form textarea {
+    border: 1vh solid  var(--colorButtonBlue);
+    width: 95%;
+  }
+  form button.tag {
+    height: 8vh;
+    margin-top: 1vh;
+    padding: 1vh;
+    width: 15vw;
+  }
+  
