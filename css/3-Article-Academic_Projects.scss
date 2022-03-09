@@ -33,6 +33,7 @@
   flex-direction: column;
   height: 70vh;
   justify-content: space-evenly;
+  padding: 1vh;
   width: 52vw;
 }
 .academic_text,
@@ -46,10 +47,19 @@
   border-radius: 2vh;
   display: flex;
   flex-direction: column;
-  height: 20vh;
-  padding: 1vh;
   text-align: justify;
   width: 90%;
+}
+.academic_text p{
+  padding: 1vh;
+}
+.projects_numbers{
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  width: 100%;
+  background-color: var(--colorButtonBackgroundBlueLight);
+  border-radius: 2vh;
 }
 .a_project_text p:last-child{
   font-size: 0.7rem;
@@ -71,7 +81,7 @@
   width: 90%;
 }
 .academic_resume img {
-  height: 20vh;
+  height: 15vh;
 }
 .academic_carousel {
   justify-content: space-evenly;

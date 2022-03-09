@@ -199,10 +199,12 @@ function professionalMainCarousel() {
       this.dataMatrix[y][4];
     document.getElementById("prof_main_img_github_0").href =
       this.dataMatrix[y][5];
-    document.getElementById("d_tag_html").style.width=this.dataMatrix[y][6][0];
-    document.getElementById("d_tag_css").style.width=this.dataMatrix[y][6][1];
-    document.getElementById("d_tag_js").style.width=this.dataMatrix[y][6][2];
-    console.log(this.dataMatrix[y][6][0])
+    document.getElementById("p_tag_html_0").style.width=this.dataMatrix[y][6][0];
+    document.getElementById("p_tag_css_0").style.width=this.dataMatrix[y][6][1];
+    document.getElementById("p_tag_js_0").style.width=this.dataMatrix[y][6][2];
+    document.getElementById("p_tag_html").innerHTML=this.dataMatrix[y][6][0];
+    document.getElementById("p_tag_css").innerHTML=this.dataMatrix[y][6][1];
+    document.getElementById("p_tag_js").innerHTML=this.dataMatrix[y][6][2];
 
     document.getElementById("prof_main_name_1").innerHTML =
       this.dataMatrix[z][0];
@@ -272,6 +274,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego_Calabozos"],
       ["media/ico/Ico_Web-development.png"],
+      ["13%","0%","87%"]
     ],
     [
       ["Hackathon-Benatural"],
@@ -279,10 +282,11 @@ function academicMainCarousel() {
       [null],
       ["media/images/Academic_Carousel/P_BeNatural.png"],
       [
-        "Elaborado con React en el frontend y Java y SQL en el backend,trabaje como lider de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente",
+        "Elaborado con React en el frontend y en el backend Java y SQL, trabajé como líder de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente",
       ],
       ["https://github.com/Miguel-Lopez-97/hackathon-benatural"],
       ["media/ico/Ico_Web-development.png"],
+      ["2%","40%", "45%"]
     ],
     [
       ["Jurassic Park"],
@@ -294,6 +298,7 @@ function academicMainCarousel() {
         "https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades",
       ],
       ["media/ico/Ico_Web-development.png"],
+      ["51%","49%", "0%"]
     ],
     [
       ["Hangman Game"],
@@ -305,6 +310,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-del-Ahorcado"],
       ["media/ico/Ico_Web-development.png"],
+      ["21%", "31%", "48%"]
     ],
     [
       ["Rick and Morty"],
@@ -316,6 +322,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/rick-and-morty"],
       ["media/ico/Ico_Web-development.png"],
+      ["2%","22%","76%"]
     ],
     [
       ["Tetris Game"],
@@ -327,6 +334,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-de-Tetris"],
       ["media/ico/Ico_Web-development.png"],
+      ["11%","14%","75%"]
     ],
     [
       ["To Do List App"],
@@ -338,6 +346,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/toDo-list"],
       ["media/ico/Ico_Web-development.png"],
+      ["5%","31%","64%"]
     ],
     [
       ["App Weather"],
@@ -349,6 +358,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Api-Clima"],
       ["media/ico/Ico_Web-development.png"],
+      ["13%","38%","49%"]
     ],
   ];
   this.x = 0;
@@ -368,6 +378,13 @@ function academicMainCarousel() {
     document.getElementById("a_main_key_0").innerHTML = this.dataMatrix[x][1];
     document.getElementById("a_main_text_0").innerHTML = this.dataMatrix[x][4];
 
+    document.getElementById("a_tag_html_0").style.width=this.dataMatrix[x][7][0];
+    document.getElementById("a_tag_css_0").style.width=this.dataMatrix[x][7][1];
+    document.getElementById("a_tag_js_0").style.width=this.dataMatrix[x][7][2];
+    document.getElementById("p_a_tag_html_0").innerHTML=this.dataMatrix[x][7][0];
+    document.getElementById("p_a_tag_css_0").innerHTML=this.dataMatrix[x][7][1];
+    document.getElementById("p_a_tag_js_0").innerHTML=this.dataMatrix[x][7][2];
+
     document.getElementById("a_main_img_1").src = this.dataMatrix[y][3];
     document.getElementById("a_main_imgclass_1").src = this.dataMatrix[y][6];
     document.getElementById("a_main_link_deploy_1").href =
@@ -377,6 +394,13 @@ function academicMainCarousel() {
     document.getElementById("a_main_name_1").innerHTML = this.dataMatrix[y][0];
     document.getElementById("a_main_key_1").innerHTML = this.dataMatrix[y][1];
     document.getElementById("a_main_text_1").innerHTML = this.dataMatrix[y][4];
+
+    document.getElementById("a_tag_html_1").style.width=this.dataMatrix[y][7][0];
+    document.getElementById("a_tag_css_1").style.width=this.dataMatrix[y][7][1];
+    document.getElementById("a_tag_js_1").style.width=this.dataMatrix[y][7][2];
+    document.getElementById("p_a_tag_html_1").innerHTML=this.dataMatrix[y][7][0];
+    document.getElementById("p_a_tag_css_1").innerHTML=this.dataMatrix[y][7][1];
+    document.getElementById("p_a_tag_js_1").innerHTML=this.dataMatrix[y][7][2];
     
     setTimeout(function () {
       document.getElementById("a_carousel_main_0").style.opacity = 1;
@@ -555,6 +579,8 @@ function principal() {
   academicalRepository.loadMatrixAcademical(0, 1);
   socialMainCarousel();
   socialRecommendation.loadMatrixSocial(0);
+  document.getElementById("number_professional_projects").innerHTML=professionalRepository.dataMatrix.length;
+  document.getElementById("number_academic_projects").innerHTML=academicalRepository.dataMatrix.length;
 }
 function init() {
   professionalRepository = new professionalMainCarousel();
