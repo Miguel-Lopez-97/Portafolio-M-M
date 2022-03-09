@@ -115,10 +115,10 @@ let contact_Open = function () {
 function time() {
   let timeNow = new Date();
   this.segNow = Math.floor(timeNow.getSeconds() / 2);
-  if (segNow == 29 && numberChangeIntroduce < 3) {
+  if (segNow===29 && numberChangeIntroduce < 3) {
     numberChangeIntroduce++;
     mainCarousel();
-  } else if (segNow == 29 && numberChangeIntroduce == 3) {
+  } else if (segNow===29 && numberChangeIntroduce===3) {
     numberChangeIntroduce = 1;
     mainCarousel();
   }
@@ -135,6 +135,7 @@ function professionalMainCarousel() {
         "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas",
       ],
       ["https://github.com/Miguel-Lopez-97/TodoListFloresDelTambo"],
+      ["3%","17%","80%"]
     ],
     [
       ["Portfolio M&M"],
@@ -145,6 +146,7 @@ function professionalMainCarousel() {
         "Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS",
       ],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
+      ["35%","44%","21%"]
     ],
     [
       ["Pokédex"],
@@ -155,6 +157,7 @@ function professionalMainCarousel() {
         "Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades",
       ],
       ["https://github.com/Miguel-Lopez-97/Pokedex"],
+      ["3%","21%","76%"]
     ],
     [
       ["Kyrio's Pizza"],
@@ -165,6 +168,7 @@ function professionalMainCarousel() {
         "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante",
       ],
       ["https://github.com/Miguel-Lopez-97/kyrios-pizza"],
+      ["1%","40%","59%"]
     ],
   ];
   this.x = 0;
@@ -195,6 +199,10 @@ function professionalMainCarousel() {
       this.dataMatrix[y][4];
     document.getElementById("prof_main_img_github_0").href =
       this.dataMatrix[y][5];
+    document.getElementById("d_tag_html").style.width=this.dataMatrix[y][6][0];
+    document.getElementById("d_tag_css").style.width=this.dataMatrix[y][6][1];
+    document.getElementById("d_tag_js").style.width=this.dataMatrix[y][6][2];
+    console.log(this.dataMatrix[y][6][0])
 
     document.getElementById("prof_main_name_1").innerHTML =
       this.dataMatrix[z][0];
@@ -212,17 +220,17 @@ function professionalMainCarousel() {
   
   };
   this.changeMatrixProfessionalRight = function () {
-    if (this.x == 0) {
+    if (this.x===0) {
       this.x = this.dataMatrix.length - 1;
     } else {
       this.x--;
     }
-    if (this.y == 0) {
+    if (this.y===0) {
       this.y = this.dataMatrix.length - 1;
     } else {
       this.y--;
     }
-    if (this.z == 0) {
+    if (this.z===0) {
       this.z = this.dataMatrix.length - 1;
     } else {
       this.z--;
@@ -230,17 +238,17 @@ function professionalMainCarousel() {
     this.loadMatrixProfessional(this.x, this.y, this.z);
   };
   this.changeMatrixProfessionalLeft = function () {
-    if (this.x == this.dataMatrix.length - 1) {
+    if (this.x===this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
     }
-    if (this.y == this.dataMatrix.length - 1) {
+    if (this.y===this.dataMatrix.length - 1) {
       this.y = 0;
     } else {
       this.y++;
     }
-    if (this.z == this.dataMatrix.length - 1) {
+    if (this.z===this.dataMatrix.length - 1) {
       this.z = 0;
     } else {
       this.z++;
@@ -377,12 +385,12 @@ function academicMainCarousel() {
   };
 
   this.changeMatrixAcademicalLeft = function () {
-    if (this.x == 0) {
+    if (this.x===0) {
       this.x = this.dataMatrix.length - 1;
     } else {
       this.x--;
     }
-    if (this.y == 0) {
+    if (this.y===0) {
       this.y = this.dataMatrix.length - 1;
     } else {
       this.y--;
@@ -390,12 +398,12 @@ function academicMainCarousel() {
     this.loadMatrixAcademical(this.x, this.y);
   };
   this.changeMatrixAcademicalRight = function () {
-    if (this.x == this.dataMatrix.length - 1) {
+    if (this.x===this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
     }
-    if (this.y == this.dataMatrix.length - 1) {
+    if (this.y===this.dataMatrix.length - 1) {
       this.y = 0;
     } else {
       this.y++;
@@ -478,21 +486,21 @@ function socialMainCarousel() {
     document.getElementById("s_main_name").innerHTML = this.dataMatrix[x][1];
     document.getElementById("s_main_key").innerHTML = this.dataMatrix[x][2];
     document.getElementById("s_main_text").innerHTML = this.dataMatrix[x][3];
-    if (this.dataMatrix[x][4] == "N/A") {
+    if (this.dataMatrix[x][4]==="N/A") {
       Close("s_main_link_github");
     } else {
       document.getElementById("s_main_link_github").href =
         this.dataMatrix[x][4];
       Open("s_main_link_github");
     }
-    if (this.dataMatrix[x][5] == "N/A") {
+    if (this.dataMatrix[x][5]==="N/A") {
       Close("s_main_link_linkedin");
     } else {
       document.getElementById("s_main_link_linkedin").href =
         this.dataMatrix[x][5];
       Open("s_main_link_linkedin");
     }
-    if (this.dataMatrix[x][6] == "N/A") {
+    if (this.dataMatrix[x][6]==="N/A") {
       Close("s_main_link_deploy");
     } else {
       document.getElementById("s_main_link_deploy").href =
@@ -504,16 +512,15 @@ function socialMainCarousel() {
 let numberSocial = 0;
 function time1() {
   this.timeNow = new Date();
-  this.segNow = Math.floor(this.timeNow.getSeconds() / 2);
-  if (segNow == 28) {
+  this.segNow = this.timeNow.getSeconds();
+  if (segNow===58) {
     if (numberSocial < socialRecommendation.dataMatrix.length) {
       this.widthValue = 0 + "%";
       document.getElementById("s_main_bar").style.width = this.widthValue;
       document.getElementById("s_carousel_main").style.opacity = 0;
       numberSocial++;
-    } else {
+    } if(numberSocial === socialRecommendation.dataMatrix.length) {
       numberSocial = 0;
-      socialRecommendation.loadMatrixSocial(numberSocial);
     }
   }
 }
@@ -522,13 +529,13 @@ function time2() {
   this.timeNow = new Date();
   this.segNow =
     this.timeNow.getSeconds() * 1000 + this.timeNow.getMilliseconds();
-  if (segNow < 58000) {
+  if (segNow < 57800) {
     this.width = 0.0018 * segNow;
     this.widthValue = this.width + "%";
     document.getElementById("s_main_bar").style.width = this.widthValue;
     document.getElementById("s_carousel_main").style.transition =
       "opacity 0.5s";
-  } else {
+  } if (segNow > 58800) {
     this.widthValue = 0 + "%";
     socialRecommendation.loadMatrixSocial(numberSocial);
     document.getElementById("s_main_bar").style.width = this.widthValue;
@@ -557,7 +564,7 @@ function init() {
   setInterval(function () {
     time();
     time1();
-  }, 2000);
+  }, 500);
   setInterval(function () {
     time2();
   }, 100);
