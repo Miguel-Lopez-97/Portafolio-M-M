@@ -62,6 +62,8 @@
   align-items: center;
   background-color: var(--colorWhiteGreen);
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 50%;
   padding: 1vw;
   text-align: justify;
@@ -254,6 +256,11 @@ section.carousel {
   justify-content: center;
   margin-left: 2%;
   padding: 2%;
+}
+.tag_names{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
 }
 .tag_html {
   -moz-border-radius: 0 0 0 4vh;
