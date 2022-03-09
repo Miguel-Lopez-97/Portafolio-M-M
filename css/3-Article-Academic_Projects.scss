@@ -9,7 +9,7 @@
   display: flex;
   height: 70vh;
   justify-content: center;
-  width: 35vw;
+  width: 30vw;
 }
 .academic_img img {
   height: 68vh;
@@ -25,7 +25,7 @@
   flex-direction: column;
   height: 70vh;
   justify-content: space-evenly;
-  width: 55vw;
+  width: 52vw;
 }
 .academic_text,
 .a_project_text {
@@ -78,6 +78,12 @@
   height: 75vh;
   width: 40vw;
 }
+
+.a_carousel_main:hover{
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
 .a_carousel_main .main_head {
   display: block;
   height: 50%;
@@ -105,7 +111,36 @@
 }
 .academic_carousel .main_img img:hover {
   cursor: pointer;
+  animation-name: rote;
+  box-shadow: -0.15rem 0.15rem 0 0.15rem var(--colorButtonGreenBorder);
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
 }
+
+@keyframes rote{
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+50% {
+  transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+}
+100%{
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+}
+}
+
 .academic_carousel .description_links {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -116,6 +151,7 @@
 }
 .academic_carousel .description_links img,
 .academic_carousel .description_links a img {
+  box-shadow: 0 0.3rem 0 -0.15rem var(--colorBackgroundGreenLightly), 0 -0.3rem 0 -0.15rem var(--colorBackgroundGreenLightly), 0.3rem 0 0 -0.15rem var(--colorBackgroundGreenLightly), -0.3rem 0 0 -0.15rem var(--colorBackgroundGreenLightly), 0 0 0 0.15rem var(--colorButtonGreenBorder), 0.075rem 0.075rem 0.225rem 0.075rem rgba(0,0,0,0);
   height: 10vh;
   width: 10vh;
 }
