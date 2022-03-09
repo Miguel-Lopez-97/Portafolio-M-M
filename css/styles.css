@@ -86,7 +86,7 @@ h1 {
   text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
 }
 
-h2 {
+form label, h2 {
   color: var(--colorBlueSubTitle);
   font-family: "Architects Daughter", cursive;
   text-shadow: 0px 4px 0px var(--colorBlueLight);
@@ -492,52 +492,68 @@ footer {
 
 /*Form*/
 .contact button.close {
-  left: 55vw;
-  top: 5vh;
+  left: 87vw;
+  top: 1vh;
 }
 
 section.contact {
   align-items: center;
+  text-align: center;
   background-color: var(--colorBlueLight);
   border: 1vh solid var(--colorButtonBlue);
   display: none;
-  height: 70vh;
+  height: 95vh;
   justify-content: space-evenly;
-  left: 20vw;
+  left: 5vw;
   position: fixed;
-  top: 25vh;
-  width: 60vw;
+  top: 0.1vh;
+  width: 90vw;
+  z-index: 4;
 }
 
 .contact-img {
   align-items: center;
   display: flex;
   height: 95%;
-  justify-content: center;
-  width: 45%;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30vw;
 }
 
 .contact-img img {
   width: 90%;
 }
 
-.contact-contact {
-  width: 50%;
+.contact-img h2.tag {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
 }
 
 form {
   align-items: center;
+  background-color: var(--colorBackgroundGreenLightly);
   display: flex;
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
   flex-direction: column;
-  height: 95%;
-  justify-content: space-evenly;
-  width: 100%;
+  height: 90%;
+  justify-content: center;
+  width: 80%;
 }
 
 form input,
 form textarea {
   border: 1vh solid var(--colorButtonBlue);
   width: 95%;
+  padding: 1vh;
 }
 
 form button.tag {

@@ -109,6 +109,7 @@ function contact_Close() {
 }
 let contact_Open = function () {
   Open("contact-section");
+  body.style.overflowY = "hidden";
 };
 
 function time() {
