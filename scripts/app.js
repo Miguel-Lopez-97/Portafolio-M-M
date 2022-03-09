@@ -128,12 +128,10 @@ function professionalMainCarousel() {
     [
       ["Flores del Tambo ToDoList"],
       ["CRUD page Nov-21"],
-      [
-        "https://todolistfloresdeltambo.herokuapp.com/"
-      ],
+      ["https://todolistfloresdeltambo.herokuapp.com/"],
       ["media/images/Prof_Carousel/P_ToDoList.png"],
       [
-        "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas"
+        "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas",
       ],
       ["https://github.com/Miguel-Lopez-97/TodoListFloresDelTambo"],
     ],
@@ -142,7 +140,9 @@ function professionalMainCarousel() {
       ["Business page Nov-21"],
       ["https://miguelmorenoportafolio.netlify.app/"],
       ["media/images/Prof_Carousel/P_Portafolio.png"],
-      ["Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS"],
+      [
+        "Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS",
+      ],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
     ],
     [
@@ -150,10 +150,10 @@ function professionalMainCarousel() {
       ["React App Nov-21"],
       ["https://miguel-lopez-pokedex-api.netlify.app/"],
       ["media/images/Prof_Carousel/P_Pokedex.png"],
-      ["Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades"],
       [
-        "https://github.com/Miguel-Lopez-97/Pokedex",
+        "Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades",
       ],
+      ["https://github.com/Miguel-Lopez-97/Pokedex"],
     ],
     [
       ["Kyrio's Pizza"],
@@ -161,7 +161,7 @@ function professionalMainCarousel() {
       ["https://miguel-lopez-market-place.netlify.app/"],
       ["media/images/Prof_Carousel/P_Market_Place_pizza.png"],
       [
-        "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante"
+        "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante",
       ],
       ["https://github.com/Miguel-Lopez-97/kyrios-pizza"],
     ],
@@ -171,6 +171,10 @@ function professionalMainCarousel() {
   this.z = 2;
 
   this.loadMatrixProfessional = function (x, y, z) {
+    document.getElementById("prof_carousel_aux_1").style.opacity = 0.1;
+    document.getElementById("prof_carousel_main_0").style.opacity = 0.2;
+    document.getElementById("prof_carousel_aux_2").style.opacity = 0.1;
+
     document.getElementById("prof_main_name_-1").innerHTML =
       this.dataMatrix[x][0];
     document.getElementById("prof_main_key_-1").innerHTML =
@@ -198,6 +202,13 @@ function professionalMainCarousel() {
     document.getElementById("prof_main_img_1").src = this.dataMatrix[z][3];
     document.getElementById("prof_main_text_1").innerHTML =
       this.dataMatrix[z][4];
+    setTimeout(function () {
+      console.log("Loading d");
+      document.getElementById("prof_carousel_aux_1").style.opacity = 1;
+      document.getElementById("prof_carousel_main_0").style.opacity = 1;
+      document.getElementById("prof_carousel_aux_2").style.opacity = 1;
+    }, 500);
+  
   };
   this.changeMatrixProfessionalRight = function () {
     if (this.x == 0) {
@@ -235,7 +246,7 @@ function professionalMainCarousel() {
     }
     this.loadMatrixProfessional(this.x, this.y, this.z);
   };
-  this.changeMatrixProfessional = function (a,b,c) {
+  this.changeMatrixProfessional = function (a, b, c) {
     this.loadMatrixProfessional(a, b, c);
   };
 }
@@ -245,9 +256,7 @@ function academicMainCarousel() {
     [
       ["Calabozos"],
       ["JV-Canvas Game Nov-21"],
-      [
-        "https://miguel-lopez-97.github.io/Juego_Calabozos/",
-      ],
+      ["https://miguel-lopez-97.github.io/Juego_Calabozos/"],
       ["media/images/Academic_Carousel/P_Canvas_Game.png"],
       [
         "En este proyecto desarrolle la lógica con JS para simular un juego de mazmorras hecho en Canvas",
@@ -260,7 +269,9 @@ function academicMainCarousel() {
       ["Market Place Feb-22"],
       [null],
       ["media/images/Academic_Carousel/P_BeNatural.png"],
-      ["Elaborado con React en el frontend y Java y SQL en el backend,trabaje como lider de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente"],
+      [
+        "Elaborado con React en el frontend y Java y SQL en el backend,trabaje como lider de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente",
+      ],
       ["https://github.com/Miguel-Lopez-97/hackathon-benatural"],
       ["media/ico/Ico_Web-development.png"],
     ],
@@ -279,7 +290,7 @@ function academicMainCarousel() {
       ["Hangman Game"],
       ["Game page with JS Nov-21"],
       ["https://juegoahorcadodiplo99.netlify.app"],
-      ["media/images/Prof_Carousel/prof_img_main_3.png"],
+      ["media/images/Academic_Carousel/P_Ahorcado.png"],
       [
         "Este Juego del Ahorcado realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, asi como manejar una página web dinámica",
       ],
@@ -292,7 +303,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-api-ricky-and-morty.netlify.app/"],
       ["media/images/Academic_Carousel/P_Rick_Morty_API.png"],
       [
-        "Esta es mi primer aplicativo con el uso de ReactJS, en el cual hay renderizado de componentes de manera dinámica a partir del consumo de una API externa, asi como navegación interna y otras funcionalidades"
+        "Esta es mi primer aplicativo con el uso de ReactJS, en el cual hay renderizado de componentes de manera dinámica a partir del consumo de una API externa, asi como navegación interna y otras funcionalidades",
       ],
       ["https://github.com/Miguel-Lopez-97/rick-and-morty"],
       ["media/ico/Ico_Web-development.png"],
@@ -314,7 +325,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-todo-list.netlify.app/"],
       ["media/images/Academic_Carousel/P_ToDoList.png"],
       [
-        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos de un CRUD aplicados en una lista de tareas diarias asi como el manejo global de estados (Redux) y comunicación entre componentes"
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos de un CRUD aplicados en una lista de tareas diarias asi como el manejo global de estados (Redux) y comunicación entre componentes",
       ],
       ["https://github.com/Miguel-Lopez-97/toDo-list"],
       ["media/ico/Ico_Web-development.png"],
@@ -325,16 +336,19 @@ function academicMainCarousel() {
       ["https://miguel-lopez-weather-app.netlify.app/"],
       ["media/images/Academic_Carousel/P_App_Weather.png"],
       [
-        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos del consumo de API, asi como el manejo global de estados y comunicación entre componentes"
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos del consumo de API, asi como el manejo global de estados y comunicación entre componentes",
       ],
       ["https://github.com/Miguel-Lopez-97/Api-Clima"],
       ["media/ico/Ico_Web-development.png"],
-    ]
+    ],
   ];
   this.x = 0;
   this.y = 1;
 
   this.loadMatrixAcademical = function (x, y) {
+    document.getElementById("a_carousel_main_0").style.opacity = 0.1;
+    document.getElementById("a_carousel_main_1").style.opacity = 0.1;
+
     document.getElementById("a_main_img_0").src = this.dataMatrix[x][3];
     document.getElementById("a_main_imgclass_0").src = this.dataMatrix[x][6];
     document.getElementById("a_main_link_deploy_0").href =
@@ -354,6 +368,11 @@ function academicMainCarousel() {
     document.getElementById("a_main_name_1").innerHTML = this.dataMatrix[y][0];
     document.getElementById("a_main_key_1").innerHTML = this.dataMatrix[y][1];
     document.getElementById("a_main_text_1").innerHTML = this.dataMatrix[y][4];
+    
+    setTimeout(function () {
+      document.getElementById("a_carousel_main_0").style.opacity = 1;
+      document.getElementById("a_carousel_main_1").style.opacity = 1;
+    }, 500);
   };
 
   this.changeMatrixAcademicalLeft = function () {
@@ -383,8 +402,8 @@ function academicMainCarousel() {
 
     this.loadMatrixAcademical(this.x, this.y);
   };
-  this.changeMatrixAcademical = function (a,b) {
-    this.loadMatrixAcademical(a,b);
+  this.changeMatrixAcademical = function (a, b) {
+    this.loadMatrixAcademical(a, b);
   };
 
   this.a_img_principal_0 = function () {
@@ -486,7 +505,7 @@ function time1() {
   this.timeNow = new Date();
   this.segNow = Math.floor(this.timeNow.getSeconds() / 2);
   if (segNow == 28) {
-    if (numberSocial < 2) {
+    if (numberSocial < socialRecommendation.dataMatrix.length) {
       this.widthValue = 0 + "%";
       document.getElementById("s_main_bar").style.width = this.widthValue;
       document.getElementById("s_carousel_main").style.opacity = 0;

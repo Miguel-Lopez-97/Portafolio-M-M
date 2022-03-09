@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Miguel Lopez</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="scripts/app.js"></script>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
 </head>
@@ -139,7 +140,7 @@
                 <div class="professional carousel">
                     <div class="professional_carousel">
                         <div class="prof_carousel_main prof_carousel_aux"
-                            onclick="professionalRepository.changeMatrixProfessionalRight()">
+                            onclick="professionalRepository.changeMatrixProfessionalRight()" id="prof_carousel_aux_1">
                             <div class="main_name">
                                 <h3 id="prof_main_name_-1">Project Name</h3>
                                 <p id="prof_main_key_-1">Keyword project and date</p>
@@ -157,7 +158,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="prof_carousel_main">
+                        <div class="prof_carousel_main"
+                        id="prof_carousel_main_0">
                             <div class="main_name">
                                 <h3 id="prof_main_name_0">Project Name</h3>
                                 <p id="prof_main_key_0">Keyword project and date</p>
@@ -200,14 +202,15 @@
                             </div>
                         </div>
                         <div class="prof_carousel_main prof_carousel_aux"
-                            onclick="professionalRepository.changeMatrixProfessionalLeft()">
+                            onclick="professionalRepository.changeMatrixProfessionalLeft()"
+                            id="prof_carousel_aux_2">
                             <div class="main_name">
                                 <h3 id="prof_main_name_1">Project Name</h3>
                                 <p id="prof_main_key_1">Keyword project and date</p>
                             </div>
                             <div class="main_img">
                                 <img id="prof_main_img_1" loading="lazy"
-                                    src="media/images/Prof_Carousel/prof_img_main_2.png" alt="">
+                                    src="" alt="">
                             </div>
                             <div class="main_description">
                                 <div class="description_text">
