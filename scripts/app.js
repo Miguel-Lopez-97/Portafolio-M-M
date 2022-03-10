@@ -27,9 +27,13 @@ function menuFlex() {
 
 function mainCarousel() {
   let imageMainCarousel = document.getElementById("introduce_carousel_image");
+  imageMainCarousel.style.opacity = 0.1;
   this.changeRouteImage =
     "media/images/Diapositiva" + numberChangeIntroduce + ".PNG";
   imageMainCarousel.src = this.changeRouteImage;
+  setTimeout(function () {
+    imageMainCarousel.style.opacity = 1;
+  }, 500);
 }
 
 let carousel1 = function () {

@@ -114,23 +114,29 @@ article {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  height: auto;
 }
 
 section {
   display: flex;
   justify-content: space-around;
+  height: auto;
 }
 
 @media screen and (max-width: 576px) {
   html {
-    font-size: 14px;
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
   }
 
   /*Articles*/
   article {
     flex-direction: column;
     margin-top: 10vh;
-    width: 90vw;
+    width: 95vw;
   }
 
   section {
@@ -147,7 +153,7 @@ section {
   article {
     flex-direction: column;
     margin-top: 10vh;
-    width: 85vw;
+    width: 90vw;
   }
 
   section {
@@ -352,10 +358,10 @@ header ul li a:hover {
   }
 
   header ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
-    height: 100vh;
+    height: 0;
     width: 80vw;
   }
 
@@ -757,7 +763,6 @@ button.carousel:hover {
 }
 
 .about-me_description p {
-  font-size: max(2vw, 18px);
   text-align: center;
 }
 
@@ -1002,15 +1007,143 @@ button.close:hover {
   article.introduce {
     margin-top: 12vh;
   }
+
+  .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .resume {
+    height: auto;
+    padding: 2vh;
+  }
+
+  .resumeImages {
+    margin: 2vh;
+  }
+
+  .resumeImages figure {
+    height: 9vh;
+    width: 9vh;
+    margin: 3vw;
+  }
+
+  .resumeImages figure img {
+    width: auto;
+    height: 9vh;
+  }
+
+  .about-me {
+    justify-content: center;
+    width: 70vw;
+  }
+  .about-me .about-me_buttons {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    flex-direction: column;
+  }
+  .about-me button.CV, .about-me button.HV, .about-me button.timeLine,
+.about-me .tag {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   article.introduce {
     margin-top: 14vh;
   }
+
+  .title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .resume {
+    height: auto;
+    padding: 2vh;
+  }
+
+  .resumeImages {
+    margin: 2vh;
+  }
+
+  .resumeImages figure {
+    height: 10vh;
+    width: 10vh;
+    margin: 2vw;
+  }
+
+  .resumeImages figure img {
+    width: auto;
+    height: 10vh;
+  }
+
+  .about-me {
+    justify-content: center;
+    width: 70vw;
+    max-width: 300px;
+    margin: 15px;
+  }
+
+  .about-me_buttons {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    flex-direction: row;
+  }
+
+  button.CV, button.HV, button.timeLine,
+.tag {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   article.introduce {
     margin-top: 14vh;
+  }
+
+  .title {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .resumeImages figure {
+    height: 11vh;
+    width: 11vh;
+    margin: 2vw;
+  }
+
+  .resumeImages figure img {
+    width: auto;
+    height: 11vh;
   }
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1134,9 +1267,16 @@ button.close:hover {
   -ms-border-radius: 5vh;
   -o-border-radius: 5vh;
   -webkit-border-radius: 5vh;
+  align-items: center;
+  align-self: center;
+  background-color: var(--colorBackgroundGreenLightly);
   border-radius: 5vh;
+  box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
+  color: var(--colorGreenBlackText);
   display: flex;
+  flex-direction: column;
   height: 75vh;
+  justify-content: space-evenly;
   width: 40vw;
 }
 
@@ -1253,20 +1393,19 @@ button.close:hover {
 
 .academic_carousel .main_name {
   flex-direction: row;
+  margin: 3vh;
   justify-content: space-around;
   width: 100%;
 }
 
 #a_main_name_1,
 #a_main_name_0 {
-  font-size: 2.2vw;
   font-weight: bold;
   text-align: center;
 }
 
 #a_main_key_1,
 #a_main_key_0 {
-  font-size: 1.6vw;
   font-weight: bolder;
   text-align: center;
 }
@@ -1309,6 +1448,212 @@ button.close:hover {
   margin-left: 35vw;
 }
 
+@media screen and (max-width: 576px) {
+  .academic_img {
+    width: 80vw;
+    margin-bottom: 10vh;
+  }
+
+  .academic_img img {
+    max-width: 70vw;
+    max-height: 60vh;
+  }
+
+  .academic_resume {
+    width: 80vw;
+    height: auto;
+  }
+
+  .academic_class {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .academic_project {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-top: 3vh;
+    justify-content: space-between;
+  }
+
+  #a_project_web {
+    flex-direction: row-reverse;
+  }
+
+  .a_project_text {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vh;
+    text-align: center;
+    width: 60%;
+  }
+
+  .academic_resume img {
+    height: 15vh;
+  }
+
+  #a_carousel_main_1 {
+    display: none;
+  }
+
+  .a_carousel_main {
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    border-radius: 3vh;
+    height: 50vh;
+    width: 90vw;
+    margin: 2vh;
+  }
+
+  .academic_carousel .description_text {
+    width: 90%;
+    margin: 2vh;
+  }
+
+  .a_image_principal {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .a_image_principal a img {
+    margin-top: 5vh;
+    height: auto;
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .a_image_principal button {
+    margin-left: 60vw;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .repositories {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 90vw;
+  }
+
+  .academic_img {
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
+
+  .academic_img img {
+    max-height: 65vw;
+  }
+
+  .academic_resume {
+    width: 70vw;
+    height: auto;
+  }
+
+  .academic_class {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .academic_project {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-top: 3vh;
+    justify-content: space-between;
+  }
+
+  #a_project_web {
+    flex-direction: row-reverse;
+  }
+
+  .a_project_text {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 15vh;
+    text-align: center;
+    width: 60%;
+  }
+
+  .academic_resume img {
+    height: 17vh;
+  }
+
+  #a_carousel_main_1 {
+    display: none;
+  }
+
+  .a_carousel_main {
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    border-radius: 3vh;
+    height: 50vh;
+    width: 70vw;
+    margin: 2vh;
+  }
+
+  .academic_carousel .description_text {
+    width: 90%;
+    margin: 2vh;
+  }
+
+  .a_image_principal {
+    width: 70vw;
+    height: 50vh;
+  }
+
+  .a_image_principal a img {
+    margin-top: 5vh;
+    height: 40vh;
+    max-width: 100%;
+    max-height: 80%;
+  }
+
+  .a_image_principal button {
+    margin-left: 60vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .repositories {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 90vw;
+  }
+
+  .academic_img {
+    width: 30vw;
+    height: 70vh;
+  }
+
+  .academic_img img {
+    height: 90%;
+    max-width: 80%;
+  }
+
+  .academic_resume {
+    width: 50vw;
+    height: 70vh;
+  }
+
+  .professional_text {
+    padding: 2vh;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
 /*Professional repositories*/
 .repositories {
   align-items: center;
@@ -1408,8 +1753,7 @@ section.carousel {
   width: 95vw;
 }
 
-.prof_carousel_main,
-.a_carousel_main {
+.prof_carousel_main {
   -moz-border-radius: 5vh;
   -ms-border-radius: 5vh;
   -o-border-radius: 5vh;
@@ -1475,7 +1819,6 @@ section.carousel {
 
 .prof_main_overlay p {
   color: white;
-  font-size: 3vh;
 }
 
 #prof_main_img_link_0:hover {
@@ -1504,7 +1847,6 @@ section.carousel {
   background-color: var(--colorWhiteGreen);
   color: var(--colorBlueGreenDark);
   display: flex;
-  font-size: max(18px, 3vh);
   height: 85%;
   justify-content: center;
   overflow: hidden;
@@ -1514,7 +1856,6 @@ section.carousel {
 }
 
 .prof_carousel_main .description_text p {
-  font-size: 0.8rem;
   width: 95%;
   height: 95%;
   overflow-y: scroll;
@@ -1715,7 +2056,6 @@ section.carousel {
   -webkit-border-radius: 0 0 0 2vh;
   align-items: center;
   border-radius: 0 0 0 2vh;
-  font-size: max(12px, 2vh);
 }
 
 .prof_carousel_aux .description_links img {
@@ -1724,7 +2064,7 @@ section.carousel {
 }
 
 .prof_carousel_aux .description_text p {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   width: 95%;
   height: 95%;
   overflow-y: scroll;
@@ -1741,6 +2081,207 @@ section.carousel {
   width: 5vh;
 }
 
+@media screen and (max-width: 576px) {
+  .repositories {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 90vw;
+  }
+
+  .professional_img {
+    width: 80vw;
+    margin-bottom: 10vh;
+  }
+
+  .professional_img img {
+    max-width: 70vw;
+    max-height: 60vh;
+  }
+
+  .professional_resume {
+    width: 80vw;
+    height: auto;
+  }
+
+  .professional_text {
+    padding: 2vh;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .prof_carousel_aux {
+    display: none;
+  }
+
+  .professional button.carousel, .academic button.carousel {
+    display: none;
+  }
+
+  .carousel {
+    height: auto;
+  }
+
+  .professional_carousel,
+.academic_carousel {
+    height: auto;
+    justify-content: center;
+    width: 95vw;
+  }
+
+  .prof_carousel_main {
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    border-radius: 3vh;
+    height: 80vh;
+    width: 80vw;
+  }
+
+  .prof_main_overlay {
+    width: 30vw;
+    height: auto;
+  }
+
+  .professional_carousel .description_links a {
+    display: flex;
+    width: 100%;
+    height: 50%;
+  }
+
+  .professional_carousel .description_links a img {
+    height: 80%;
+  }
+
+  .main_tag {
+    width: 60vw;
+  }
+
+  .main_tag button.close {
+    height: 5vh;
+    margin-bottom: 15vh;
+    margin-left: 50vw;
+    width: 5vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .repositories {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 90vw;
+  }
+
+  .professional_img {
+    width: 70vw;
+    margin-bottom: 5vh;
+  }
+
+  .professional_img img {
+    max-height: 65vw;
+  }
+
+  .professional_resume {
+    width: 70vw;
+  }
+
+  .professional_text {
+    padding: 2vh;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .prof_carousel_aux {
+    display: none;
+  }
+
+  .professional button.carousel, .academic button.carousel {
+    display: none;
+  }
+
+  .carousel {
+    height: auto;
+  }
+
+  .professional_carousel,
+.academic_carousel {
+    height: auto;
+    justify-content: center;
+    width: 95vw;
+  }
+
+  .prof_carousel_main {
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    border-radius: 3vh;
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .prof_main_overlay {
+    width: 30vw;
+    height: auto;
+  }
+
+  .professional_carousel .description_links a {
+    display: flex;
+    width: 100%;
+    height: 50%;
+  }
+
+  .professional_carousel .description_links a img {
+    height: 80%;
+  }
+
+  .main_tag {
+    width: 60vw;
+  }
+
+  .main_tag button.close {
+    height: 5vh;
+    margin-bottom: 15vh;
+    margin-left: 50vw;
+    width: 5vh;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .repositories {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    width: 90vw;
+  }
+
+  .professional_img {
+    width: 30vw;
+    height: 70vh;
+  }
+
+  .professional_img img {
+    height: 90%;
+    max-width: 80%;
+  }
+
+  .professional_resume {
+    width: 50vw;
+    height: 70vh;
+  }
+
+  .professional_text {
+    padding: 2vh;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+}
 /*Social-media*/
 .social-media {
   display: flex;
@@ -1778,7 +2319,6 @@ section.carousel {
   color: var(--colorBlackText);
   display: flex;
   display: flex;
-  font-size: max(16px, 2vh);
   height: 20vh;
   justify-content: center;
   padding: 1vh;
@@ -1853,7 +2393,6 @@ section.carousel {
   display: flex;
   align-items: center;
   border-radius: 0;
-  font-size: max(15px, min(2vw, 3vh));
   height: 40vh;
   width: 95%;
 }

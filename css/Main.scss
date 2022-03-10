@@ -108,21 +108,25 @@ article {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
+  height: auto;
 }
 section {
   display: flex;
   justify-content: space-around;
+  height: auto;
 }
 
   @media screen and (max-width: 576px){
     html {
-      font-size: 14px;
+      font-size: 15px;
     }
+    h1 {
+      font-size: 2.2rem;}
     /*Articles*/
 article {
   flex-direction: column;
   margin-top: 10vh;
-  width: 90vw;
+  width: 95vw;
 }
 section {
   flex-direction: column;
@@ -137,7 +141,7 @@ section {
 article {
   flex-direction: column;
   margin-top: 10vh;
-  width: 85vw;
+  width: 90vw;
 }
 section {
   flex-direction: column;
