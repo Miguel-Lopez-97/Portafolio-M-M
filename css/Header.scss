@@ -101,10 +101,10 @@ header {
       padding: 2vh;
     }
     header ul {
-      display: flex;
+      display: none;
       flex-direction: column;
       justify-content: space-around;
-      height: 100vh;
+      height: 0;
       width: 80vw;
     }
     header ul li {

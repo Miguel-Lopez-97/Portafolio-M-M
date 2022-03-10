@@ -186,7 +186,6 @@
     width: 90%;
   }
   .about-me_description p {
-    font-size: max(2vw, 18px);
     text-align: center;
   }
   .about-me_buttons {
@@ -409,16 +408,122 @@
     article.introduce {
       margin-top: 12vh;
     }
+    .title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      width: 90%;
+    }
+    .resume {
+      height: auto;
+      padding: 2vh;}
+      .resumeImages{
+        margin: 2vh;
+      }
+    .resumeImages figure{
+      height: 9vh;
+      width: 9vh;
+    margin: 3vw;}
+    .resumeImages figure img{
+        width: auto;
+        height: 9vh;
+      }
+      .about-me {
+        justify-content: center;
+        width: 70vw;
+        .about-me_buttons {
+          height: auto;
+          width: auto;
+          padding: 2vh;
+          flex-direction: column;
+        }
+        button.CV,button.HV,button.timeLine,
+  .tag {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+}
+}
   }
   @media screen and (min-width: 576px) and (max-width: 768px){
     article.introduce {
       margin-top: 14vh;
-    } 
+    }
+    .title {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      width: 80%;
+    }
+    .resume {
+      height: auto;
+      padding: 2vh;}
+      .resumeImages{
+        margin: 2vh;
+      }
+    .resumeImages figure{
+      height: 10vh;
+      width: 10vh;
+    margin: 2vw;}
+    .resumeImages figure img{
+        width: auto;
+        height: 10vh;
+      }
+      .about-me {
+        justify-content: center;
+        width: 70vw;
+        max-width: 300px;
+        margin: 15px;
+}
+.about-me_buttons {
+  height: auto;
+  width: auto;
+  padding: 2vh;
+  flex-direction: row;}
+  
+button.CV,button.HV,button.timeLine,
+  .tag {
+    height: auto;
+    width: auto;
+    padding: 2vh;
+    margin: 2vh;
+    border-radius: 3vh;
+    -webkit-border-radius: 3vh;
+    -moz-border-radius: 3vh;
+    -ms-border-radius: 3vh;
+    -o-border-radius: 3vh;
+}
   }
   @media screen and (min-width: 768px) and (max-width: 992px){
     article.introduce {
       margin-top: 14vh;
-    } 
+    }
+    .title {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      width: 80%;
+    }
+    .resumeImages figure{
+      height: 11vh;
+      width: 11vh;
+    margin: 2vw;}
+    .resumeImages figure img{
+        width: auto;
+        height: 11vh;
+      }
   }
   @media screen and (min-width: 992px) and (max-width: 1200px){
     article.introduce {

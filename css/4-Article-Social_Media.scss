@@ -31,7 +31,6 @@
     color: var(--colorBlackText);
     display: flex;
     display: flex;
-    font-size: max(16px, 2vh);
     height: 20vh;
     justify-content: center;
     padding: 1vh;
@@ -97,7 +96,6 @@
     display: flex;
     align-items: center;
     border-radius: 0;
-    font-size: max(15px, min(2vw, 3vh));
     height: 40vh;
     width: 95%;
   }
