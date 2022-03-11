@@ -51,13 +51,13 @@
     height: 90%;
     justify-content: center;
     width: 80%;
-
   }
 
   form input,
   form textarea {
     border: 1vh solid  var(--colorButtonBlue);
     width: 95%;
+    height: auto;
     padding: 1vh;
   }
   form button.tag {
@@ -67,3 +67,46 @@
     width: 15vw;
   }
   
+  @media screen and (max-width: 576px){
+    .contact-img{
+      flex-direction: row;
+      width: 85%;
+    }
+    .contact-img img {
+      width: 15vh;
+    }
+    .contact-content {
+      width: 90vw;
+    }
+    form input{
+    margin:2vh
+  }
+  form textarea {
+    padding: 3vh;
+    margin:2vh
+  }
+    form button.tag {
+      width: 60%;
+    }
+    .contact button.close {
+      left: 82vw;
+      top: 1vh;
+    }
+  }
+  @media screen and (min-width: 576px)  and (max-width: 1200px){
+    section.contact {
+      align-items: center;
+      text-align: center;
+      background-color: var(--colorBlueLight);
+      border: 1vh solid  var(--colorButtonBlue);
+      display: none;
+      flex-direction: row;
+      height: 95vh;
+      justify-content: space-evenly;
+      left: 5vw;
+      position: fixed;
+      top: 0.1vh;
+      width: 90vw;
+      z-index: 4;
+    }
+  }

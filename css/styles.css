@@ -136,7 +136,7 @@ section {
   article {
     flex-direction: column;
     margin-top: 10vh;
-    width: 95vw;
+    width: 90vw;
   }
 
   section {
@@ -496,6 +496,21 @@ footer {
   height: 3vh;
 }
 
+@media screen and (max-width: 576px) {
+  .down {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .down {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .up {
+    width: 70%;
+  }
+}
 /*Form*/
 .contact button.close {
   left: 87vw;
@@ -559,6 +574,7 @@ form input,
 form textarea {
   border: 1vh solid var(--colorButtonBlue);
   width: 95%;
+  height: auto;
   padding: 1vh;
 }
 
@@ -569,6 +585,55 @@ form button.tag {
   width: 15vw;
 }
 
+@media screen and (max-width: 576px) {
+  .contact-img {
+    flex-direction: row;
+    width: 85%;
+  }
+
+  .contact-img img {
+    width: 15vh;
+  }
+
+  .contact-content {
+    width: 90vw;
+  }
+
+  form input {
+    margin: 2vh;
+  }
+
+  form textarea {
+    padding: 3vh;
+    margin: 2vh;
+  }
+
+  form button.tag {
+    width: 60%;
+  }
+
+  .contact button.close {
+    left: 82vw;
+    top: 1vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+  section.contact {
+    align-items: center;
+    text-align: center;
+    background-color: var(--colorBlueLight);
+    border: 1vh solid var(--colorButtonBlue);
+    display: none;
+    flex-direction: row;
+    height: 95vh;
+    justify-content: space-evenly;
+    left: 5vw;
+    position: fixed;
+    top: 0.1vh;
+    width: 90vw;
+    z-index: 4;
+  }
+}
 /*First Article (Introduce)*/
 .introduce_carousel {
   display: flex;
@@ -1275,7 +1340,7 @@ button.close:hover {
   color: var(--colorGreenBlackText);
   display: flex;
   flex-direction: column;
-  height: 75vh;
+  height: 60vh;
   justify-content: space-evenly;
   width: 40vw;
 }
@@ -1509,6 +1574,7 @@ button.close:hover {
     height: 50vh;
     width: 90vw;
     margin: 2vh;
+    max-width: 400px;
   }
 
   .academic_carousel .description_text {
@@ -1600,6 +1666,7 @@ button.close:hover {
     height: 50vh;
     width: 70vw;
     margin: 2vh;
+    max-width: 550px;
   }
 
   .academic_carousel .description_text {
@@ -1750,7 +1817,7 @@ section.carousel {
   display: flex;
   height: 68vh;
   justify-content: space-around;
-  width: 95vw;
+  width: 90vw;
 }
 
 .prof_carousel_main {
@@ -2128,7 +2195,8 @@ section.carousel {
 .academic_carousel {
     height: auto;
     justify-content: center;
-    width: 95vw;
+    width: 90vw;
+    padding: 3vw;
   }
 
   .prof_carousel_main {
@@ -2212,7 +2280,8 @@ section.carousel {
 .academic_carousel {
     height: auto;
     justify-content: center;
-    width: 95vw;
+    width: 90vw;
+    padding: 3vh;
   }
 
   .prof_carousel_main {
@@ -2420,6 +2489,37 @@ section.carousel {
   -webkit-border-radius: 1vh;
   border-radius: 1vh;
   height: 8vh;
+}
+
+@media screen and (max-width: 576px) {
+  .social-media {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+
+  .links {
+    width: 85vw;
+  }
+
+  .s_carousel_main {
+    width: 75vw;
+    margin-top: 10vh;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .social-media {
+    flex-direction: column;
+    flex-wrap: none;
+  }
+
+  .links {
+    width: 85vw;
+  }
+
+  .s_carousel_main {
+    width: 70vw;
+    max-height: 580px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

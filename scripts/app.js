@@ -580,7 +580,7 @@ function principal() {
   professionalMainCarousel();
   professionalRepository.loadMatrixProfessional(0, 1, 2);
   academicMainCarousel();
-  academicalRepository.loadMatrixAcademical(0, 1);
+  academicalRepository.loadMatrixAcademical(6, 7);
   socialMainCarousel();
   socialRecommendation.loadMatrixSocial(0);
   document.getElementById("number_professional_projects").innerHTML=professionalRepository.dataMatrix.length;
