@@ -347,7 +347,7 @@ header ul li a:hover {
 
   #contact {
     margin-left: 60vw;
-    margin-top: 3vh;
+    margin-top: 15px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -384,7 +384,7 @@ header ul li a:hover {
 
   #contact {
     margin-left: 70vw;
-    margin-top: 4vh;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -824,11 +824,18 @@ button.carousel:hover {
   height: 50%;
   justify-content: center;
   overflow: auto;
+  padding: 2vh;
   width: 90%;
 }
 
-.about-me_description p {
-  text-align: center;
+.about-me_description p:first-child {
+  margin-top: 2vh;
+  padding-top: 2vh;
+}
+
+#Web-develop.about-me_description p, #engineering.about-me_description p {
+  overflow-y: scroll;
+  padding-right: 1vw;
 }
 
 .about-me_buttons {
