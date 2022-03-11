@@ -121,3 +121,30 @@
     border-radius: 1vh;
     height: 8vh;
   }
+  @media screen and (max-width: 576px){
+    .social-media {
+      flex-direction: column;
+      flex-wrap: none;
+    }
+    .links {
+      width: 85vw;
+    }
+    .s_carousel_main {
+      width: 75vw;
+      margin-top: 10vh;
+    }
+  }
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    .social-media {
+      flex-direction: column;
+      flex-wrap: none;
+    }
+    .links {
+      width: 85vw;
+    }
+    .s_carousel_main {
+      width: 70vw;
+      max-height: 580px;
+    }
+  }
+  
