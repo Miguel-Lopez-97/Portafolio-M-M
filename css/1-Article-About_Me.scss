@@ -137,7 +137,7 @@ button.carousel:hover {
     var(--colorBlueLight) 0%,
     var(--colorBlueDark) 100%
   );
-  box-shadow: -0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
+  box-shadow: 0.5rem -0.5rem 0 0.25rem var(--colorBlueGreenDark);
 }
 #skills {
   background-color: var(--colorBlueLight);

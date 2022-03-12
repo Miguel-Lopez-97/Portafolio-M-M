@@ -88,6 +88,7 @@ header ul li a:hover {
     height: 100%;
   }
   header a img {
+    max-height: 50px;
     height: 95%;
   }
 }
@@ -119,6 +120,7 @@ header ul li a:hover {
   }
   header a img {
     height: 95%;
+    max-height: 60px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
