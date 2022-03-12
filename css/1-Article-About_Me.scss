@@ -1,581 +1,606 @@
 /*First Article (Introduce)*/
-
-  .introduce_carousel {
-    display: flex;
-    align-items: center;
-    height: 75vh;
-    justify-content: center;
-    width: 95vw;
-  }
-  .introduce_carousel img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95%;
-    width: auto;
-  }
-  .carousel_buttons {
-    align-items: flex-start;
-    display: flex;
-    height: auto;
-    justify-content: space-around;
-    margin-top: 2vh;
-    width: 50vw;
-  }
-  button.carousel {
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    background-color: var(--colorButtonGreen);
-    border-radius: 100%;
-    border: 5px solid var(--colorButtonGreenBorder);
-    height: 8vh;
-    width: 8vh;
-  }
-  button.carousel:hover {
-    background-color: var(--colorButtonGreenBorder);
-    border: 5px solid var(--colorButtonGreen);
-  }
-  /*Second Article About me*/
-  .about-Me {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .title {
-    align-items: center;
-    display: flex;
-    height: auto;
-    justify-content: space-around;
-    width: 100%;
-  }
-  
-  .resume {
-    align-items: center;
-    background-color: var(--colorBackgroundGreenLightly);
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    justify-content: space-around;
-    margin: 3vh;
-    text-align: center;
-    width: 100%;
-    box-shadow: 1rem 1rem var(--colorButtonGreenBorder);
-  }
-  .resumeText {
-    display: flex;
-    width: 90%;
-  }
-  .resumeImages{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 90%;
-  }
-  .resumeImages figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 15vh;
-    width: 15vh;
-    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0,0,0,0);
-    }
-  .resumeImages figure:hover{
-    filter: brightness(1.25);
-    -webkit-filter: brightness(1.25);
+.introduce_carousel {
+  align-items: center;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  width: 95vw;
 }
-  .resumeImages figure img{
-    width: auto;
-    height: 15vh;
-  }
-  .about-me {
-    -moz-border-radius: 5vh;
-    -ms-border-radius: 5vh;
-    -o-border-radius: 5vh;
-    -webkit-border-radius: 5vh;
-    align-items: center;
-    border-radius: 5vh;
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    justify-content: center;
-    width: 25vw;
-  }
-  #Web-develop {
-    background: -moz-linear-gradient(    90deg,    var(--colorBlueDark) 0%,    var(--colorBlueLight) 100%  );
-    background: -webkit-linear-gradient(    90deg,    var(--colorBlueDark) 0%,    var(--colorBlueLight) 100%  );
-    background: linear-gradient(    90deg,    var(--colorBlueDark) 0%,  var(--colorBlueLight) 100%  );
-    box-shadow: -0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
-  }
-  #engineering {
-    background: -moz-linear-gradient(
-      90deg,
-      var(--colorBlueLight) 0%,    
-      var(--colorBlueDark) 100%
-    );
+.introduce_carousel img {
+  align-items: center;
+  display: flex;
+  height: 95%;
+  justify-content: center;
+  width: auto;
+}
+.carousel_buttons {
+  align-items: flex-start;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  margin-top: 2vh;
+  width: 50vw;
+}
+button.carousel {
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  background-color: var(--colorButtonGreen);
+  border-radius: 100%;
+  border: 5px solid var(--colorButtonGreenBorder);
+  height: 8vh;
+  width: 8vh;
+}
+button.carousel:hover {
+  background-color: var(--colorButtonGreenBorder);
+  border: 5px solid var(--colorButtonGreen);
+}
+/*Second Article About me*/
+.about-Me {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.title {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.resume {
+  align-items: center;
+  background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: 1rem 1rem var(--colorButtonGreenBorder);
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-around;
+  margin: 3vh;
+  text-align: center;
+  width: 100%;
+}
+.resumeText {
+  display: flex;
+  width: 90%;
+}
+.resumeImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+}
+.resumeImages figure {
+  align-items: center;
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
+    -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0 0 0 0.3rem var(--colorButtonGreenBorder),
+    0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
+  display: flex;
+  height: 15vh;
+  justify-content: center;
+  width: 15vh;
+}
+.resumeImages figure:hover {
+  -webkit-filter: brightness(1.25);
+  filter: brightness(1.25);
+}
+.resumeImages figure img {
+  height: 15vh;
+  width: auto;
+}
+.about-me {
+  -moz-border-radius: 5vh;
+  -ms-border-radius: 5vh;
+  -o-border-radius: 5vh;
+  -webkit-border-radius: 5vh;
+  align-items: center;
+  border-radius: 5vh;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  width: 25vw;
+}
+#Web-develop {
+  background: -moz-linear-gradient(
+    90deg,
+    var(--colorBlueDark) 0%,
+    var(--colorBlueLight) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--colorBlueDark) 0%,
+    var(--colorBlueLight) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    var(--colorBlueDark) 0%,
+    var(--colorBlueLight) 100%
+  );
+  box-shadow: -0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
+}
+#engineering {
+  background: -moz-linear-gradient(
     background: -webkit-linear-gradient(
-      90deg,
-      var(--colorBlueLight) 0%,
-      var(--colorBlueDark) 100%
-    );
-    background: linear-gradient(
-      90deg,
-      var(--colorBlueLight) 0%,
-      var(--colorBlueDark) 100%
-    );
-    box-shadow: 0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
-  }
-  #skills {
-    background-color: var(--colorBlueLight);
-    box-shadow: 0 0.5rem 0 0.25rem var(--colorBlueGreenDark);
-  }
-
-  .about-me:hover {
-    filter: brightness(1.1);
-    -webkit-filter: brightness(1.1);
-  }
-  .about-me_img {
-    align-items: center;
-    display: flex;
-    height: 28%;
-    justify-content: center;
-  }
-  .about-me_img img {
-    height: 15vh;
-  }
-  .about-me_img img:hover {
-    height: 18vh;
-    animation-name: rote;
-    animation-duration: 0.6s;
-    animation-iteration-count: infinite;
-  }
-  @keyframes rote{
-    0% {
-      transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(5deg);
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -ms-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-  }
-  100%{
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
+        background:
+          linear-gradient(
+            box-shadow: 0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark) ;
+              90deg,
+            var(--colorBlueLight) 0%,
+            var(--colorBlueDark) 100%
+          )
+          ; 90deg,
+        var(--colorBlueLight) 0%,
+        var(--colorBlueDark) 100%
+      ) ; 90deg,
+    var(--colorBlueLight) 0%,
+    var(--colorBlueDark) 100%
+  );
+}
+#skills {
+  background-color: var(--colorBlueLight);
+  box-shadow: 0 0.5rem 0 0.25rem var(--colorBlueGreenDark);
+}
+.about-me:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+}
+.about-me_img {
+  align-items: center;
+  display: flex;
+  height: 28%;
+  justify-content: center;
+}
+.about-me_img img {
+  height: 15vh;
+}
+.about-me_img img:hover {
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-name: rote;
+  height: 18vh;
+}
+@keyframes rote {
+  0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+  50% {
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
   }
-
-  .about-me_description {
-    -moz-border-radius: 2vh;
-    -ms-border-radius: 2vh;
-    -o-border-radius: 2vh;
-    -webkit-border-radius: 2vh;
+  100% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.about-me_description {
+  -moz-border-radius: 2vh;
+  -ms-border-radius: 2vh;
+  -o-border-radius: 2vh;
+  -webkit-border-radius: 2vh;
+  align-items: center;
+  background-color: var(--colorBackgroundBlue);
+  border-radius: 2vh;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  overflow: auto;
+  padding: 2vh;
+  width: 90%;
+}
+.about-me_description p:first-child {
+  margin-top: 2vh;
+  padding-top: 2vh;
+}
+#Web-develop.about-me_description p,
+#engineering.about-me_description p {
+  overflow-y: scroll;
+  padding-right: 1vw;
+}
+.about-me_buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 20%;
+  justify-content: space-around;
+  width: 12vw;
+}
+.about-me_buttons p {
+  font-size: 0.8rem;
+  text-align: center;
+}
+button.timeLine,
+.tag {
+  -moz-border-radius: 3vh;
+  -ms-border-radius: 3vh;
+  -o-border-radius: 3vh;
+  -webkit-border-radius: 3vh;
+  background-color: var(--colorBlueGreenDark);
+  border-radius: 3vh;
+  border: 5px solid var(--colorBackgroundBlueLight);
+  color: var(--colorBackgroundBlueLight);
+  font-weight: bold;
+  height: 5vh;
+  width: 10vw;
+}
+button.timeLine:hover,
+button.tag:hover {
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  background-color: var(--colorBackgroundBlueLight);
+  border: 5px solid var(--colorBlueGreenDark);
+  color: var(--colorBlueGreenDark);
+  transition: 0.1s;
+}
+button.CV {
+  -moz-border-radius: 2.5vh 0 0 2.5vh;
+  -ms-border-radius: 2.5vh 0 0 2.5vh;
+  -o-border-radius: 2.5vh 0 0 2.5vh;
+  -webkit-border-radius: 2.5vh 0 0 2.5vh;
+  background-color: var(--colorButtonBackgroundBlueLight);
+  border-radius: 2.5vh 0 0 2.5vh;
+  border: 5px solid var(--colorButtonBlueBorder);
+  color: var(--colorButtonText);
+  font-weight: bold;
+  height: 5vh;
+  margin-right: 0;
+  width: 5vw;
+}
+button.CV:hover {
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  background-color: var(--colorButtonBlueBorder);
+  border: 5px solid var(--colorButtonBackgroundBlueLight);
+  color: var(--colorWhiteGreen);
+  transition: 0.1s;
+}
+button.HV {
+  -moz-border-radius: 0 2.5vh 2.5vh 0;
+  -ms-border-radius: 0 2.5vh 2.5vh 0;
+  -o-border-radius: 0 2.5vh 2.5vh 0;
+  -webkit-border-radius: 0 2.5vh 2.5vh 0;
+  background-color: var(--colorButtonBackgroundWhite);
+  border-radius: 0 2.5vh 2.5vh 0;
+  border: 5px solid var(--colorButtonBlueLightBorder);
+  color: var(--colorButtonText);
+  font-weight: bold;
+  height: 5vh;
+  margin-left: 0;
+  width: 5vw;
+}
+button.HV:hover {
+  background-color: var(--colorButtonBlueLightBorder);
+  border: 5px solid var(--colorWhiteGreen);
+  color: var(--colorWhiteGreen);
+}
+/*Timeline display*/
+section.timeLine {
+  align-items: center;
+  background-color: var(--colorBlueLight);
+  border: 10px solid var(--colorButtonBlue);
+  display: none;
+  height: 80vh;
+  justify-content: space-evenly;
+  position: fixed;
+  top: 10vh;
+  width: 95vw;
+}
+.timeLine_graph {
+  background-color: var(--colorWhiteGreen);
+  border: 5px solid var(--colorBackgroundGreenLightly);
+  display: flex;
+  height: 90%;
+  width: 55%;
+}
+.timeLine_graph img {
+  height: 95%;
+  width: 95%;
+}
+.timeLine_content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  width: 40%;
+}
+.timeLine_img {
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  align-items: center;
+  background-color: var(--colorWhiteGreen);
+  border-radius: 100%;
+  border: 5px solid var(--colorButtonGreen);
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  margin-bottom: 1vh;
+  width: 20vh;
+}
+.timeLine_img img {
+  height: 90%;
+  width: 90%;
+}
+.timeLine_img:hover {
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 22vh;
+}
+.timeLine_text {
+  align-items: center;
+  background-color: var(--colorBackgroundGreenLightly);
+  border: 5px solid var(--colorButtonGreenHover);
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  margin-bottom: 2vh;
+  width: 90%;
+}
+.timeLine_button {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+button.left,
+button.right,
+button.down {
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  align-items: center;
+  background-color: var(--colorBackgroundGreenLightly);
+  border-radius: 50%;
+  border: 3px solid var(--colorButtonBackgroundWhite);
+  display: flex;
+  font-weight: bolder;
+  height: 6vh;
+  justify-content: center;
+  width: 6vh;
+}
+button.left:hover,
+button.right:hover,
+button.down:hover {
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  background-color: var(--colorButtonGreenHover);
+  border-radius: 50%;
+  border: 3px solid var(--colorBackgroundGreenLightly);
+  transition: 0.1s;
+}
+button img {
+  height: 3vh;
+  width: 3vh;
+}
+button.close {
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  align-items: center;
+  background-color: var(--colorButtonText);
+  border-radius: 50%;
+  border: 3px solid var(--colorWhiteGreen);
+  color: var(--colorWhiteGreen);
+  display: flex;
+  font-weight: bolder;
+  height: 6vh;
+  justify-content: center;
+  position: absolute;
+  width: 6vh;
+}
+.timeLine button.close {
+  margin-bottom: 65vh;
+  margin-left: 75vw;
+}
+button.close:hover {
+  -moz-transition: 0.1ms;
+  -ms-transition: 0.1ms;
+  -o-transition: 0.1ms;
+  -webkit-transition: 0.1ms;
+  background-color: var(--colorWhiteGreen);
+  border: 3px solid var(--colorButtonText);
+  color: var(--colorButtonText);
+  transition: 0.1ms;
+}
+@media screen and (max-width: 576px) {
+  article.introduce {
+    margin-top: 12vh;
+  }
+  .introduce_carousel {
+    height: auto;
+    padding: 5vh;
+    width: 95vw;
+  }
+  .introduce_carousel img {
     align-items: center;
-    background-color: var(--colorBackgroundBlue);
-    border-radius: 2vh;
     display: flex;
-    height: 50%;
+    height: auto;
     justify-content: center;
-    overflow: auto;
-    padding: 2vh;
+    width: 95%;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    text-align: center;
     width: 90%;
   }
-  .about-me_description p:first-child{ margin-top: 2vh; padding-top: 2vh;}
-
-  #Web-develop.about-me_description p,  #engineering.about-me_description p{
-    overflow-y: scroll;
-    padding-right: 1vw;
+  .resume {
+    height: auto;
+    padding: 2vh;
   }
-  .about-me_buttons {
+  .resumeImages {
+    margin: 2vh;
+  }
+  .resumeImages figure {
+    height: 9vh;
+    margin: 3vw;
+    width: 9vh;
+  }
+  .resumeImages figure img {
+    height: 9vh;
+    width: auto;
+  }
+  .about-me {
+    justify-content: center;
+    max-height: 400px;
+    width: 70vw;
+
+    .about-me_buttons {
+      flex-direction: column;
+      height: auto;
+      padding: 2vh;
+      width: auto;
+    }
+    button.CV,
+    button.HV,
+    button.timeLine,
+    .tag {
+      -moz-border-radius: 3vh;
+      -ms-border-radius: 3vh;
+      -o-border-radius: 3vh;
+      -webkit-border-radius: 3vh;
+      border-radius: 3vh;
+      height: auto;
+      margin: 2vh;
+      padding: 2vh;
+      width: auto;
+    }
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  article.introduce {
+    margin-top: 14vh;
+  }
+  .introduce_carousel {
+    height: 70vh;
+    width: 70vw;
+  }
+  .introduce_carousel img {
     align-items: center;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 20%;
-    justify-content: space-around;
-    width: 12vw;
+    height: auto;
+    justify-content: center;
+    max-height: 95%;
+    width: 95%;
   }
-  .about-me_buttons p{
-    font-size: 0.8rem;
+  .title {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
     text-align: center;
+    width: 80%;
   }
+  .resume {
+    height: auto;
+    padding: 2vh;
+  }
+  .resumeImages {
+    margin: 2vh;
+  }
+  .resumeImages figure {
+    height: 10vh;
+    margin: 2vw;
+    width: 10vh;
+  }
+  .resumeImages figure img {
+    height: 10vh;
+    width: auto;
+  }
+  .about-me {
+    justify-content: center;
+    margin: 15px;
+    max-height: 450px;
+    max-width: 300px;
+    width: 70vw;
+  }
+  .about-me_buttons {
+    flex-direction: row;
+    height: auto;
+    padding: 2vh;
+    width: auto;
+  }
+  button.CV,
+  button.HV,
   button.timeLine,
   .tag {
     -moz-border-radius: 3vh;
     -ms-border-radius: 3vh;
     -o-border-radius: 3vh;
     -webkit-border-radius: 3vh;
-    background-color: var(--colorBlueGreenDark);
     border-radius: 3vh;
-    border: 5px solid var(--colorBackgroundBlueLight);
-    color: var(--colorBackgroundBlueLight);
-    font-weight: bold;
-    height: 5vh;
-    width: 10vw;
+    height: auto;
+    margin: 2vh;
+    padding: 2vh;
+    width: auto;
   }
-  button.timeLine:hover,
-  button.tag:hover {
-    -moz-transition: 0.1s;
-    -ms-transition: 0.1s;
-    -o-transition: 0.1s;
-    -webkit-transition: 0.1s;
-    background-color: var(--colorBackgroundBlueLight);
-    border: 5px solid var(--colorBlueGreenDark);
-    color: var(--colorBlueGreenDark);
-    transition: 0.1s;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  article.introduce {
+    margin-top: 14vh;
   }
-  button.CV {
-    -moz-border-radius: 2.5vh 0 0 2.5vh;
-    -ms-border-radius: 2.5vh 0 0 2.5vh;
-    -o-border-radius: 2.5vh 0 0 2.5vh;
-    -webkit-border-radius: 2.5vh 0 0 2.5vh;
-    background-color: var(--colorButtonBackgroundBlueLight);
-    border-radius: 2.5vh 0 0 2.5vh;
-    border: 5px solid var(--colorButtonBlueBorder);
-    color: var(--colorButtonText);
-    font-weight: bold;
-    height: 5vh;
-    margin-right: 0;
-    width: 5vw;
-  }
-  button.CV:hover {
-    -moz-transition: 0.1s;
-    -ms-transition: 0.1s;
-    -o-transition: 0.1s;
-    -webkit-transition: 0.1s;
-    background-color: var(--colorButtonBlueBorder);
-    border: 5px solid var(--colorButtonBackgroundBlueLight);
-    color: var(--colorWhiteGreen);
-    transition: 0.1s;
-  }
-  button.HV {
-    -moz-border-radius: 0 2.5vh 2.5vh 0;
-    -ms-border-radius: 0 2.5vh 2.5vh 0;
-    -o-border-radius: 0 2.5vh 2.5vh 0;
-    -webkit-border-radius: 0 2.5vh 2.5vh 0;
-    background-color: var(--colorButtonBackgroundWhite);
-    border-radius: 0 2.5vh 2.5vh 0;
-    border: 5px solid var(--colorButtonBlueLightBorder);
-    color: var(--colorButtonText);
-    font-weight: bold;
-    height: 5vh;
-    margin-left: 0;
-    width: 5vw;
-  }
-  button.HV:hover {
-    background-color: var(--colorButtonBlueLightBorder);
-    border: 5px solid var(--colorWhiteGreen);
-    color: var(--colorWhiteGreen);
-  }
-  /*Timeline display*/
-  section.timeLine {
-    align-items: center;
-    background-color: var(--colorBlueLight);
-    border: 10px solid var(--colorButtonBlue);
-    display: none;
-    height: 80vh;
-    justify-content: space-evenly;
-    position: fixed;
-    top: 10vh;
-    width: 95vw;
-  }
-  .timeLine_graph {
-    background-color: var(--colorWhiteGreen);
-    border: 5px solid var(--colorBackgroundGreenLightly);
-    display: flex;
-    height: 90%;
-    width: 55%;
-  }
-  .timeLine_graph img {
-    height: 95%;
-    width: 95%;
-  }
-  .timeLine_content {
-    align-items: center;
+  .title {
     display: flex;
     flex-direction: column;
-    height: 90%;
-    justify-content: center;
-    width: 40%;
-  }
-  .timeLine_img {
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    align-items: center;
-    background-color: var(--colorWhiteGreen);
-    border-radius: 100%;
-    border: 5px solid var(--colorButtonGreen);
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    margin-bottom: 1vh;
-    width: 20vh;
-  }
-  .timeLine_img img {
-    height: 90%;
-    width: 90%;
-  }
-  .timeLine_img:hover {
-    -moz-transition: 0.4s;
-    -ms-transition: 0.4s;
-    -o-transition: 0.4s;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    width: 22vh;
-  }
-  .timeLine_text {
-    align-items: center;
-    background-color: var(--colorBackgroundGreenLightly);
-    border: 5px solid var(--colorButtonGreenHover);
-    display: flex;
-    height: 40vh;
-    justify-content: center;
-    margin-bottom: 2vh;
-    width: 90%;
-  }
-  .timeLine_button {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-  }
-  button.left,
-  button.right,
-  button.down {
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    align-items: center;
-    background-color: var(--colorBackgroundGreenLightly);
-    border-radius: 50%;
-    border: 3px solid var(--colorButtonBackgroundWhite);
-    display: flex;
-    font-weight: bolder;
-    height: 6vh;
-    justify-content: center;
-    width: 6vh;
-  }
-  button.left:hover,
-  button.right:hover,
-  button.down:hover {
-    -moz-transition: 0.1s;
-    -ms-transition: 0.1s;
-    -o-transition: 0.1s;
-    -webkit-transition: 0.1s;
-    background-color: var(--colorButtonGreenHover);
-    border-radius: 50%;
-    border: 3px solid var(--colorBackgroundGreenLightly);
-    transition: 0.1s;
-  }
-  button img {
-    height: 3vh;
-    width: 3vh;
-  }
-  button.close {
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    align-items: center;
-    background-color: var(--colorButtonText);
-    border-radius: 50%;
-    border: 3px solid var(--colorWhiteGreen);
-    color: var(--colorWhiteGreen);
-    display: flex;
-    font-weight: bolder;
-    height: 6vh;
-    justify-content: center;
-    position: absolute;
-    width: 6vh;
-  }
-  .timeLine button.close {
-    margin-bottom: 65vh;
-    margin-left: 75vw;
-  }
-  button.close:hover {
-    -moz-transition: 0.1ms;
-    -ms-transition: 0.1ms;
-    -o-transition: 0.1ms;
-    -webkit-transition: 0.1ms;
-    background-color: var(--colorWhiteGreen);
-    border: 3px solid var(--colorButtonText);
-    color: var(--colorButtonText);
-    transition: 0.1ms;
-  }
-
-  @media screen and (max-width: 576px){
-    article.introduce {
-      margin-top: 12vh;
-    }
-    .introduce_carousel {
-     padding: 5vh;
-      height: auto;
-      width: 95vw;
-    }
-    .introduce_carousel img {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: auto;
-      width: 95%;
-    }
-    .title {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      justify-content: center;
-      width: 90%;
-    }
-    .resume {
-      height: auto;
-      padding: 2vh;}
-      .resumeImages{
-        margin: 2vh;
-      }
-    .resumeImages figure{
-      height: 9vh;
-      width: 9vh;
-    margin: 3vw;}
-    .resumeImages figure img{
-        width: auto;
-        height: 9vh;
-      }
-      .about-me {
-        justify-content: center;
-        width: 70vw;
-        max-height: 400px;
-        .about-me_buttons {
-          height: auto;
-          width: auto;
-          padding: 2vh;
-          flex-direction: column;
-        }
-        button.CV,button.HV,button.timeLine,
-  .tag {
     height: auto;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+  }
+  .resumeImages figure {
+    height: 11vh;
+    margin: 2vw;
+    width: 11vh;
+  }
+  .resumeImages figure img {
+    height: 11vh;
     width: auto;
-    padding: 2vh;
-    margin: 2vh;
-    border-radius: 3vh;
-    -webkit-border-radius: 3vh;
-    -moz-border-radius: 3vh;
-    -ms-border-radius: 3vh;
-    -o-border-radius: 3vh;
+  }
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  article.introduce {
+    margin-top: 15vh;
+  }
 }
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  article.introduce {
+    margin-top: 17vh;
   }
-  @media screen and (min-width: 576px) and (max-width: 768px){
-    article.introduce {
-      margin-top: 14vh;
-    }
-    .introduce_carousel {
-       height: 70vh;
-       width: 70vw;
-     }
-     .introduce_carousel img {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       height: auto;
-       max-height: 95%;
-       width: 95%;
-     }
-    .title {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      height: auto;
-      justify-content: center;
-      width: 80%;
-    }
-    .resume {
-      height: auto;
-      padding: 2vh;}
-      .resumeImages{
-        margin: 2vh;
-      }
-    .resumeImages figure{
-      height: 10vh;
-      width: 10vh;
-    margin: 2vw;}
-    .resumeImages figure img{
-        width: auto;
-        height: 10vh;
-      }
-      .about-me {
-        justify-content: center;
-        width: 70vw;
-        max-width: 300px;
-        max-height: 450px;
-        margin: 15px;
 }
-.about-me_buttons {
-  height: auto;
-  width: auto;
-  padding: 2vh;
-  flex-direction: row;}
-  
-button.CV,button.HV,button.timeLine,
-  .tag {
-    height: auto;
-    width: auto;
-    padding: 2vh;
-    margin: 2vh;
-    border-radius: 3vh;
-    -webkit-border-radius: 3vh;
-    -moz-border-radius: 3vh;
-    -ms-border-radius: 3vh;
-    -o-border-radius: 3vh;
-}
+@media screen and (min-width: 1400px) {
+  article.introduce {
+    margin-top: 20vh;
   }
-  @media screen and (min-width: 768px) and (max-width: 992px){
-    article.introduce {
-      margin-top: 14vh;
-    }
-    .title {
-      display: flex;
-      text-align: center;
-      flex-direction: column;
-      height: auto;
-      justify-content: center;
-      width: 80%;
-    }
-    .resumeImages figure{
-      height: 11vh;
-      width: 11vh;
-    margin: 2vw;}
-    .resumeImages figure img{
-        width: auto;
-        height: 11vh;
-      }
-  }
-  @media screen and (min-width: 992px) and (max-width: 1200px){
-    article.introduce {
-      margin-top: 15vh;
-    }  
-  }
-  @media screen and (min-width: 1200px) and (max-width: 1400px){
-    article.introduce {
-      margin-top: 17vh;
-    }  
-  }
-  @media screen and (min-width: 1400px) {
-    article.introduce {
-      margin-top: 20vh;
-    }
 }
