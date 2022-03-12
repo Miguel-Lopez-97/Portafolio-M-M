@@ -321,8 +321,7 @@ header ul li a:hover {
   }
 
   header {
-    height: auto;
-    min-height: 40px;
+    height: 40px;
     z-index: 2;
   }
 
@@ -342,8 +341,12 @@ header ul li a:hover {
     font-size: 6vw;
   }
 
-  header ul li header img {
-    height: 30px;
+  header a {
+    height: 100%;
+  }
+
+  header a img {
+    height: 95%;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -352,8 +355,7 @@ header ul li a:hover {
   }
 
   header {
-    height: auto;
-    min-height: 50px;
+    height: 50px;
     padding: 2vh 0;
   }
 
@@ -374,8 +376,12 @@ header ul li a:hover {
     font-size: 6vw;
   }
 
-  header ul li header img {
-    height: 40px;
+  header a {
+    height: 100%;
+  }
+
+  header a img {
+    height: 95%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
