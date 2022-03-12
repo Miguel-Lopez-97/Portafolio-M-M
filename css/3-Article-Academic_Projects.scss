@@ -224,7 +224,11 @@
   -webkit-border-radius: 0 0 2vh 2vh;
   border-radius: 0 0 2vh 2vh;
   width: 100%;
+
 }
+.academic_carousel .description_text p{width: 90%;
+  height: 90%;overflow-y: scroll;
+  padding-right: 1vw;}
 .academic.carousel_buttons {
   height: 8vh;
   margin-top: 2vh;

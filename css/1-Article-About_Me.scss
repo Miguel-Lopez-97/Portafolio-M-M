@@ -2,12 +2,17 @@
 
   .introduce_carousel {
     display: flex;
+    align-items: center;
     height: 75vh;
-    justify-content: space-around;
-    width: 100vw;
+    justify-content: center;
+    width: 95vw;
   }
   .introduce_carousel img {
-    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    width: auto;
   }
   .carousel_buttons {
     align-items: flex-start;
@@ -200,6 +205,10 @@
     height: 20%;
     justify-content: space-around;
     width: 12vw;
+  }
+  .about-me_buttons p{
+    font-size: 0.8rem;
+    text-align: center;
   }
   button.timeLine,
   .tag {
@@ -412,6 +421,18 @@
     article.introduce {
       margin-top: 12vh;
     }
+    .introduce_carousel {
+     padding: 5vh;
+      height: auto;
+      width: 95vw;
+    }
+    .introduce_carousel img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      width: 95%;
+    }
     .title {
       text-align: center;
       display: flex;
@@ -437,6 +458,7 @@
       .about-me {
         justify-content: center;
         width: 70vw;
+        max-height: 400px;
         .about-me_buttons {
           height: auto;
           width: auto;
@@ -461,6 +483,18 @@
     article.introduce {
       margin-top: 14vh;
     }
+    .introduce_carousel {
+       height: 70vh;
+       width: 70vw;
+     }
+     .introduce_carousel img {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: auto;
+       max-height: 95%;
+       width: 95%;
+     }
     .title {
       text-align: center;
       display: flex;
@@ -487,6 +521,7 @@
         justify-content: center;
         width: 70vw;
         max-width: 300px;
+        max-height: 450px;
         margin: 15px;
 }
 .about-me_buttons {

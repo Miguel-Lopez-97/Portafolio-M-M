@@ -637,13 +637,18 @@ form button.tag {
 /*First Article (Introduce)*/
 .introduce_carousel {
   display: flex;
+  align-items: center;
   height: 75vh;
-  justify-content: space-around;
-  width: 100vw;
+  justify-content: center;
+  width: 95vw;
 }
 
 .introduce_carousel img {
-  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  width: auto;
 }
 
 .carousel_buttons {
@@ -846,6 +851,11 @@ button.carousel:hover {
   height: 20%;
   justify-content: space-around;
   width: 12vw;
+}
+
+.about-me_buttons p {
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 button.timeLine,
@@ -1080,6 +1090,20 @@ button.close:hover {
     margin-top: 12vh;
   }
 
+  .introduce_carousel {
+    padding: 5vh;
+    height: auto;
+    width: 95vw;
+  }
+
+  .introduce_carousel img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 95%;
+  }
+
   .title {
     text-align: center;
     display: flex;
@@ -1112,6 +1136,7 @@ button.close:hover {
   .about-me {
     justify-content: center;
     width: 70vw;
+    max-height: 400px;
   }
   .about-me .about-me_buttons {
     height: auto;
@@ -1135,6 +1160,20 @@ button.close:hover {
 @media screen and (min-width: 576px) and (max-width: 768px) {
   article.introduce {
     margin-top: 14vh;
+  }
+
+  .introduce_carousel {
+    height: 70vh;
+    width: 70vw;
+  }
+
+  .introduce_carousel img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    max-height: 95%;
+    width: 95%;
   }
 
   .title {
@@ -1170,6 +1209,7 @@ button.close:hover {
     justify-content: center;
     width: 70vw;
     max-width: 300px;
+    max-height: 450px;
     margin: 15px;
   }
 
@@ -1489,6 +1529,13 @@ button.close:hover {
   -webkit-border-radius: 0 0 2vh 2vh;
   border-radius: 0 0 2vh 2vh;
   width: 100%;
+}
+
+.academic_carousel .description_text p {
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  padding-right: 1vw;
 }
 
 .academic.carousel_buttons {
@@ -2213,6 +2260,7 @@ section.carousel {
     -webkit-border-radius: 3vh;
     border-radius: 3vh;
     height: 80vh;
+    max-height: 400px;
     width: 80vw;
   }
 
@@ -2223,12 +2271,13 @@ section.carousel {
 
   .professional_carousel .description_links a {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 50%;
   }
 
   .professional_carousel .description_links a img {
-    height: 80%;
+    width: 30px;
   }
 
   .main_tag {
@@ -2299,6 +2348,7 @@ section.carousel {
     border-radius: 3vh;
     height: 70vh;
     width: 70vw;
+    max-height: 450px;
   }
 
   .prof_main_overlay {
@@ -2308,12 +2358,13 @@ section.carousel {
 
   .professional_carousel .description_links a {
     display: flex;
+    justify-content: center;
     width: 100%;
     height: 50%;
   }
 
   .professional_carousel .description_links a img {
-    height: 80%;
+    width: 60px;
   }
 
   .main_tag {
@@ -2511,6 +2562,7 @@ section.carousel {
   .s_carousel_main {
     width: 75vw;
     margin-top: 10vh;
+    max-height: 400px;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -2525,7 +2577,7 @@ section.carousel {
 
   .s_carousel_main {
     width: 70vw;
-    max-height: 580px;
+    max-height: 500px;
   }
 }
 
