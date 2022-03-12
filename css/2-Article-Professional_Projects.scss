@@ -66,16 +66,10 @@
     width: 90%;
   }
 section.carousel {
-    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
+    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
-
-    0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
-    0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
-    -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
-    0 0 0 0.3rem var(--colorButtonGreenBorder),
-    0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
   }
 .carousel {
     align-items: center;
@@ -100,16 +94,13 @@ section.carousel {
     align-self: center;
     background-color: var(--colorBackgroundGreenLightly);
     border-radius: 5vh;
-    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder),
+    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc, 1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
     color: var(--colorGreenBlackText);
     display: flex;
     flex-direction: column;
     height: 62vh;
     justify-content: space-evenly;
     width: 40vw;
-
-    0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc,
-    1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
   }
 .main_name {
     align-items: center;
@@ -323,13 +314,9 @@ section.carousel {
     -o-border-radius: 2vh;
     -webkit-border-radius: 2vh;
     border-radius: 2vh;
-    box-shadow: 0.2rem 0.2rem 0 0 var(--colorButtonGreenBorder),
+    box-shadow: 0.2rem 0.2rem 0 0 var(--colorButtonGreenBorder), 0.35rem 0.35rem 0 0 #8caa8f, 0.5rem 0.5rem 0 0 #b9cbbb, 0.65rem 0.65rem 0 0 #dbe4dc, 0.65rem 0.65rem 0 0 #f1f5f2, 0.2rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0);
     height: 50vh;
     width: 20vw;
-
-    0.35rem 0.35rem 0 0 #8caa8f, 0.5rem 0.5rem 0 0 #b9cbbb,
-    0.65rem 0.65rem 0 0 #dbe4dc, 0.65rem 0.65rem 0 0 #f1f5f2,
-    0.2rem 0.2rem 0.5rem 0.2rem rgba(0, 0, 0, 0);
   }
 .prof_carousel_aux:hover {
     -moz-transition: all 0.5s;

@@ -75,12 +75,7 @@ button.carousel:hover {
 }
 .resumeImages figure {
   align-items: center;
-  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
-    0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
-    0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
-    -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
-    0 0 0 0.3rem var(--colorButtonGreenBorder),
-    0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
   display: flex;
   height: 15vh;
   justify-content: center;
@@ -125,23 +120,24 @@ button.carousel:hover {
   );
   box-shadow: -0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
 }
-#engineering {
+#engineering 
+{
   background: -moz-linear-gradient(
-    background: -webkit-linear-gradient(
-        background:
-          linear-gradient(
-            box-shadow: 0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark) ;
-              90deg,
-            var(--colorBlueLight) 0%,
-            var(--colorBlueDark) 100%
-          )
-          ; 90deg,
-        var(--colorBlueLight) 0%,
-        var(--colorBlueDark) 100%
-      ) ; 90deg,
+    90deg,
     var(--colorBlueLight) 0%,
     var(--colorBlueDark) 100%
   );
+  background: -webkit-linear-gradient(
+    90deg,
+    var(--colorBlueLight) 0%,
+    var(--colorBlueDark) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    var(--colorBlueLight) 0%,
+    var(--colorBlueDark) 100%
+  );
+  box-shadow: -0.5rem 0.5rem 0 0.25rem var(--colorBlueGreenDark);
 }
 #skills {
   background-color: var(--colorBlueLight);
