@@ -442,6 +442,7 @@ section.carousel {
   -webkit-border-radius: 3vh;
   border-radius: 3vh;
   height: 80vh;
+  max-height: 400px;
   width: 80vw;
 }
 .prof_main_overlay {
@@ -450,11 +451,12 @@ section.carousel {
 }
 .professional_carousel .description_links a {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 50%;
 }
 .professional_carousel .description_links a img {
-  height: 80%;
+  width: 30px;
 }
 .main_tag {
   width: 60vw;
@@ -515,6 +517,7 @@ section.carousel {
   border-radius: 3vh;
   height: 70vh;
   width: 70vw;
+  max-height: 450px;
 }
 .prof_main_overlay {
   width: 30vw;
@@ -522,11 +525,12 @@ section.carousel {
 }
 .professional_carousel .description_links a {
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 50%;
 }
 .professional_carousel .description_links a img {
-  height: 80%;
+  width: 60px;
 }
 .main_tag {
   width: 60vw;
