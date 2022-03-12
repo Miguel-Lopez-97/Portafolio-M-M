@@ -1,112 +1,114 @@
 /*Form*/
 .contact button.close {
-    left: 87vw;
+  left: 87vw;
+  top: 1vh;
+}
+section.contact {
+  align-items: center;
+  background-color: var(--colorBlueLight);
+  border: 1vh solid var(--colorButtonBlue);
+  display: none;
+  height: 95vh;
+  justify-content: space-evenly;
+  left: 5vw;
+  position: fixed;
+  text-align: center;
+  top: 0.1vh;
+  width: 90vw;
+  z-index: 4;
+}
+.contact-img {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  justify-content: space-around;
+  width: 30vw;
+}
+.contact-img img {
+  width: 90%;
+}
+.contact-img h2.tag {
+  height: auto;
+  padding: 2vw;
+  width: auto;
+}
+.contact-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+}
+form {
+  align-items: center;
+  background-color: var(--colorBackgroundGreenLightly);
+  box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
+    -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly),
+    0 0 0 0.3rem var(--colorButtonGreenBorder),
+    0.15rem 0.15rem 0.45rem 0.15rem rgba(0, 0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+  width: 80%;
+}
+form input,
+form textarea {
+  border: 1vh solid var(--colorButtonBlue);
+  height: auto;
+  padding: 1vh 0;
+  width: 90%;
+}
+form button.tag {
+  height: 8vh;
+  margin-top: 1vh;
+  padding: 1vh;
+  width: 15vw;
+}
+@media screen and (max-width: 576px) {
+  .contact-img {
+    flex-direction: row;
+    width: 85%;
+  }
+  .contact-img img {
+    width: 15vh;
+  }
+  .contact-content {
+    width: 90vw;
+  }
+  form input {
+    margin: 2vh;
+  }
+  form textarea {
+    margin: 2vh 0;
+    padding: 3vh;
+    width: 70%;
+  }
+  form button.tag {
+    width: 60%;
+  }
+  .contact button.close {
+    left: 82vw;
     top: 1vh;
   }
+}
+@media screen and (min-width: 576px) and (max-width: 1200px) {
   section.contact {
     align-items: center;
-    text-align: center;
     background-color: var(--colorBlueLight);
-    border: 1vh solid  var(--colorButtonBlue);
+    border: 1vh solid var(--colorButtonBlue);
     display: none;
+    flex-direction: row;
     height: 95vh;
     justify-content: space-evenly;
     left: 5vw;
     position: fixed;
+    text-align: center;
     top: 0.1vh;
     width: 90vw;
     z-index: 4;
   }
-  .contact-img {
-    align-items: center;
-    display: flex;
-    height: 95%;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30vw;
-  }
-  .contact-img img {
-    width: 90%;
-  }
-
-  .contact-img h2.tag{
-    width: auto;
-    height: auto;
-    padding: 2vw;
-  }
-
-  .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50vw;
-  }
-  form {
-    align-items: center;
-    background-color: var(--colorBackgroundGreenLightly);
-    display: flex;
-    box-shadow: 0 0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0 -0.6rem 0 -0.3rem var(--colorBackgroundGreenLightly), 0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), -0.6rem 0 0 -0.3rem var(--colorBackgroundGreenLightly), 0 0 0 0.3rem var(--colorButtonGreenBorder), 0.15rem 0.15rem 0.45rem 0.15rem rgba(0,0,0,0);
-    flex-direction: column;
-    height: 90%;
-    justify-content: center;
-    width: 80%;
-  }
-
-  form input,
-  form textarea {
-    border: 1vh solid  var(--colorButtonBlue);
-    width: 95%;
-    height: auto;
-    padding: 1vh;
-  }
-  form button.tag {
-    height: 8vh;
-    margin-top: 1vh;
-    padding: 1vh;
-    width: 15vw;
-  }
-  
-  @media screen and (max-width: 576px){
-    .contact-img{
-      flex-direction: row;
-      width: 85%;
-    }
-    .contact-img img {
-      width: 15vh;
-    }
-    .contact-content {
-      width: 90vw;
-    }
-    form input{
-    margin:2vh
-  }
-  form textarea {
-    padding: 3vh;
-    margin:2vh
-  }
-    form button.tag {
-      width: 60%;
-    }
-    .contact button.close {
-      left: 82vw;
-      top: 1vh;
-    }
-  }
-  @media screen and (min-width: 576px)  and (max-width: 1200px){
-    section.contact {
-      align-items: center;
-      text-align: center;
-      background-color: var(--colorBlueLight);
-      border: 1vh solid  var(--colorButtonBlue);
-      display: none;
-      flex-direction: row;
-      height: 95vh;
-      justify-content: space-evenly;
-      left: 5vw;
-      position: fixed;
-      top: 0.1vh;
-      width: 90vw;
-      z-index: 4;
-    }
-  }
+}

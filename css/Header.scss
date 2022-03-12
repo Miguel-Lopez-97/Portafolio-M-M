@@ -1,179 +1,155 @@
 /*Header*/
 header {
-    align-items: center;
-    background-color: var(--colorBlueTitle);
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+  align-items: center;
+  background-color: var(--colorBlueTitle);
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+}
+header ul {
+  align-items: center;
+  display: flex;
+  height: 80%;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header ul li {
+  text-align: center;
+  width: 20%;
+}
+header ul li a {
+  color: var(--colorBackgroundMain);
+  font-family: "Source Serif Pro", serif;
+  font-size: 2vw;
+  text-decoration: none;
+}
+header ul li a:hover {
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  color: var(--colorList);
+  font-family: "Source Serif Pro", serif;
+  font-size: 2.3vw;
+  text-decoration: underline dotted var(--colorList);
+}
+#contact {
+  background: transparent;
+  border: none;
+  display: flex;
+  height: 7vh;
+  width: 7vh;
+}
+#contact_img {
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 0.5vh solid var(--colorButtonGreen);
+  height: 6vh;
+  width: 6vh;
+}
+#contact_img:hover {
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  border: 0.7vh solid var(--colorButtonGreenHover);
+  transition: 0.1s;
+}
+@media screen and (max-width: 576px) {
+  a:hover {
+    font-size: 6.5vw;
+  }
+
+  header {
+    height: auto;
+    min-height: 40px;
+    z-index: 2;
   }
   header ul {
-    align-items: center;
-    display: flex;
-    list-style: none;
-    height: 90%;
+    display: none;
+    flex-direction: column;
+    height: 0;
+    justify-content: space-around;
   }
   header ul li {
     text-align: center;
-    width: 20vw;
+    width: 60%;
   }
   header ul li a {
-    color: var(--colorBackgroundMain);
-    font-family: "Source Serif Pro", serif;
-    font-size: 2vw;
-    text-decoration: none;
+    font-size: 6vw;
   }
-  header ul li a:hover {
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    color: var(--colorList);
-    font-family: "Source Serif Pro", serif;
-    font-size: 2.3vw;
-    text-decoration: underline dotted var(--colorList);
+  header ul li header img {
+    height: 30px;
   }
-  #contact {
-    background: transparent;
-    border: none;
-    height: 7vh;
-    position: fixed;
-    width: 7vh;
-    z-index: 3;
-  }
-  #contact_img {
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: 0.5vh solid var(--colorButtonGreen);
-    height: 6vh;
-    width: 6vh;
-  }
-  #contact_img:hover {
-    -moz-transition: 0.1s;
-    -ms-transition: 0.1s;
-    -o-transition: 0.1s;
-    -webkit-transition: 0.1s;
-    border: 0.7vh solid var(--colorButtonGreenHover);
-    transition: 0.1s;
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  a:hover {
+    font-size: 6.5vw;
   }
 
-  @media screen and (max-width: 576px){
-    header {
-      height: auto;
-      min-height: 40px;
-      padding: 2vh;
-      z-index: 2;
-    }
-    header ul {
-      display: none;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 0;
-      width: 80vw;
-    }
-    header ul li {
-      text-align: center;
-      width: 80vw;
-    }
-    header ul li a {
-      font-size: 6vw;
-    }
-    header ul li a:hover {
-      font-size: 6.5vw;
-    }
-
-    header img {
-      height: 30px;
-    }
-    #contact {
-      margin-left: 60vw;
-      margin-top: 15px;
-    }
+  header {
+    height: auto;
+    min-height: 50px;
+    padding: 2vh 0;
   }
-  @media screen and (min-width: 576px) and (max-width: 768px){
-    header {
-      height: auto;
-      min-height: 50px;
-      padding: 2vh;
-    }
-    header ul {
-      display: none;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 0;
-      width: 80vw;
-    }
-    header ul li {
-      text-align: center;
-      width: 80vw;
-    }
-    header ul li a {
-      font-size: 6vw;
-    }
-    header ul li a:hover {
-      font-size: 6.5vw;
-    }
-    header img {
-      height: 40px;
-    }
-    #contact {
-      margin-left: 70vw;
-      margin-top: 20px;
-    }
+  header ul {
+    display: none;
+    flex-direction: column;
+    height: 0;
+    justify-content: space-around;
+    width: 80vw;
   }
-  @media screen and (min-width: 768px) and (max-width: 992px){
-    header {
-      height: 10vh;
-      padding: 1vh;
-    }
-    header img {
-      height: 8vh;
-    }
-    #contact {
-      margin-left: 95vw;
-      margin-top: 3vh;
-    }
+  header ul li {
+    text-align: center;
+    width: 80vw;
   }
-  @media screen and (min-width: 992px) and (max-width: 1200px){
-    header {
-      height: 10vh;
-      padding: 2vh;
-    }
-    header img {
-      height: 9vh;
-    }
-    #contact {
-      margin-left: 92vw;
-      margin-top: 3vh;
-    }
+  header ul li a {
+    font-size: 6vw;
   }
-  @media screen and (min-width: 1200px) and (max-width: 1400px){
-    header {
-      height: 12vh;
-      padding: 2vh;
-    }
-    header img {
-      height: 10vh;
-    }
-    #contact {
-      margin-left: 92vw;
-      margin-top: 4vh;
-    }
+  header ul li header img {
+    height: 40px;
   }
-  @media screen and (min-width: 1400px) {
-    header {
-      height: 15vh;
-      padding: 2vh;
-    }
-    header img {
-      height: 13vh;
-    }
-    #contact {
-      margin-left: 95vw;
-      margin-top: 5vh;
-    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    height: 10vh;
+    padding: 1vh;
   }
+  header img {
+    height: 8vh;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
+    height: 10vh;
+    padding: 2vh;
+  }
+  header img {
+    height: 9vh;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  header {
+    height: 12vh;
+    padding: 2vh;
+  }
+  header img {
+    height: 10vh;
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    height: 15vh;
+    padding: 2vh;
+  }
+  header img {
+    height: 13vh;
+  }
+}

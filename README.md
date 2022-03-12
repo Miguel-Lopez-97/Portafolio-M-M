@@ -1,6 +1,6 @@
 # Portafolio-M-M
 
-_Este proyecto busca realizar una página empresarial profesional de mi marca personal como desarrollador, el portafolio está enfocado en mostrar mis habilidades como programador asi como localizar más ordenadamente cada uno de mis aportes, proyectos y ejercicios_
+_Este proyecto busca realizar una página empresarial profesional de mi marca personal como desarrollador, el portafolio está enfocado en mostrar mis habilidades como programador así como localizar más ordenadamente cada uno de mis aportes, proyectos y ejercicios_
 
 ## Comenzando 🚀
 

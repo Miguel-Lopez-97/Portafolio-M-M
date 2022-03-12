@@ -9,14 +9,16 @@ function menuFlex() {
     let navObject = document.getElementById("navDoc");
     if (menuFlag === false) {
       menuObject.style.zIndex = "4";
+      menuObject.style.height = "100vh";
       navObject.style.display = "flex";
-      navObject.style.height = "100vh";
+      navObject.style.height = "90%";
       body.style.overflowY = "hidden";
       menuFlag = true;
     } else {
       menuObject.style.zIndex = "2";
+      menuObject.style.height = "auto";
       navObject.style.display = "none";
-      navObject.style.height = "0vh";
+      navObject.style.height = "0";
       body.style.overflowY = "scroll";
       menuFlag = false;
     }
@@ -158,7 +160,7 @@ function professionalMainCarousel() {
       ["https://miguelmorenoportafolio.netlify.app/"],
       ["media/images/Prof_Carousel/P_Portafolio.png"],
       [
-        "Esta es my página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript vanila asi como en HTML y CSS, Para ir al despliegue de clic en la imagen superior",
+        "Esta es mi página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript puro así como en HTML y CSS, Para ir al despliegue de clic en la imagen superior",
       ],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
       ["35%","44%","21%"]
@@ -296,7 +298,7 @@ function academicMainCarousel() {
       [null],
       ["media/images/Academic_Carousel/P_BeNatural.png"],
       [
-        "Elaborado con React en el frontend y en el backend Java y SQL, trabajé como líder de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku esta pendiente, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Elaborado con React en el frontend y en el backend Java y SQL, trabajé como líder de Frontend en este proyecto colaborativo con España en la Hackathon F5 2022, la producción en Heroku está pendiente, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/hackathon-benatural"],
       ["media/ico/Ico_Web-development.png"],
@@ -307,7 +309,7 @@ function academicMainCarousel() {
       ["Landing page Nov-21"],
       ["https://miguel-lopez-jurassic-world-landingpage.netlify.app/"],
       ["media/images/Academic_Carousel/P_Jurassic_Park.png"],
-      ["Esta es mi primera pagina web de mi saga favorita, uso de CSS y HTML, Para ir al despliegue de clic en la imagen superior o en el icono de cohete."],
+      ["Esta es mi primera página web de mi saga favorita, uso de CSS y HTML, Para ir al despliegue de clic en la imagen superior o en el icono de cohete."],
       [
         "https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades",
       ],
@@ -320,7 +322,7 @@ function academicMainCarousel() {
       ["https://juegoahorcadodiplo99.netlify.app"],
       ["media/images/Academic_Carousel/P_Ahorcado.png"],
       [
-        "Este Juego del Ahorcado realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, asi como manejar una página web dinámica, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Este Juego del Ahorcado realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, así como manejar una página web dinámica, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-del-Ahorcado"],
       ["media/ico/Ico_Web-development.png"],
@@ -332,7 +334,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-api-ricky-and-morty.netlify.app/"],
       ["media/images/Academic_Carousel/P_Rick_Morty_API.png"],
       [
-        "Esta es mi primer aplicativo con el uso de ReactJS, en el cual hay renderizado de componentes de manera dinámica a partir del consumo de una API externa, asi como navegación interna y otras funcionalidades, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Esta es mi primer aplicativo con el uso de ReactJS, en el cual hay renderizado de componentes de manera dinámica a partir del consumo de una API externa, así como navegación interna y otras funcionalidades, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/rick-and-morty"],
       ["media/ico/Ico_Web-development.png"],
@@ -344,7 +346,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-valentina-rippe-tetris-game.netlify.app/"],
       ["media/images/Academic_Carousel/P_Tetris.png"],
       [
-        "Este Juego del Tetris realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, asi como manejar una página web dinámica, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Este Juego del Tetris realizado con JavaScript, permite aplicar conocimientos básicos de métodos y funciones, así como manejar una página web dinámica, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-de-Tetris"],
       ["media/ico/Ico_Web-development.png"],
@@ -356,7 +358,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-todo-list.netlify.app/"],
       ["media/images/Academic_Carousel/P_ToDoList.png"],
       [
-        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos de un CRUD aplicados en una lista de tareas diarias asi como el manejo global de estados (Redux) y comunicación entre componentes, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos de un CRUD aplicados en una lista de tareas diarias así como el manejo global de estados (Redux) y comunicación entre componentes, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/toDo-list"],
       ["media/ico/Ico_Web-development.png"],
@@ -368,7 +370,7 @@ function academicMainCarousel() {
       ["https://miguel-lopez-weather-app.netlify.app/"],
       ["media/images/Academic_Carousel/P_App_Weather.png"],
       [
-        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos del consumo de API, asi como el manejo global de estados y comunicación entre componentes, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+        "Este aplicativo desarrollado con ReactJS, cumple con los requerimientos del consumo de API, así como el manejo global de estados y comunicación entre componentes, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
       ],
       ["https://github.com/Miguel-Lopez-97/Api-Clima"],
       ["media/ico/Ico_Web-development.png"],
