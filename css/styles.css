@@ -342,7 +342,7 @@ header ul li a:hover {
     font-size: 6vw;
   }
 
-  header ul li header img {
+  header a img {
     height: 30px;
   }
 }
@@ -374,7 +374,7 @@ header ul li a:hover {
     font-size: 6vw;
   }
 
-  header ul li header img {
+  header a img {
     height: 40px;
   }
 }
