@@ -94,16 +94,14 @@
     align-self: center;
     background-color: var(--colorBackgroundGreenLightly);
     border-radius: 5vh;
-    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder),
+    box-shadow: 0.4rem 0.4rem 0 0 var(--colorButtonGreenBorder), 0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc,
+    1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
     color: var(--colorGreenBlackText);
     display: flex;
     flex-direction: column;
     height: 60vh;
     justify-content: space-evenly;
     width: 40vw;
-
-    0.7rem 0.7rem 0 0 #8caa8f, 1rem 1rem 0 0 #b9cbbb, 1.2rem 1.2rem 0 0 #dbe4dc,
-    1.2rem 1.2rem 0 0 #f1f5f2, 0.4rem 0.4rem 1rem 0.4rem rgba(0, 0, 0, 0);
   }
 .a_carousel_main:hover{
     -webkit-filter: brightness(1.1);
