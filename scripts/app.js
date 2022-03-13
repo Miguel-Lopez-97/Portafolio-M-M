@@ -22,7 +22,7 @@ function menuFlex() {
       menuFlag = true;
     } else {
       menuObject.style.zIndex = "2";
-      logoMenu.style.width = "70%"
+      logoMenu.style.width = "50%"
       menuObject.style.height = "auto";
       navObject.style.display = "none";
       menuTitle.style.display ="flex"
@@ -386,8 +386,8 @@ function academicMainCarousel() {
       ["13%","38%","49%"]
     ],
   ];
-  this.x = 0;
-  this.y = 1;
+  this.x = 6;
+  this.y = 7;
 
   this.loadMatrixAcademical = function (x, y) {
     document.getElementById("a_carousel_main_0").style.opacity = 0.1;
@@ -434,9 +434,11 @@ function academicMainCarousel() {
   };
 
   this.changeMatrixAcademicalLeft = function () {
-    if (this.x===0) {
+    if (window.screen.width > 769)
+    {if (this.x===0) {
       this.x = this.dataMatrix.length - 1;
-    } else {
+    }
+    else {
       this.x--;
     }
     if (this.y===0) {
@@ -444,10 +446,20 @@ function academicMainCarousel() {
     } else {
       this.y--;
     }
-    this.loadMatrixAcademical(this.x, this.y);
+    this.loadMatrixAcademical(this.x, this.y);}
+    else{
+      if (this.x===0) {
+        this.x = this.dataMatrix.length - 1;
+      } else {
+        this.x--;
+      }
+    this.loadMatrixAcademical(this.x, this.x);
+    }
+    
   };
   this.changeMatrixAcademicalRight = function () {
-    if (this.x===this.dataMatrix.length - 1) {
+    if (window.screen.width > 769){
+      if (this.x===this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
@@ -459,6 +471,16 @@ function academicMainCarousel() {
     }
 
     this.loadMatrixAcademical(this.x, this.y);
+    }
+    else{
+      if (this.x===this.dataMatrix.length-1) {
+        this.x = 0;
+      } else {
+        this.x++;
+      }
+    this.loadMatrixAcademical(this.x, this.x);
+    }
+    
   };
   this.changeMatrixAcademical = function (a, b) {
     this.loadMatrixAcademical(a, b);

@@ -78,6 +78,14 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h1 {
   color: var(--colorBlueTitle);
   font-family: "Source Code Pro", monospace;
@@ -106,7 +114,7 @@ h3 {
 p {
   color: var(--colorBlackText);
   font-family: "Oswald", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   font-weight: normal;
 }
 
@@ -1141,7 +1149,7 @@ button.close:hover {
 
   .about-me {
     justify-content: center;
-    max-height: 400px;
+    max-height: 500px;
     width: 70vw;
   }
   .about-me .about-me_buttons {
@@ -1216,7 +1224,7 @@ button.close:hover {
   .about-me {
     justify-content: center;
     margin: 15px;
-    max-height: 450px;
+    max-height: 580px;
     max-width: 300px;
     width: 70vw;
   }
@@ -1561,7 +1569,7 @@ button.timeLine,
   display: none;
   flex-direction: column;
   height: 60vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
   position: absolute;
   width: 40vw;
 }
@@ -1574,7 +1582,8 @@ button.timeLine,
 }
 
 .a_image_principal button {
-  margin-left: 35vw;
+  margin-left: 70%;
+  margin-bottom: 60%;
 }
 
 @media screen and (max-width: 576px) {
@@ -1639,6 +1648,11 @@ button.timeLine,
     margin: 2vh;
     max-width: 400px;
     width: 90vw;
+  }
+
+  .a_carousel_main .description_links img, .a_carousel_main .description_links a img {
+    width: 50px;
+    height: 50px;
   }
 
   .academic_carousel .description_text {
@@ -1731,6 +1745,15 @@ button.timeLine,
     margin: 2vh;
     max-width: 550px;
     width: 70vw;
+  }
+
+  .a_carousel_main .description_links img, .a_carousel_main .description_links a img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .a_carousel_main .description_links button.tag {
+    width: 60px;
   }
 
   .academic_carousel .description_text {
@@ -2247,7 +2270,8 @@ section.carousel {
     display: none;
   }
 
-  .professional button.carousel, .academic button.carousel {
+  .professional button.carousel,
+.academic button.carousel {
     display: none;
   }
 
@@ -2300,6 +2324,14 @@ section.carousel {
     margin-left: 50vw;
     width: 5vh;
   }
+
+  .description_text {
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
   .repositories {
@@ -2334,7 +2366,8 @@ section.carousel {
     display: none;
   }
 
-  .professional button.carousel, .academic button.carousel {
+  .professional button.carousel,
+.academic button.carousel {
     display: none;
   }
 
@@ -2441,7 +2474,7 @@ section.carousel {
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 20vh;
+  height: auto;
   justify-content: space-around;
   padding: 2vh;
 }
@@ -2456,7 +2489,7 @@ section.carousel {
   color: var(--colorBlackText);
   display: flex;
   display: flex;
-  height: 20vh;
+  height: auto;
   justify-content: center;
   padding: 1vh;
   text-align: justify;
