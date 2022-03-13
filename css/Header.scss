@@ -14,8 +14,17 @@ header ul {
   align-items: center;
   display: flex;
   height: 80%;
+  width: auto;
   justify-content: space-evenly;
   list-style: none;
+}
+header a{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header a h2{
+  display: none;
 }
 header ul li {
   text-align: center;
@@ -75,6 +84,7 @@ header ul li a:hover {
     display: none;
     flex-direction: column;
     height: 0;
+    align-items: center;
     justify-content: space-around;
   }
   header ul li {
@@ -84,8 +94,16 @@ header ul li a:hover {
   header ul li a {
     font-size: 6vw;
   } 
-  header a {
+  header a{
+    display: flex;
+    justify-content: space-between;
     height: 100%;
+    width: 50%;
+    max-width: 250px;
+  }
+  header a h2{
+    display: flex;
+    color: var(--colorList);
   }
   header a img {
     max-height: 50px;
@@ -104,19 +122,29 @@ header ul li a:hover {
   header ul {
     display: none;
     flex-direction: column;
+    align-items: center;
     height: 0;
     justify-content: space-around;
-    width: 80vw;
   }
   header ul li {
     text-align: center;
-    width: 80vw;
+    width: 100%;
+    padding: 2vh;
   }
   header ul li a {
+    width: 100%;
     font-size: 6vw;
   }
-  header a {
+  header a{
+    display: flex;
+    justify-content: space-between;
     height: 100%;
+    width: 40%;
+    max-width: 400px;
+  }
+  header a h2{
+    display: flex;
+    color: var(--colorList);
   }
   header a img {
     height: 95%;
