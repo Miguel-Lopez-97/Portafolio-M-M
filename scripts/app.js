@@ -7,20 +7,29 @@ function menuFlex() {
   if (window.screen.width < 769) {
     let menuObject = document.getElementById("headerDoc");
     let navObject = document.getElementById("navDoc");
+    let menuTitle = document.getElementById("menu");
+    let logoMenu = document.getElementById("logoMenu");
+    let contactButton = document.getElementById("contact");
     if (menuFlag === false) {
       menuObject.style.zIndex = "4";
       menuObject.style.height = "100vh";
       navObject.style.display = "flex";
+      logoMenu.style.width = "20%"
       navObject.style.height = "90%";
+      menuTitle.style.display ="none"
+      contactButton.style.display ="none"
       body.style.overflowY = "hidden";
       menuFlag = true;
     } else {
       menuObject.style.zIndex = "2";
+      logoMenu.style.width = "70%"
       menuObject.style.height = "auto";
       navObject.style.display = "none";
+      menuTitle.style.display ="flex"
       navObject.style.height = "0";
       body.style.overflowY = "scroll";
       menuFlag = false;
+      contactButton.style.display ="flex"
     }
   } else {
     null;
