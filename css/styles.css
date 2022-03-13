@@ -100,8 +100,6 @@ h2 {
   font-family: "Architects Daughter", cursive;
   font-size: 1.5rem;
   font-weight: bold;
-  text-decoration: underline wavy var(--colorBlueTitle);
-  text-shadow: 0px 4px 0px var(--colorBlueLight);
 }
 
 h3 {
@@ -835,25 +833,31 @@ button.carousel:hover {
   -ms-border-radius: 2vh;
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
-  align-items: center;
+  align-items: left;
   background-color: var(--colorBackgroundBlue);
   border-radius: 2vh;
   display: flex;
+  flex-direction: column;
   height: 50%;
   justify-content: center;
   overflow: auto;
-  padding: 2vh;
-  width: 90%;
+  padding: 3vh;
+  text-align: left;
+  width: 80%;
 }
 
 .about-me_description p:first-child {
-  margin-top: 2vh;
-  padding-top: 2vh;
+  margin-top: 25vh;
+}
+
+.skills p {
+  width: auto;
 }
 
 #Web-develop.about-me_description p,
 #engineering.about-me_description p {
   overflow-y: scroll;
+  width: auto;
   padding-right: 1vw;
 }
 
@@ -1152,6 +1156,9 @@ button.close:hover {
     max-height: 500px;
     width: 70vw;
   }
+  .about-me .about-me_description p:first-child {
+    margin-top: 2vh;
+  }
   .about-me .about-me_buttons {
     flex-direction: column;
     height: auto;
@@ -1227,6 +1234,10 @@ button.close:hover {
     max-height: 580px;
     max-width: 300px;
     width: 70vw;
+  }
+
+  .about-me_description p:first-child {
+    margin-top: 5vh;
   }
 
   .about-me_buttons {
@@ -2075,7 +2086,7 @@ section.carousel {
 
 .tag {
   align-items: center;
-  height: 5vh;
+  height: auto;
   justify-content: center;
   margin-left: 2%;
   padding: 2%;
@@ -2299,8 +2310,7 @@ section.carousel {
   }
 
   .prof_main_overlay {
-    height: auto;
-    width: 30vw;
+    display: none;
   }
 
   .professional_carousel .description_links a {
@@ -2395,8 +2405,7 @@ section.carousel {
   }
 
   .prof_main_overlay {
-    height: auto;
-    width: 30vw;
+    display: none;
   }
 
   .professional_carousel .description_links a {
