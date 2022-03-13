@@ -243,7 +243,7 @@ section.carousel {
 }
 .tag {
   align-items: center;
-  height: 5vh;
+  height: auto;
   justify-content: center;
   margin-left: 2%;
   padding: 2%;
@@ -440,8 +440,7 @@ section.carousel {
     width: 80vw;
   }
   .prof_main_overlay {
-    height: auto;
-    width: 30vw;
+    display: none;
   }
   .professional_carousel .description_links a {
     display: flex;
@@ -520,9 +519,7 @@ section.carousel {
     max-height: 450px;
     width: 70vw;
   }
-  .prof_main_overlay {
-    height: auto;
-    width: 30vw;
+  .prof_main_overlay {display: none;
   }
   .professional_carousel .description_links a {
     display: flex;

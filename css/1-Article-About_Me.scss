@@ -190,23 +190,28 @@ button.carousel:hover {
   -ms-border-radius: 2vh;
   -o-border-radius: 2vh;
   -webkit-border-radius: 2vh;
-  align-items: center;
+  align-items: left;
   background-color: var(--colorBackgroundBlue);
   border-radius: 2vh;
   display: flex;
+  flex-direction: column;
   height: 50%;
   justify-content: center;
   overflow: auto;
-  padding: 2vh;
-  width: 90%;
+  padding: 3vh;
+  text-align: left;
+  width: 80%;
 }
 .about-me_description p:first-child {
-  margin-top: 2vh;
-  padding-top: 2vh;
+  margin-top: 25vh;
 }
+  
+.skills p {width: auto};
+
 #Web-develop.about-me_description p,
 #engineering.about-me_description p {
   overflow-y: scroll;
+  width: auto;
   padding-right: 1vw;
 }
 .about-me_buttons {
@@ -472,7 +477,9 @@ button.close:hover {
     justify-content: center;
     max-height: 500px;
     width: 70vw;
-
+    .about-me_description p:first-child {
+      margin-top: 2vh;
+    }
     .about-me_buttons {
       flex-direction: column;
       height: auto;
@@ -541,6 +548,9 @@ button.close:hover {
     max-height: 580px;
     max-width: 300px;
     width: 70vw;
+  }
+  .about-me_description p:first-child {
+    margin-top: 5vh;
   }
   .about-me_buttons {
     flex-direction: row;

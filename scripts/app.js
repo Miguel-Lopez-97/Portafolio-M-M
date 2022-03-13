@@ -14,22 +14,22 @@ function menuFlex() {
       menuObject.style.zIndex = "4";
       menuObject.style.height = "100vh";
       navObject.style.display = "flex";
-      logoMenu.style.width = "20%"
+      logoMenu.style.width = "20%";
       navObject.style.height = "90%";
-      menuTitle.style.display ="none"
-      contactButton.style.display ="none"
+      menuTitle.style.display = "none";
+      contactButton.style.display = "none";
       body.style.overflowY = "hidden";
       menuFlag = true;
     } else {
       menuObject.style.zIndex = "2";
-      logoMenu.style.width = "50%"
+      logoMenu.style.width = "50%";
       menuObject.style.height = "auto";
       navObject.style.display = "none";
-      menuTitle.style.display ="flex"
+      menuTitle.style.display = "flex";
       navObject.style.height = "0";
       body.style.overflowY = "scroll";
       menuFlag = false;
-      contactButton.style.display ="flex"
+      contactButton.style.display = "flex";
     }
   } else {
     null;
@@ -38,30 +38,39 @@ function menuFlex() {
 
 function mainCarousel() {
   let imageMainCarousel = document.getElementById("introduce_carousel_image");
-  if (window.screen.width >= 1024){
-  this.changeRouteImage =
-    "media/images/AboutMe_Carousel/Diapositiva" + numberChangeIntroduce + ".PNG";
-  imageMainCarousel.src = this.changeRouteImage;}
-  if (768 < window.screen.width < 1024){
+  if (window.screen.width >= 1024) {
     this.changeRouteImage =
-      "media/images/AboutMe_Carousel/Diapositiva_T_" + numberChangeIntroduce + ".PNG";
-    imageMainCarousel.src = this.changeRouteImage;}
-    if (window.screen.width <= 768){
-      this.changeRouteImage =
-        "media/images/AboutMe_Carousel/Diapositiva_M_" + numberChangeIntroduce + ".PNG";
-      imageMainCarousel.src = this.changeRouteImage;}
+      "media/images/AboutMe_Carousel/Diapositiva" +
+      numberChangeIntroduce +
+      ".PNG";
+    imageMainCarousel.src = this.changeRouteImage;
+  }
+  if (768 < window.screen.width < 1024) {
+    this.changeRouteImage =
+      "media/images/AboutMe_Carousel/Diapositiva_T_" +
+      numberChangeIntroduce +
+      ".PNG";
+    imageMainCarousel.src = this.changeRouteImage;
+  }
+  if (window.screen.width <= 768) {
+    this.changeRouteImage =
+      "media/images/AboutMe_Carousel/Diapositiva_M_" +
+      numberChangeIntroduce +
+      ".PNG";
+    imageMainCarousel.src = this.changeRouteImage;
+  }
 }
 
 let carousel1 = function () {
-  numberChangeIntroduce=1;
+  numberChangeIntroduce = 1;
   mainCarousel();
 };
 let carousel2 = function () {
-  numberChangeIntroduce=2;
+  numberChangeIntroduce = 2;
   mainCarousel();
 };
 let carousel3 = function () {
-  numberChangeIntroduce=3;
+  numberChangeIntroduce = 3;
   mainCarousel();
 };
 
@@ -134,7 +143,7 @@ let contact_Open = function () {
 
 function time() {
   let imageMainCarousel = document.getElementById("introduce_carousel_image");
-    setTimeout(function () {
+  setTimeout(function () {
     imageMainCarousel.style.opacity = 0.1;
     if (numberChangeIntroduce < 3) {
       numberChangeIntroduce++;
@@ -147,8 +156,7 @@ function time() {
   setTimeout(function () {
     imageMainCarousel.style.opacity = 1;
   }, 29500);
-  }
-
+}
 
 function professionalMainCarousel() {
   this.dataMatrix = [
@@ -161,7 +169,7 @@ function professionalMainCarousel() {
         "Este proyecto fue desarrollado como Full Stack en MERN, consiste en un CRUD para listar tareas las cuales almacena el Backend enlazado con MongoAtlas, Para ir al despliegue de clic en la imagen superior",
       ],
       ["https://github.com/Miguel-Lopez-97/TodoListFloresDelTambo"],
-      ["3%","17%","80%"]
+      ["3%", "17%", "80%"],
     ],
     [
       ["Portfolio M&M"],
@@ -172,7 +180,7 @@ function professionalMainCarousel() {
         "Esta es mi página principal sobre mi trabajo como Desarrollo Web, desarrollada en JavaScript puro así como en HTML y CSS, Para ir al despliegue de clic en la imagen superior",
       ],
       ["https://github.com/Miguel-Lopez-97/Portafolio-M-M"],
-      ["35%","44%","21%"]
+      ["35%", "44%", "21%"],
     ],
     [
       ["Pokédex"],
@@ -183,7 +191,7 @@ function professionalMainCarousel() {
         "Esta Aplicación de ReactJS, permite Utilizar conceptos avanzados de renderización, consumo dinámico de APIs así como navegación interna, este proyecto sigue en mejoramiento continuo con la finalidad de añadir más funcionalidades, Para ir al despliegue de clic en la imagen superior",
       ],
       ["https://github.com/Miguel-Lopez-97/Pokedex"],
-      ["3%","21%","76%"]
+      ["3%", "21%", "76%"],
     ],
     [
       ["Kyrio's Pizza"],
@@ -194,7 +202,7 @@ function professionalMainCarousel() {
         "Este MarketPlace Realizado con ReactJS para un negocio de comidas rápidas real, le permite a los clientes interactuar con el menú disponible, añadir sus compras al carrito y enviar su pedido directamente al restaurante, Para ir al despliegue de clic en la imagen superior",
       ],
       ["https://github.com/Miguel-Lopez-97/kyrios-pizza"],
-      ["1%","40%","59%"]
+      ["1%", "40%", "59%"],
     ],
   ];
   this.x = 0;
@@ -225,12 +233,15 @@ function professionalMainCarousel() {
       this.dataMatrix[y][4];
     document.getElementById("prof_main_img_github_0").href =
       this.dataMatrix[y][5];
-    document.getElementById("p_tag_html_0").style.width=this.dataMatrix[y][6][0];
-    document.getElementById("p_tag_css_0").style.width=this.dataMatrix[y][6][1];
-    document.getElementById("p_tag_js_0").style.width=this.dataMatrix[y][6][2];
-    document.getElementById("p_tag_html").innerHTML=this.dataMatrix[y][6][0];
-    document.getElementById("p_tag_css").innerHTML=this.dataMatrix[y][6][1];
-    document.getElementById("p_tag_js").innerHTML=this.dataMatrix[y][6][2];
+    document.getElementById("p_tag_html_0").style.width =
+      this.dataMatrix[y][6][0];
+    document.getElementById("p_tag_css_0").style.width =
+      this.dataMatrix[y][6][1];
+    document.getElementById("p_tag_js_0").style.width =
+      this.dataMatrix[y][6][2];
+    document.getElementById("p_tag_html").innerHTML = this.dataMatrix[y][6][0];
+    document.getElementById("p_tag_css").innerHTML = this.dataMatrix[y][6][1];
+    document.getElementById("p_tag_js").innerHTML = this.dataMatrix[y][6][2];
 
     document.getElementById("prof_main_name_1").innerHTML =
       this.dataMatrix[z][0];
@@ -244,20 +255,19 @@ function professionalMainCarousel() {
       document.getElementById("prof_carousel_main_0").style.opacity = 1;
       document.getElementById("prof_carousel_aux_2").style.opacity = 1;
     }, 500);
-  
   };
   this.changeMatrixProfessionalRight = function () {
-    if (this.x===0) {
+    if (this.x === 0) {
       this.x = this.dataMatrix.length - 1;
     } else {
       this.x--;
     }
-    if (this.y===0) {
+    if (this.y === 0) {
       this.y = this.dataMatrix.length - 1;
     } else {
       this.y--;
     }
-    if (this.z===0) {
+    if (this.z === 0) {
       this.z = this.dataMatrix.length - 1;
     } else {
       this.z--;
@@ -265,17 +275,17 @@ function professionalMainCarousel() {
     this.loadMatrixProfessional(this.x, this.y, this.z);
   };
   this.changeMatrixProfessionalLeft = function () {
-    if (this.x===this.dataMatrix.length - 1) {
+    if (this.x === this.dataMatrix.length - 1) {
       this.x = 0;
     } else {
       this.x++;
     }
-    if (this.y===this.dataMatrix.length - 1) {
+    if (this.y === this.dataMatrix.length - 1) {
       this.y = 0;
     } else {
       this.y++;
     }
-    if (this.z===this.dataMatrix.length - 1) {
+    if (this.z === this.dataMatrix.length - 1) {
       this.z = 0;
     } else {
       this.z++;
@@ -299,7 +309,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego_Calabozos"],
       ["media/ico/Ico_Web-development.png"],
-      ["13%","0%","87%"]
+      ["13%", "0%", "87%"],
     ],
     [
       ["Hackathon-Benatural"],
@@ -311,19 +321,21 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/hackathon-benatural"],
       ["media/ico/Ico_Web-development.png"],
-      ["2%","40%", "45%"]
+      ["2%", "40%", "45%"],
     ],
     [
       ["Jurassic Park"],
       ["Landing page Nov-21"],
       ["https://miguel-lopez-jurassic-world-landingpage.netlify.app/"],
       ["media/images/Academic_Carousel/P_Jurassic_Park.png"],
-      ["Esta es mi primera página web de mi saga favorita, uso de CSS y HTML, Para ir al despliegue de clic en la imagen superior o en el icono de cohete."],
+      [
+        "Esta es mi primera página web de mi saga favorita, uso de CSS y HTML, Para ir al despliegue de clic en la imagen superior o en el icono de cohete.",
+      ],
       [
         "https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades",
       ],
       ["media/ico/Ico_Web-development.png"],
-      ["51%","49%", "0%"]
+      ["51%", "49%", "0%"],
     ],
     [
       ["Hangman Game"],
@@ -335,7 +347,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-del-Ahorcado"],
       ["media/ico/Ico_Web-development.png"],
-      ["21%", "31%", "48%"]
+      ["21%", "31%", "48%"],
     ],
     [
       ["Rick and Morty"],
@@ -347,7 +359,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/rick-and-morty"],
       ["media/ico/Ico_Web-development.png"],
-      ["2%","22%","76%"]
+      ["2%", "22%", "76%"],
     ],
     [
       ["Tetris Game"],
@@ -359,7 +371,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Juego-de-Tetris"],
       ["media/ico/Ico_Web-development.png"],
-      ["11%","14%","75%"]
+      ["11%", "14%", "75%"],
     ],
     [
       ["To Do List App"],
@@ -371,7 +383,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/toDo-list"],
       ["media/ico/Ico_Web-development.png"],
-      ["5%","31%","64%"]
+      ["5%", "31%", "64%"],
     ],
     [
       ["App Weather"],
@@ -383,7 +395,7 @@ function academicMainCarousel() {
       ],
       ["https://github.com/Miguel-Lopez-97/Api-Clima"],
       ["media/ico/Ico_Web-development.png"],
-      ["13%","38%","49%"]
+      ["13%", "38%", "49%"],
     ],
   ];
   this.x = 6;
@@ -403,12 +415,18 @@ function academicMainCarousel() {
     document.getElementById("a_main_key_0").innerHTML = this.dataMatrix[x][1];
     document.getElementById("a_main_text_0").innerHTML = this.dataMatrix[x][4];
 
-    document.getElementById("a_tag_html_0").style.width=this.dataMatrix[x][7][0];
-    document.getElementById("a_tag_css_0").style.width=this.dataMatrix[x][7][1];
-    document.getElementById("a_tag_js_0").style.width=this.dataMatrix[x][7][2];
-    document.getElementById("p_a_tag_html_0").innerHTML=this.dataMatrix[x][7][0];
-    document.getElementById("p_a_tag_css_0").innerHTML=this.dataMatrix[x][7][1];
-    document.getElementById("p_a_tag_js_0").innerHTML=this.dataMatrix[x][7][2];
+    document.getElementById("a_tag_html_0").style.width =
+      this.dataMatrix[x][7][0];
+    document.getElementById("a_tag_css_0").style.width =
+      this.dataMatrix[x][7][1];
+    document.getElementById("a_tag_js_0").style.width =
+      this.dataMatrix[x][7][2];
+    document.getElementById("p_a_tag_html_0").innerHTML =
+      this.dataMatrix[x][7][0];
+    document.getElementById("p_a_tag_css_0").innerHTML =
+      this.dataMatrix[x][7][1];
+    document.getElementById("p_a_tag_js_0").innerHTML =
+      this.dataMatrix[x][7][2];
 
     document.getElementById("a_main_img_1").src = this.dataMatrix[y][3];
     document.getElementById("a_main_imgclass_1").src = this.dataMatrix[y][6];
@@ -420,13 +438,19 @@ function academicMainCarousel() {
     document.getElementById("a_main_key_1").innerHTML = this.dataMatrix[y][1];
     document.getElementById("a_main_text_1").innerHTML = this.dataMatrix[y][4];
 
-    document.getElementById("a_tag_html_1").style.width=this.dataMatrix[y][7][0];
-    document.getElementById("a_tag_css_1").style.width=this.dataMatrix[y][7][1];
-    document.getElementById("a_tag_js_1").style.width=this.dataMatrix[y][7][2];
-    document.getElementById("p_a_tag_html_1").innerHTML=this.dataMatrix[y][7][0];
-    document.getElementById("p_a_tag_css_1").innerHTML=this.dataMatrix[y][7][1];
-    document.getElementById("p_a_tag_js_1").innerHTML=this.dataMatrix[y][7][2];
-    
+    document.getElementById("a_tag_html_1").style.width =
+      this.dataMatrix[y][7][0];
+    document.getElementById("a_tag_css_1").style.width =
+      this.dataMatrix[y][7][1];
+    document.getElementById("a_tag_js_1").style.width =
+      this.dataMatrix[y][7][2];
+    document.getElementById("p_a_tag_html_1").innerHTML =
+      this.dataMatrix[y][7][0];
+    document.getElementById("p_a_tag_css_1").innerHTML =
+      this.dataMatrix[y][7][1];
+    document.getElementById("p_a_tag_js_1").innerHTML =
+      this.dataMatrix[y][7][2];
+
     setTimeout(function () {
       document.getElementById("a_carousel_main_0").style.opacity = 1;
       document.getElementById("a_carousel_main_1").style.opacity = 1;
@@ -434,53 +458,49 @@ function academicMainCarousel() {
   };
 
   this.changeMatrixAcademicalLeft = function () {
-    if (window.screen.width > 769)
-    {if (this.x===0) {
-      this.x = this.dataMatrix.length - 1;
-    }
-    else {
-      this.x--;
-    }
-    if (this.y===0) {
-      this.y = this.dataMatrix.length - 1;
-    } else {
-      this.y--;
-    }
-    this.loadMatrixAcademical(this.x, this.y);}
-    else{
-      if (this.x===0) {
+    if (window.screen.width > 769) {
+      if (this.x === 0) {
         this.x = this.dataMatrix.length - 1;
       } else {
         this.x--;
       }
-    this.loadMatrixAcademical(this.x, this.x);
+      if (this.y === 0) {
+        this.y = this.dataMatrix.length - 1;
+      } else {
+        this.y--;
+      }
+      this.loadMatrixAcademical(this.x, this.y);
+    } else {
+      if (this.x === 0) {
+        this.x = this.dataMatrix.length - 1;
+      } else {
+        this.x--;
+      }
+      this.loadMatrixAcademical(this.x, this.x);
     }
-    
   };
   this.changeMatrixAcademicalRight = function () {
-    if (window.screen.width > 769){
-      if (this.x===this.dataMatrix.length - 1) {
-      this.x = 0;
-    } else {
-      this.x++;
-    }
-    if (this.y===this.dataMatrix.length - 1) {
-      this.y = 0;
-    } else {
-      this.y++;
-    }
-
-    this.loadMatrixAcademical(this.x, this.y);
-    }
-    else{
-      if (this.x===this.dataMatrix.length-1) {
+    if (window.screen.width > 769) {
+      if (this.x === this.dataMatrix.length - 1) {
         this.x = 0;
       } else {
         this.x++;
       }
-    this.loadMatrixAcademical(this.x, this.x);
+      if (this.y === this.dataMatrix.length - 1) {
+        this.y = 0;
+      } else {
+        this.y++;
+      }
+
+      this.loadMatrixAcademical(this.x, this.y);
+    } else {
+      if (this.x === this.dataMatrix.length - 1) {
+        this.x = 0;
+      } else {
+        this.x++;
+      }
+      this.loadMatrixAcademical(this.x, this.x);
     }
-    
   };
   this.changeMatrixAcademical = function (a, b) {
     this.loadMatrixAcademical(a, b);
@@ -557,21 +577,21 @@ function socialMainCarousel() {
     document.getElementById("s_main_name").innerHTML = this.dataMatrix[x][1];
     document.getElementById("s_main_key").innerHTML = this.dataMatrix[x][2];
     document.getElementById("s_main_text").innerHTML = this.dataMatrix[x][3];
-    if (this.dataMatrix[x][4]==="N/A") {
+    if (this.dataMatrix[x][4] === "N/A") {
       Close("s_main_link_github");
     } else {
       document.getElementById("s_main_link_github").href =
         this.dataMatrix[x][4];
       Open("s_main_link_github");
     }
-    if (this.dataMatrix[x][5]==="N/A") {
+    if (this.dataMatrix[x][5] === "N/A") {
       Close("s_main_link_linkedin");
     } else {
       document.getElementById("s_main_link_linkedin").href =
         this.dataMatrix[x][5];
       Open("s_main_link_linkedin");
     }
-    if (this.dataMatrix[x][6]==="N/A") {
+    if (this.dataMatrix[x][6] === "N/A") {
       Close("s_main_link_deploy");
     } else {
       document.getElementById("s_main_link_deploy").href =
@@ -581,37 +601,57 @@ function socialMainCarousel() {
   };
 }
 let numberSocial = 0;
+let segNow=0;
 function time1() {
-  this.timeNow = new Date();
-  this.segNow = this.timeNow.getSeconds();
-  if (segNow===58) {
-    if (numberSocial < socialRecommendation.dataMatrix.length) {
+  
+  setTimeout(function () {
+      console.log(numberSocial, "init");
       this.widthValue = 0 + "%";
       document.getElementById("s_main_bar").style.width = this.widthValue;
       document.getElementById("s_carousel_main").style.opacity = 0;
-      numberSocial++;
-    } if(numberSocial === socialRecommendation.dataMatrix.length) {
-      numberSocial = 0;
-    }
-  }
-}
-function time2() {
-  this.timeNow = new Date();
-  this.segNow =
-    this.timeNow.getSeconds() * 1000 + this.timeNow.getMilliseconds();
-  if (segNow < 57800) {
-    this.width = 0.0018 * segNow;
-    this.widthValue = this.width + "%";
-    document.getElementById("s_main_bar").style.width = this.widthValue;
-    document.getElementById("s_carousel_main").style.transition =
-      "opacity 0.5s";
-  } if (segNow > 58800) {
-    this.widthValue = 0 + "%";
-    socialRecommendation.loadMatrixSocial(numberSocial);
-    document.getElementById("s_main_bar").style.width = this.widthValue;
+  }, 10);
+
+  setTimeout(function () {
     document.getElementById("s_carousel_main").style.opacity = 1;
-  }
+    document.getElementById("s_main_bar").style.opacity = 1;
+  }, 1000);
+
+  /* setTimeout(function () {
+    setInterval(function () {
+      if (segNow < 2750) {
+        this.width = 0.036 * segNow;
+        this.widthValue = this.width + "%";
+        document.getElementById("s_main_bar").style.width = this.widthValue;
+        console.log(segNow, "--",this.widthValue);
+        segNow++;
+        }
+        else{
+          document.getElementById("s_main_bar").style.opacity=0;
+          document.getElementById("s_main_bar").style.width = "0%";
+          segNow=0;
+        };
+      }, 10)
+  }, 1500); */
+
+  setTimeout(function () {
+    document.getElementById("s_carousel_main").style.opacity = 0;
+    document.getElementById("s_main_bar").style.opacity = 0;
+    numberSocial++;
+    console.log(numberSocial, "neww");
+  }, 28500);
+
+  setTimeout(function () {
+    if (numberSocial < socialRecommendation.dataMatrix.length) {
+      socialRecommendation.loadMatrixSocial(numberSocial);
+    }
+    if (numberSocial === socialRecommendation.dataMatrix.length) {
+      numberSocial = 0;
+      socialRecommendation.loadMatrixSocial(numberSocial);
+      console.log(numberSocial, "reset");
+    }
+    }, 29500);
 }
+
 let professionalRepository;
 let academicalRepository;
 let socialRecommendation;
@@ -623,21 +663,21 @@ function principal() {
   academicalRepository.loadMatrixAcademical(6, 7);
   socialMainCarousel();
   socialRecommendation.loadMatrixSocial(0);
-  document.getElementById("number_professional_projects").innerHTML=professionalRepository.dataMatrix.length;
-  document.getElementById("number_academic_projects").innerHTML=academicalRepository.dataMatrix.length;
+  document.getElementById("number_professional_projects").innerHTML =
+    professionalRepository.dataMatrix.length;
+  document.getElementById("number_academic_projects").innerHTML =
+    academicalRepository.dataMatrix.length;
 }
 function init() {
   professionalRepository = new professionalMainCarousel();
   academicalRepository = new academicMainCarousel();
   socialRecommendation = new socialMainCarousel();
   principal();
+  time1();
   setInterval(function () {
     time();
   }, 30000);
   setInterval(function () {
     time1();
-  }, 500);
-  setInterval(function () {
-    time2();
-  }, 100);
+  }, 30000);
 }
