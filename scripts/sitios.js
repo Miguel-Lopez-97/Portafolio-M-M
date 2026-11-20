@@ -193,6 +193,8 @@ function pintarCifras() {
   const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
   set("sitios_total", total);
   set("sitios_aem", aem);
+  document.querySelectorAll("[data-cifra=total]").forEach((el) => { el.textContent = total; });
+  document.querySelectorAll("[data-cifra=aem]").forEach((el) => { el.textContent = aem; });
   const desde = Math.min(...anios), hasta = Math.max(...anios);
   set("sitios_anios", hasta - desde + 1);
   set("sitios_rango", `años · ${desde}–${hasta}`);

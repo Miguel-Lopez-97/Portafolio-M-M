@@ -5,60 +5,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Miguel Lopez</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Miguel Ángel Moreno López · Web, datos e IA</title>
+    <meta name="description" content="Construyo sitios, mido lo que pasa en ellos y automatizo con datos e IA. 23 sitios web en WordPress, Adobe Experience Manager y código; analítica, tableros y asistentes con IA generativa.">
+    <meta name="theme-color" content="#124559">
+    <link rel="canonical" href="https://miguelmorenoportafolio.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:url" content="https://miguelmorenoportafolio.netlify.app/">
+    <meta property="og:title" content="Miguel Ángel Moreno López · Web, datos e IA">
+    <meta property="og:description" content="Construyo sitios, mido lo que pasa en ellos y automatizo con datos e IA.">
+    <meta property="og:image" content="https://miguelmorenoportafolio.netlify.app/media/og-portafolio.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/png" href="media/ico/favicon-64.png">
+    <link rel="apple-touch-icon" href="media/ico/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@400;500;700&family=Source+Code+Pro:wght@500;700&family=Source+Serif+Pro:wght@700&display=swap">
     <link rel="stylesheet" href="css/tokens.css">
-    <link rel="stylesheet" href="css/sitios.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/sitios.css">
     <link rel="stylesheet" href="css/trayectoria.css">
-    <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="scripts/app.js"></script>
+    <script src="scripts/app.js" defer></script>
     <script src="scripts/sitios.js" defer></script>
 </head>
 
-<body onload="init();" id="body">
-    <header id="headerDoc">
-        <a href="#a_introduce" onclick="menuFlex()" id="logoMenu">
-            <img loading="lazy" src="media/ico/Ico_Logo-M&Mv1.png" alt="">
-            <h2 id="menu">Menú</h2>
-        </a>
-        <ul id="navDoc">
-            <li><a href="#a_about-Me" onclick="menuFlex()">Acerca de mí</a></li>
-            <li><a href="#a_websites" onclick="menuFlex()">Sitios Web</a></li>
-            <li><a href="#a_trayectoria" onclick="menuFlex()">Trayectoria</a></li>
-        </ul>
-        <button id="contact" onclick="contact_Open()">
-            <img id="contact_img" loading="lazy" src="media/ico/Ico_Contact.png" alt="">
-        </button>
+<body>
+    <a class="sr-only" href="#a_about-Me">Saltar al contenido</a>
+    <header class="site_header" id="headerDoc">
+        <div class="header_inner">
+            <a class="header_brand" href="#inicio">
+                <img src="media/ico/logo-112.webp" width="56" height="45" alt="">
+                <span>Miguel Moreno</span>
+            </a>
+            <nav aria-label="Principal">
+                <ul class="header_nav" id="navDoc">
+                    <li><a href="#a_about-Me">Acerca de mí</a></li>
+                    <li><a href="#a_websites">Sitios web</a></li>
+                    <li><a href="#a_trayectoria">Trayectoria</a></li>
+                </ul>
+            </nav>
+            <button class="btn header_cta" type="button" onclick="contact_Open()">Contacto</button>
+            <button class="header_toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navDoc" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
     </header>
     <main>
-        <article class="introduce" id="a_introduce">
-            <div class="introduce_carousel">
-                <img id="introduce_carousel_image" loading="lazy" src="" alt="">
+        <section class="hero" id="inicio">
+            <div class="hero_inner">
+                <div class="hero_texto">
+                    <p class="hero_hola">Hola, soy</p>
+                    <h1 class="hero_nombre">Miguel Ángel Moreno López</h1>
+                    <p class="hero_frase">Construyo sitios, mido lo que pasa en ellos y automatizo con datos e IA.</p>
+                    <p class="hero_kicker">Estrategia digital · Desarrollo web · Inteligencia de datos e IA</p>
+                    <div class="hero_acciones">
+                        <a class="btn primario" href="#a_websites">Ver sitios</a>
+                        <button class="btn" type="button" onclick="contact_Open()">Escríbeme</button>
+                        <a class="btn" href="https://drive.google.com/file/d/1r8uaf21nZYTzjnAT5v2rfL1-1udppijL/view?usp=sharing" target="_blank" rel="noopener">Ver CV ↗</a>
+                    </div>
+                    <ul class="hero_cifras">
+                        <li><strong data-cifra="total">23</strong><span>sitios web montados</span></li>
+                        <li><strong data-cifra="aem">6</strong><span>en Adobe Experience Manager</span></li>
+                        <li><strong>+4</strong><span>años en Rubica</span></li>
+                    </ul>
+                </div>
+                <div class="hero_visual" aria-hidden="true">
+                    <img src="media/ico/logo-560.webp" width="560" height="449" alt="">
+                    <span class="hero_chip uno">WordPress · AEM</span>
+                    <span class="hero_chip dos">GA4 · Power BI</span>
+                    <span class="hero_chip tres">IA generativa</span>
+                </div>
             </div>
-            <div class="carousel_buttons">
-                <button class="carousel" onclick="carousel1()"></button>
-                <button class="carousel" onclick="carousel2()"></button>
-                <button class="carousel" onclick="carousel3()"></button>
-            </div>
-        </article>
+        </section>
         <article class="perfil" id="a_about-Me">
             <div class="title">
-                <h1>Acerca de mí</h1>
-                <h2>Miguel Ángel Moreno López</h2>
+                <h2 class="sec_title">Acerca de mí</h2>
+                <p class="sec_sub">Quién soy y cómo trabajo</p>
             </div>
 
             <div class="perfil_intro">
-                <div class="perfil_lead">
-                    <p class="perfil_frase">Construyo sitios, mido lo que pasa en ellos y automatizo con datos e IA.</p>
-                    <p class="perfil_kicker">Estrategia digital · Desarrollo web · Inteligencia de datos e IA</p>
-                    <div class="perfil_acciones">
-                        <a class="perfil_btn primario" href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez/" target="_blank" rel="noopener">LinkedIn ↗</a>
-                        <a class="perfil_btn" href="https://github.com/Miguel-Lopez-97" target="_blank" rel="noopener">GitHub ↗</a>
-                        <button class="perfil_btn" type="button" onclick="contact_Open()">Escríbeme</button>
-                        <a class="perfil_btn" href="https://drive.google.com/file/d/1r8uaf21nZYTzjnAT5v2rfL1-1udppijL/view?usp=sharing" target="_blank" rel="noopener">Ver CV ↗</a>
-                    </div>
-                </div>
                 <div class="perfil_texto">
                     <p>Soy Miguel Ángel Moreno López. Trabajo donde se cruzan la web, los datos y la inteligencia artificial.</p>
                     <p>Monto sitios y plataformas para marcas (WordPress, Adobe Experience Manager, React, Moodle), instalo
@@ -134,8 +162,8 @@
         </article>
         <article class="websites" id="a_websites">
             <div class="title">
-                <h1>Sitios Web:</h1>
-                <h2>Sitios en los que he trabajado</h2>
+                <h2 class="sec_title">Sitios web</h2>
+                <p class="sec_sub">Sitios en los que he trabajado</p>
             </div>
             <div class="sitios_intro">
                 <p class="sitios_rol_texto"><strong>Webmaster y desarrollador front-end.</strong> Tomo un diseño y lo
@@ -166,8 +194,8 @@
         </article>
         <article class="trayectoria" id="a_trayectoria">
             <div class="title">
-                <h1>Trayectoria</h1>
-                <h2>Experiencia y formación</h2>
+                <h2 class="sec_title">Trayectoria</h2>
+                <p class="sec_sub">Experiencia y formación</p>
             </div>
 
             <div class="tray_grid">
@@ -289,39 +317,48 @@
                 <a class="tray_link" href="https://github.com/Miguel-Lopez-97" target="_blank" rel="noopener">Ver en GitHub ↗</a>
             </div>
         </article>
-        <section class="contact" id="contact-section">
-            <button class="close" onclick="contact_Close()">X</button>
-            <div class="contact-img">
-                <img loading="lazy" src="media/ico/Ico_Logo-M&M-main.png" alt="">
-                <h2 class="tag">Formulario de Contacto</h2>
-            </div>
-            <div class="contact-content">
-
-                <form id="form" action="https://formsubmit.co/diplodopus69@gmail.com" method="POST" class="form">
-                    <label for="FormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" name="name" required placeholder="Tu Nombre" class="formSpace">
-                    <label for="FormControlInput1" class="form-label">E-mail</label>
-                    <input type="email" name="email" required placeholder="Tu Correo Electrónico" class="formSpace">
-                    <label for="FormControlInput1" class="form-label">Mensaje</label>
-                    <textarea type="email" name="message" required placeholder="Escribe tu mensaje aquí"
-                        class="formSpace"></textarea>
-                    <button type="submit" class="sendButton tag">Enviar</button>
-                </form>
-                <a href="mailto:diplodopus69@lgmail.com" id="mail"></a>
-            </div>
-        </section>
     </main>
-    <footer>
-        <div class="footer_img">
-            <img loading="lazy" src="media/ico/Ico_Logo-M&Mv1.png" alt="">
+
+    <dialog class="contacto" id="contact-section" aria-labelledby="contacto_titulo">
+        <div class="contacto_card">
+            <button class="contacto_cerrar" type="button" onclick="contact_Close()" aria-label="Cerrar">×</button>
+            <div class="contacto_lado">
+                <img src="media/ico/logo-112.webp" width="112" height="90" alt="">
+                <h2 id="contacto_titulo">Hablemos</h2>
+                <p>Cuéntame qué necesitas: un sitio, medir lo que pasa en él o automatizar una tarea con datos e IA. Te respondo por correo.</p>
+                <ul class="contacto_links">
+                    <li><a href="mailto:diplodopus69@gmail.com">diplodopus69@gmail.com</a></li>
+                    <li><a href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez/" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+                </ul>
+            </div>
+            <form class="contacto_form" id="form" action="https://formsubmit.co/diplodopus69@gmail.com" method="POST">
+                <label for="contacto_nombre">Nombre</label>
+                <input id="contacto_nombre" type="text" name="name" required autocomplete="name" placeholder="Tu nombre">
+                <label for="contacto_correo">Correo</label>
+                <input id="contacto_correo" type="email" name="email" required autocomplete="email" placeholder="tucorreo@ejemplo.com">
+                <label for="contacto_mensaje">Mensaje</label>
+                <textarea id="contacto_mensaje" name="message" required placeholder="Cuéntame tu proyecto o tu idea"></textarea>
+                <button class="btn primario" type="submit">Enviar mensaje</button>
+            </form>
         </div>
-        <div class="footer_text">
-            <div class="footer_text up">
-                <h3>Miguel Ángel Moreno López</h3>
+    </dialog>
+
+    <footer class="site_footer">
+        <div class="footer_inner">
+            <div class="footer_brand">
+                <img src="media/ico/logo-112.webp" width="65" height="52" alt="">
+                <div>
+                    <p class="footer_nombre">Miguel Ángel Moreno López</p>
+                    <p class="footer_tag">Estrategia digital · Desarrollo web · Datos e IA</p>
+                </div>
             </div>
-            <div class="footer_text down">
-                <p>© All rights reserved (2026)</p>
-            </div>
+            <ul class="footer_links">
+                <li><a href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/Miguel-Lopez-97" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://drive.google.com/file/d/1r8uaf21nZYTzjnAT5v2rfL1-1udppijL/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
+                <li><button type="button" onclick="contact_Open()">Contacto</button></li>
+            </ul>
+            <p class="footer_copy">© 2026 Miguel Ángel Moreno López</p>
         </div>
     </footer>
 </body>
