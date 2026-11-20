@@ -7,9 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Miguel Lopez</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/sitios.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/trayectoria.css">
     <link rel="stylesheet" ref="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="scripts/app.js"></script>
-    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="scripts/sitios.js" defer></script>
 </head>
 
 <body onload="init();" id="body">
@@ -19,10 +23,9 @@
             <h2 id="menu">Menú</h2>
         </a>
         <ul id="navDoc">
-            <li><a href="#a_about-Me" onclick="menuFlex()">Acerca de mi</a></li>
-            <li><a href="#a_professional_dev" onclick="menuFlex()">Proyectos Profesionales</a></li>
-            <li><a href="#a_academic_dev" onclick="menuFlex()">Proyectos Académicos</a></li>
-            <li><a href="#a_social" onclick="menuFlex()">Redes Sociales</a></li>
+            <li><a href="#a_about-Me" onclick="menuFlex()">Acerca de mí</a></li>
+            <li><a href="#a_websites" onclick="menuFlex()">Sitios Web</a></li>
+            <li><a href="#a_trayectoria" onclick="menuFlex()">Trayectoria</a></li>
         </ul>
         <button id="contact" onclick="contact_Open()">
             <img id="contact_img" loading="lazy" src="media/ico/Ico_Contact.png" alt="">
@@ -39,510 +42,251 @@
                 <button class="carousel" onclick="carousel3()"></button>
             </div>
         </article>
-        <article class="about-Me" id="a_about-Me">
+        <article class="perfil" id="a_about-Me">
             <div class="title">
-                <h1>Acerca de mi:</h1>
+                <h1>Acerca de mí</h1>
                 <h2>Miguel Ángel Moreno López</h2>
             </div>
-            <div class="resume">
-                <div class="resumeText">
-                    <h3>"Soy Desarrollador Web Full Stack, con conocimientos en desarrollo de aplicaciones Web con
-                        Stack MERN, HTML, JS y CSS, gestión de bases de datos SQL y NoSQL (MongoDB), Diseño y
-                        Maquetación Responsive (UX - UI), manejo de Metodología SCRUM y GitFlow. <br> Master en Big Data
-                        y Business Intelligence e Ingeniero de Petróleos con experiencia en Consultoría de formulación,
-                        seguimiento y evaluación de proyectos (sociales y productivos)"</h3>
-                </div>
-                <div class="resumeImages">
-                    <figure><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png"
-                            alt="html"></figure>
-                    <figure><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/397px-Javascript-shield.svg.png"
-                            alt=""></figure>
-                    <figure><img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/340px-CSS3_logo_and_wordmark.svg.png"
-                            alt=""></figure>
-                    <figure><img
-                            src="https://dotnettrickscloud.blob.core.windows.net/uploads/CourseImages/becomeamernstackdeveloper-mobile.png"
-                            alt=""></figure>
-                    <figure><img src="media/ico/Ico_GitHub.png" alt=""></figure>
-                    <figure><img src="https://img.icons8.com/office/480/figma.png" alt=""></figure>
-                </div>
-            </div>
-            <section class="about-me" id="Web-develop">
-                <div class="about-me_img">
-                    <img loading="lazy" src="media/ico/Ico_Web-development.png" alt="">
-                </div>
-                <div class="about-me_description">
-                    <p>Desarrollador Web con conocimientos en desarrollo de
-                        aplicaciones web con MERN,
-                        HTML, JS y CSS, gestión de bases
-                        de datos SQL y Mongo, diseño y
-                        maquetación responsive (UX - UI),
-                        manejo de metodología SCRUM y
-                        GitFlow</p>
-                </div>
-                <div class="about-me_buttons">
-                    <!-- <button class="timeLine" id="timeLine_Web" onclick="timeLineDevelopment()">Timeline</button> -->
-                    <p>Currículo como Desarrollador Web</p>
-                    <button class="CV" id="CV_Web"><a
-                            href="https://drive.google.com/file/d/19e1WfXAMdIARGj3B02XMulA2mm7S7Qzv/view?usp=sharing"
-                            target="blank">CV</a></button>
-                </div>
-            </section>
-            <section class="about-me" id="skills">
-                <div class="about-me_img">
-                    <img loading="lazy" src="media/ico/Ico_Teaching.png" alt="">
-                </div>
-                <div class="about-me_description skills">
-                    <p>Habilidades Blandas: </p>
-                    <p>• Comunicación </p>
-                    <p> • Liderazgo</p>
-                    <p> • Trabajo en equipo</p>
-                    <p> • Resolución de Problemas</p>
-                    <p> • Emprendimiento</p>
-                    <p> • Organización (tiempo y recursos)</p>
-                    <p> • Creatividad</p>
-                    <p> • Design Thinking </p>
-                </div>
-                <div class="about-me_buttons">
-                    <!-- <button class="timeLine" id="timeLine_Skills" onclick="timeLineSkills()">Timeline</button> -->
-                </div>
-            </section>
-            <section class="about-me" id="engineering">
-                <div class="about-me_img">
-                    <img loading="lazy" src="media/ico/Ico_Engineering.png" alt="">
-                </div>
-                <div class="about-me_description">
-                    <p> Ingeniero con
-                        experiencia en Fiscalización de
-                        Hidrocarburos, seguimiento
-                        normativo y administrativo a
-                        contratos y campos petrolíferos, seguimiento y evaluación de
-                        proyectos (sociales y productivos),
-                        Experiencia administrativa,
-                        organizacional, gestión
-                        documental, servicio y atención al
-                        cliente.</p>
-                </div>
-                <div class="about-me_buttons">
-                    <!-- <button class="timeLine" id="timeLine_Engineering" onclick="timeLineEngineering()">Timeline</button> -->
-                    <p>Currículo como Ingeniero y Consultor</p>
-                    <button class="HV" id="HV_Engineering"><a
-                            href="https://drive.google.com/file/d/1fdQhl7zptL1RpanHm1T9wVXXp53d1UE4/view?usp=sharing"
-                            target="blank">CV</a></button>
-                </div>
-            </section>
-            <section class="timeLine" id="timeLineDiv">
-                <div class="timeLine_graph">
-                    <img loading="lazy" src="" id="timeLine_graph" alt="">
-                </div>
-                <div class="timeLine_content">
-                    <div class="timeLine_img">
-                        <img loading="lazy" id="imagen_event" src="media/images/event_0.png" alt="">
-                    </div>
-                    <div class="timeLine_text">
-                        <p id="resume_event">Resume of event</p>
-                    </div>
-                    <div class="timeLine_button">
-                        <button class="left" id="timeLine_left"><img loading="lazy" src="media/ico/Ico_left.png"
-                                alt=""></button>
-                        <button class="left" id="timeLine_down"><img loading="lazy" src="media/ico/Ico_down.png"
-                                alt=""></button>
-                        <button class="right" id="timeLine_right"><img loading="lazy" src="media/ico/Ico_right.png"
-                                alt=""></button>
-                    </div>
-                </div>
-                <button class="close" onclick="timeLineClose()">X</button>
-            </section>
-        </article>
-        <article class="professional-Develps" id="a_professional_dev">
-            <div class="title">
-                <h1>Repositorios:</h1>
-                <h2>Proyectos Profesionales</h2>
-            </div>
-            <section class="professional repositories">
-                <div class="professional_img">
-                    <img loading="lazy" src="media/images/General/Profesional_image.png" alt="">
-                </div>
-                <div class="professional_resume">
-                    <div class="professional_ico">
-                        <a href="https://github.com/Miguel-Lopez-97" target="_blank">
-                            <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                        </a>
-                    </div>
-                    <div class="professional_text">
-                        <p>Este tipo de proyectos cuentan con un desarrollo más profundo, ya que están enfocados a un
-                            manejo Full Stack o a un entorno de negocios. En ellos aplico todas mis habilidades y
-                            actitudes como desarrollador desde su etapa inicial de planteamiento y diseño hasta su
-                            producción y entrega final.</p>
-                        <div class="projects_numbers">
-                            <p>Hasta la fecha se muestran: </p>
-                            <p id="number_professional_projects"></p>
-                            <p> Proyectos.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="professional carousel">
-                <div class="professional carousel">
-                    <div class="professional_carousel">
-                        <div class="prof_carousel_main prof_carousel_aux"
-                            onclick="professionalRepository.changeMatrixProfessionalRight()" id="prof_carousel_aux_1">
-                            <div class="main_name">
-                                <h3 id="prof_main_name_-1">Project Name</h3>
-                                <p id="prof_main_key_-1">Keyword project and date</p>
-                            </div>
-                            <div class="main_img">
-                                <img loading="lazy" id="prof_main_img_-1" src="" alt="">
-                            </div>
-                            <div class="main_description">
-                                <div class="description_text">
-                                    <p id="prof_main_text_-1">description's project</p>
-                                </div>
-                                <div class="description_links">
-                                    <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                                    <button class="tag" id="tag_professional">Tag</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="prof_carousel_main" id="prof_carousel_main_0">
-                            <div class="main_name">
-                                <h3 id="prof_main_name_0">Project Name</h3>
-                                <p id="prof_main_key_0">Keyword project and date</p>
-                            </div>
-                            <div class="main_img" id="main_img_prof">
-                                <div class="prof_main_overlay">
-                                    <p>Click here!! for going to the deploy project page</p>
-                                </div>
-                                <a id="prof_main_img_link_0" href="" target="_blank">
-                                    <img id="prof_main_img_0" loading="lazy" src="" alt="">
-                                </a>
-                            </div>
-                            <div class="main_description">
-                                <div class="description_text">
-                                    <p id="prof_main_text_0">description's project</p>
-                                </div>
-                                <div class="description_links">
-                                    <a id="prof_main_img_github_0" href="" target="_blank" id="prof_main_link">
-                                        <img loading="lazy" src="media/ico/Ico_GitHub.png" alt=""></a>
-                                    <button class="tag" id="tag_professional" onclick="p_tag()">Tag</button>
-                                </div>
-                            </div>
-                            <div class="main_tag" id="p_main_tag">
-                                <p>Languages</p>
-                                <div class="tag_names">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="tag_progress">
-                                    <div class="tag tag_html" id="p_tag_html_0">
-                                        <p id="p_tag_html"></p>
-                                    </div>
-                                    <div class="tag tag_css" id="p_tag_css_0">
-                                        <p id="p_tag_css"></p>
-                                    </div>
-                                    <div class="tag tag_js" id="p_tag_js_0">
-                                        <p id="p_tag_js"></p>
-                                    </div>
-                                </div>
-                                <button class="close" onclick="p_tag_close()">X</button>
-                            </div>
-                        </div>
-                        <div class="prof_carousel_main prof_carousel_aux"
-                            onclick="professionalRepository.changeMatrixProfessionalLeft()" id="prof_carousel_aux_2">
-                            <div class="main_name">
-                                <h3 id="prof_main_name_1">Project Name</h3>
-                                <p id="prof_main_key_1">Keyword project and date</p>
-                            </div>
-                            <div class="main_img">
-                                <img id="prof_main_img_1" loading="lazy" src="" alt="">
-                            </div>
-                            <div class="main_description">
-                                <div class="description_text">
-                                    <p id="prof_main_text_1">description's project</p>
-                                </div>
-                                <div class="description_links">
-                                    <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                                    <button class="tag" id="tag_professional"">Tag</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>                    
-                </div>                
-                <div class=" carousel_buttons">
-                                        <button class="left" id="professional_carousel_left"
-                                            onclick="professionalRepository.changeMatrixProfessionalLeft()"><img
-                                                src="media/ico/Ico_left.png" alt=""></button>
-                                        <button class="carousel"
-                                            onclick="professionalRepository.changeMatrixProfessional(3,0,1)"></button>
-                                        <button class="carousel"
-                                            onclick="professionalRepository.changeMatrixProfessional(0,1,2)"></button>
-                                        <button class="carousel"
-                                            onclick="professionalRepository.changeMatrixProfessional(1,2,3)"></button>
-                                        <button class="carousel"
-                                            onclick="professionalRepository.changeMatrixProfessional(2,3,0)"></button>
-                                        <button class="right" id="professional_carousel_right"
-                                            onclick="professionalRepository.changeMatrixProfessionalRight()"><img
-                                                src="media/ico/Ico_right.png" alt=""></button>
-                                </div>
-            </section>
-        </article>
-        <article class="academic-projects" id="a_academic_dev">
-            <div class="title">
-                <h1>Repositorios:</h1>
-                <h2>Proyectos Académicos</h2>
-            </div>
-            <section class="academic repositories">
-                <div class="academic_img">
-                    <img loading="lazy" src="media/images/General/Academic_image.png" alt="">
-                </div>
-                <div class="academic_resume">
-                    <div class="academic_text">
-                        <p>Estos proyectos cuentan con una finalidad específica así como una funcionalidad más sencilla,
-                            abarcan principalmente el entendimiento básico de los distintos lenguajes y aplicaciones
-                            prácticas. Estos están subclasificados en tres tipos relacionados a su objetivo principal.
-                        </p>
-                        <div class="projects_numbers">
-                            <p>Hasta la fecha se muestran: </p>
-                            <p id="number_academic_projects"></p>
-                            <p> Proyectos.</p>
-                        </div>
-                    </div>
-                    <div class="academic_class">
-                        <div class="academic_project">
-                            <div class="a_project_img">
-                                <img loading="lazy" src="media/ico/Ico_Engineering.png" alt="">
-                            </div>
-                            <div class="a_project_text">
-                                <p>Ingeniería,</p>
-                                <p>desarrollos con temática técnica de Ing.</p>
-                            </div>
-                        </div>
-                        <div class="academic_project" id="a_project_web">
-                            <div class="a_project_img">
-                                <img loading="lazy" src="media/ico/Ico_Teaching.png" alt="">
-                            </div>
-                            <div class="a_project_text">
-                                <p>Educativos,</p>
-                                <p>desarrollos con temática educativa</p>
-                            </div>
-                        </div>
-                        <div class="academic_project">
-                            <div class="a_project_img">
-                                <img loading="lazy" src="media/ico/Ico_Web-development.png" alt="">
-                            </div>
-                            <div class="a_project_text">
-                                <p>Desarrollo Web,</p>
-                                <p>aplicaciones enfocadas a distintas funcionalidades</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="academic carousel">
-                <div class="academic carousel">
-                    <div class="academic_carousel">
-                        <div class="a_carousel_main" id="a_carousel_main_0">
-                            <div class="main_head">
-                                <div class="head_img">
-                                    <div class="main_img">
-                                        <img id="a_main_img_0" loading="lazy" src="" alt=""
-                                            onclick="academicalRepository.a_img_principal_0()">
-                                    </div>
-                                    <div class="description_links">
-                                        <img id="a_main_imgclass_0" loading="lazy" src="" alt="">
-                                        <button class="tag" id="tag_professional" onclick="a_tag_0()">Tag</button>
-                                        <a id="a_main_link_deploy_0" href="" target="_blank">
-                                            <img loading="lazy" src="media/ico/Ico_Deploy.png" alt="">
-                                        </a>
-                                        <a id="a_main_link_github_0" href="" target="_blank">
-                                            <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main_name">
-                                    <p id="a_main_name_0">Project Name</p>
-                                    <p id="a_main_key_0">project's date</p>
-                                </div>
-                            </div>
-                            <div class="main_description">
-                                <div class="description_text">
-                                    <p id="a_main_text_0">description's project</p>
-                                </div>
-                            </div>
-                            <div class="main_tag" id="a_main_tag_0">
-                                <p>Languages</p>
-                                <div class="tag_names">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="tag_progress">
-                                    <div class="tag tag_html" id="a_tag_html_0">
-                                        <p id="p_a_tag_html_0"></p>
-                                    </div>
-                                    <div class="tag tag_css" id="a_tag_css_0">
-                                        <p id="p_a_tag_css_0"></p>
-                                    </div>
-                                    <div class="tag tag_js" id="a_tag_js_0">
-                                        <p id="p_a_tag_js_0"></p>
-                                    </div>
-                                </div>
-                                <button class="close" onclick="a_tag_close_0()">X</button>
-                            </div>
-                            <div class="a_image_principal" id="a_image_principal_0">
-                                <button class="close"
-                                    onclick="academicalRepository.a_img_principal_close_0()">X</button>
-                                <h2 id="a_principal_name_0">Project Name</h2>
-                                <a href="" target="_blank" id="a_principal_link_0"><img id="a_principal_imgclass_0"
-                                        loading="lazy" src="" alt=""></a>
 
-                            </div>
-                        </div>
-                        <div class="a_carousel_main" id="a_carousel_main_1">
-                            <div class="main_head">
-                                <div class="head_img">
-                                    <div class="main_img">
-                                        <img id="a_main_img_1" loading="lazy" src="media/images/a_img_main_0.png" alt=""
-                                            onclick="academicalRepository.a_img_principal_1()">
-                                    </div>
-                                    <div class="description_links">
-                                        <img id="a_main_imgclass_1" loading="lazy" src="media/ico/Ico_Engineering.png"
-                                            alt="">
-                                        <button class="tag" id="tag_professional" onclick="a_tag_1()">Tag</button>
-                                        <a id="a_main_link_deploy_1"
-                                            href="https://sleepy-archimedes-03d4ce.netlify.app/" target="_blank">
-                                            <img loading="lazy" src="media/ico/Ico_Deploy.png" alt="">
-                                        </a>
-                                        <a id="a_main_link_github_1"
-                                            href="https://github.com/Miguel-Lopez-97/Landing-page-Jurassic-World-Novedades"
-                                            target="_blank">
-                                            <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="main_name">
-                                    <p id="a_main_name_1">Project Name</p>
-                                    <p id="a_main_key_1">project's date</p>
-                                </div>
-                            </div>
-                            <div class="main_description">
-                                <div class="description_text">
-                                    <p id="a_main_text_1">description's project</p>
-                                </div>
-                            </div>
-                            <div class="main_tag" id="a_main_tag_1">
-                                <p>Languages</p>
-                                <div class="tag_names">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JS</p>
-                                </div>
-                                <div class="tag_progress">
-                                    <div class="tag tag_html" id="a_tag_html_1">
-                                        <p id="p_a_tag_html_1"></p>
-                                    </div>
-                                    <div class="tag tag_css" id="a_tag_css_1">
-                                        <p id="p_a_tag_css_1"></p>
-                                    </div>
-                                    <div class="tag tag_js" id="a_tag_js_1">
-                                        <p id="p_a_tag_js_1"></p>
-                                    </div>
-                                </div>
-                                <button class="close" onclick="a_tag_close_1()">X</button>
-                            </div>
-                            <div class="a_image_principal" id="a_image_principal_1">
-                                <button class="close"
-                                    onclick="academicalRepository.a_img_principal_close_1()">X</button>
-                                <h2 id="a_principal_name_1">Project Name</h2>
-                                
-                                <a href="" target="_blank" id="a_principal_link_1"><img id="a_principal_imgclass_1"
-                                        loading="lazy" src="" alt=""></a>
-                            </div>
-                        </div>
+            <div class="perfil_intro">
+                <div class="perfil_lead">
+                    <p class="perfil_frase">Construyo sitios, mido lo que pasa en ellos y automatizo con datos e IA.</p>
+                    <p class="perfil_kicker">Estrategia digital · Desarrollo web · Inteligencia de datos e IA</p>
+                    <div class="perfil_acciones">
+                        <a class="perfil_btn primario" href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez/" target="_blank" rel="noopener">LinkedIn ↗</a>
+                        <a class="perfil_btn" href="https://github.com/Miguel-Lopez-97" target="_blank" rel="noopener">GitHub ↗</a>
+                        <button class="perfil_btn" type="button" onclick="contact_Open()">Escríbeme</button>
+                        <a class="perfil_btn" href="https://drive.google.com/file/d/1r8uaf21nZYTzjnAT5v2rfL1-1udppijL/view?usp=sharing" target="_blank" rel="noopener">Ver CV ↗</a>
                     </div>
                 </div>
-                <div class="carousel_buttons">
-                    <button class="left" id="a_carousel_left"
-                        onclick="academicalRepository.changeMatrixAcademicalLeft()"><img src="media/ico/Ico_left.png"
-                            alt=""></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(0,1)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(1,2)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(2,3)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(3,4)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(4,5)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(5,6)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(6,7)"></button>
-                    <button class="carousel" onclick="academicalRepository.changeMatrixAcademical(7,0)"></button>
-                    <button class="right" id="professional_carousel_right"
-                        onclick="academicalRepository.changeMatrixAcademicalRight()"><img src="media/ico/Ico_right.png"
-                            alt=""></button>
+                <div class="perfil_texto">
+                    <p>Soy Miguel Ángel Moreno López. Trabajo donde se cruzan la web, los datos y la inteligencia artificial.</p>
+                    <p>Monto sitios y plataformas para marcas (WordPress, Adobe Experience Manager, React, Moodle), instalo
+                        la medición para saber qué pasa en ellos y convierto esos datos en tableros que ayudan a decidir.
+                        Hoy también diseño asistentes con IA generativa que automatizan tareas de los equipos.</p>
+                    <p>Vengo de la ingeniería de petróleos y la consultoría de proyectos: de ahí traigo el rigor, la
+                        trazabilidad y el foco en resultados. Soy máster en Big Data y Business Intelligence y especialista
+                        en Visual Analytics y Big Data. En Rubica empecé como pasante en 2022 y hoy soy AI Implementation Specialist.</p>
                 </div>
-            </section>
+            </div>
+
+            <div class="perfil_grid">
+                <div class="perfil_card">
+                    <img class="perfil_icon" src="media/ico/Ico_Perfil_Web.svg" alt="" width="56" height="56">
+                    <h3>Construyo</h3>
+                    <p class="perfil_area">Desarrollo web</p>
+                    <p>Convierto diseños en sitios funcionando: configuro la plataforma, creo plantillas, monto cada
+                        página y resuelvo la versión móvil.</p>
+                    <ul class="perfil_chips">
+                        <li>WordPress</li><li>Elementor</li><li>AEM</li><li>React</li><li>Astro</li><li>Moodle</li>
+                    </ul>
+                    <a class="perfil_link" href="#a_websites">Ver sitios →</a>
+                </div>
+                <div class="perfil_card">
+                    <img class="perfil_icon" src="media/ico/Ico_Perfil_Datos.svg" alt="" width="56" height="56">
+                    <h3>Mido y analizo</h3>
+                    <p class="perfil_area">Datos y BI</p>
+                    <p>Instalo la medición, automatizo la limpieza de datos, investigo mercados y convierto todo en
+                        tableros e informes para decidir.</p>
+                    <ul class="perfil_chips">
+                        <li>GA4</li><li>GTM</li><li>Clarity</li><li>Python</li><li>R</li><li>SQL</li><li>Power BI</li><li>Tableau</li><li>Looker Studio</li><li>Talkwalker</li><li>Supermetrics</li><li>Clientify</li><li>Pipedrive</li>
+                    </ul>
+                </div>
+                <div class="perfil_card">
+                    <img class="perfil_icon" src="media/ico/Ico_Perfil_IA.svg" alt="" width="56" height="56">
+                    <h3>Automatizo</h3>
+                    <p class="perfil_area">IA generativa</p>
+                    <p>Diseño asistentes virtuales que trabajan junto a los equipos y automatizan tareas repetitivas.</p>
+                    <ul class="perfil_chips">
+                        <li>AI Coworkers</li><li>Prompt engineering</li><li>Automatización</li>
+                    </ul>
+                </div>
+                <div class="perfil_card">
+                    <img class="perfil_icon" src="media/ico/Ico_Perfil_Ensenar.svg" alt="" width="56" height="56">
+                    <h3>Enseño</h3>
+                    <p class="perfil_area">Capacitaciones</p>
+                    <p>Creo y dicto capacitaciones para que clientes y equipos usen sus datos y herramientas por su cuenta.</p>
+                    <ul class="perfil_chips">
+                        <li>Talleres</li><li>Guías</li><li>Acompañamiento</li><li>TBR</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="perfil_extra">
+                <div class="perfil_panel">
+                    <h3>Cómo trabajo</h3>
+                    <ul class="perfil_chips grandes">
+                        <li>Scrum</li><li>TBR</li><li>Trazabilidad</li><li>Estandarización de datos</li><li>Explicar lo técnico en simple</li><li>Foco en resultados</li>
+                    </ul>
+                </div>
+                <div class="perfil_panel">
+                    <h3>También desarrollo a medida</h3>
+                    <p class="perfil_panel_texto">Herramientas en código para empresas, más allá de los sitios web:</p>
+                    <ul class="perfil_chips grandes">
+                        <li>Calculadoras médicas</li><li>Calculadoras de test</li><li>Formularios</li><li>Iniciativas</li><li>Desarrollos a medida</li>
+                    </ul>
+                    <ul class="perfil_chips">
+                        <li>Java</li><li>Angular</li><li>React</li><li>Python</li>
+                    </ul>
+                    <a class="perfil_link" href="#a_trayectoria">Ver trayectoria y formación →</a>
+                </div>
+            </div>
         </article>
-        <article class="social-media" id="a_social">
+        <article class="websites" id="a_websites">
             <div class="title">
-                <h1>Social media:</h1>
+                <h1>Sitios Web:</h1>
+                <h2>Sitios en los que he trabajado</h2>
             </div>
-            <div class="social-media links">
-                <div class="Social_profile" id="social_linkedin">
-                    <div class="Social_profile_img">
-                        <a href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez" target="_blank">
-                            <img loading="lazy" src="media/ico/Ico_LinkedIn.png" alt="">
-                        </a>
-                    </div>
-                    <div class="Social_profile_text">
-                        <p>Aquí encontraras más información sobre mi perfil profesional completo desde LinkedIn, mis
-                            distintos intereses y Networking en un solo lugar</p>
-                    </div>
-                </div>
-                <div class="Social_profile" id="social_github">
-                    <div class="Social_profile_img">
-                        <a href="https://github.com/Miguel-Lopez-97" target="_blank">
-                            <img loading="lazy" src="media/ico/Ico_GitHub.png" alt="">
-                        </a>
-                    </div>
-                    <div class="Social_profile_text">
-                        <p>Visualiza los repositorios completos en los cuales he trabajado en mi perfil de GitHub, así
-                            como los proyectos en los cuales estoy enfocado</p>
-                    </div>
-                </div>
-                <div class="Social_profile" id="social_netlify">
-                    <div class="Social_profile_img">
-                        <img loading="lazy" src="media/ico/Ico_Netlify.png" alt="">
-                    </div>
-                    <div class="Social_profile_text">
-                        <p>Próximamente, encontraras relacionadas mis otras redes sociales a nivel profesional en este
-                            apartado</p>
-                    </div>
+            <div class="sitios_intro">
+                <p class="sitios_rol_texto"><strong>Webmaster y desarrollador front-end.</strong> Tomo un diseño y lo
+                    convierto en un sitio funcionando: configuro la plataforma (WordPress/Elementor o Adobe Experience
+                    Manager), creo las plantillas, monto cada página, resuelvo la versión móvil y dejo el contenido
+                    publicado. Marcas y organizaciones de salud, educación, turismo, vinos, industria y más.</p>
+                <div class="sitios_cifras">
+                    <div class="sitios_cifra"><strong id="sitios_total">23</strong><span>sitios montados</span></div>
+                    <div class="sitios_cifra"><strong id="sitios_aem">6</strong><span>en Adobe Experience Manager</span></div>
+                    <div class="sitios_cifra"><strong id="sitios_anios">4</strong><span id="sitios_rango">años · 2023–2026</span></div>
                 </div>
             </div>
-            <div class="social-media refers">
-                <div class="s_carousel_main" id="s_carousel_main">
-                    <div class="main_head">
-                        <div class="head_img">
-                            <img id="s_main_img" loading="lazy" src="" alt="">
-                        </div>
-                        <div class="main_name">
-                            <p id="s_main_name">Name</p>
-                            <p id="s_main_key">career</p>
-                        </div>
-                    </div>
-                    <div id="s_main_bar"></div>
-                    <div class="description_text">
-                        <p id="s_main_text">recommendation testimony</p>
-                    </div>
-                    <div class="description_links">
-                        <a id="s_main_link_github" href="" target="_blank"><img loading="lazy"
-                                src="media/ico/Ico_GitHub.png" alt=""></a>
-                        <a id="s_main_link_linkedin" href="" target="_blank"><img loading="lazy"
-                                src="media/ico/Ico_LinkedIn.png" alt=""></a>
-                        <a id="s_main_link_deploy" href="" target="_blank"><img loading="lazy"
-                                src="media/ico/Ico_Deploy.png" alt=""></a>
-                    </div>
-                </div>
+            <div class="sitios_filtros">
+                <div class="sitios_filtro_grupo" id="sitios_filtro_tipo" role="group" aria-label="Filtrar por tipo"></div>
+                <div class="sitios_filtro_grupo" id="sitios_filtro_tec" role="group" aria-label="Filtrar por tecnología"></div>
+                <p id="sitios_contador" aria-live="polite"></p>
+            </div>
+            <div id="sitios_lista"></div>
+            <div class="sitios_privados">
+                <strong id="sitios_privados_total">+5</strong>
+                <p id="sitios_privados_texto">sitios completos en Adobe Experience Manager para el sector salud
+                    (2024 – 2026). Son privados, por eso no se muestran capturas ni nombres.</p>
+            </div>
+            <p class="sitios_creditos">El diseño visual de estos proyectos fue de equipos creativos. Mi trabajo:
+                convertir ese diseño en un sitio real, configurar la plataforma, crear las plantillas, montar cada
+                página, resolver la versión móvil (muchas veces sin mockup) y dejar el contenido publicado. Ganadería
+                Colombia es un proyecto propio: diseño, contenido y desarrollo.</p>
+        </article>
+        <article class="trayectoria" id="a_trayectoria">
+            <div class="title">
+                <h1>Trayectoria</h1>
+                <h2>Experiencia y formación</h2>
+            </div>
+
+            <div class="tray_grid">
+                <section class="tray_col" aria-labelledby="tray_exp_title">
+                    <h3 class="tray_col_title" id="tray_exp_title">Experiencia</h3>
+                    <ol class="tray_lista">
+                        <li class="actual tray_empresa">
+                            <p class="tray_fecha">may. 2022 – hoy · 4 años y medio</p>
+                            <p class="tray_cargo">RUBICA</p>
+                            <p class="tray_lugar">Agencia de consultoría digital, tecnología y educación · Bogotá</p>
+                            <ol class="tray_roles" aria-label="Evolución de cargos en Rubica">
+                                <li>
+                                    <p class="tray_fecha">may. 2024 – hoy</p>
+                                    <p class="tray_rol">AI Implementation Specialist</p>
+                                    <p class="tray_desc">Asistentes virtuales (AI Coworkers) y automatizaciones de procesos ·
+                                        estrategia tecnológica y de datos para universidades, con IA aplicada a la experiencia
+                                        educativa · proyectos de innovación con Agile y TBR.</p>
+                                </li>
+                                <li>
+                                    <p class="tray_fecha">may. 2023 – hoy</p>
+                                    <p class="tray_rol">Full Stack Developer &amp; Data Analyst</p>
+                                    <p class="tray_desc">Desarrollos a medida en PHP y React · observatorios digitales y tableros
+                                        en Power BI y Looker Studio · sitios en WordPress, AEM y Moodle · investigación de mercados
+                                        con Talkwalker y reporting automatizado (Supermetrics, Dataslayer).</p>
+                                </li>
+                                <li>
+                                    <p class="tray_fecha">may. 2022 – abr. 2023</p>
+                                    <p class="tray_rol">Tech Intern · pasante de desarrollo e innovación</p>
+                                    <p class="tray_desc">Web scraping con Python (Selenium, Flask) · aplicaciones internas en React ·
+                                        despliegue y mantenimiento de sitios y bases de datos.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">ago. 2020 – ago. 2021</p>
+                            <p class="tray_cargo">Consultor</p>
+                            <p class="tray_lugar">resuelve · consultoría de impacto social</p>
+                            <p class="tray_desc">Diseño de proyectos y propuestas de consultoría para alcaldías de Colombia;
+                                investigación social, financiera y de diseño.</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">nov. – dic. 2019</p>
+                            <p class="tray_cargo">Auditor – contador</p>
+                            <p class="tray_lugar">A&amp;G Ingeniería Aplicada</p>
+                            <p class="tray_desc">Auditoría externa, inventarios de activos y gestión documental en SAP.</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">sept. 2017 – feb. 2018</p>
+                            <p class="tray_cargo">Pasante – ingeniero de fiscalización</p>
+                            <p class="tray_lugar">Agencia Nacional de Hidrocarburos</p>
+                            <p class="tray_desc">Seguimiento a contratos de hidrocarburos y bases de datos de los reportes de
+                                perforación del país.</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">ago. 2016 – sept. 2019</p>
+                            <p class="tray_cargo">Auxiliar de investigación</p>
+                            <p class="tray_lugar">Ecopetrol · Semillero de Recobro Mejorado (ICP)</p>
+                            <p class="tray_desc">Investigación aplicada en inyección de polímeros (Campo Casabe), base de mi trabajo de grado.
+                                <a class="tray_inline" href="https://doi.org/10.3390/en16227565" target="_blank" rel="noopener">Publicado en la revista Energies ↗</a></p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">jun. 2016 – jul. 2018</p>
+                            <p class="tray_cargo">Auxiliar administrativo</p>
+                            <p class="tray_lugar">Fundación COMDESCOL</p>
+                            <p class="tray_desc">Área administrativa, financiera y documental; creación del sistema contable
+                                interno.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="tray_col" aria-labelledby="tray_edu_title">
+                    <h3 class="tray_col_title" id="tray_edu_title">Formación</h3>
+                    <ul class="tray_titulos">
+                        <li>
+                            <p class="tray_fecha">2023 – 2025</p>
+                            <p class="tray_cargo">Especialización en Visual Analytics y Big Data</p>
+                            <p class="tray_lugar">UNIR · Universidad Internacional de La Rioja</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">2021 – 2022</p>
+                            <p class="tray_cargo">Full Stack Web Developer</p>
+                            <p class="tray_lugar">Simplon.co</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">2020 – 2021</p>
+                            <p class="tray_cargo">Máster en Big Data y Business Intelligence</p>
+                            <p class="tray_lugar">ISEB · doble titulación con la Universidad Isabel I de Castilla · nota 9,8</p>
+                        </li>
+                        <li>
+                            <p class="tray_fecha">2014 – 2019</p>
+                            <p class="tray_cargo">Ingeniería de Petróleos</p>
+                            <p class="tray_lugar">Universidad de América</p>
+                        </li>
+                    </ul>
+
+                    <h4 class="tray_sub">Diplomados</h4>
+                    <ul class="tray_mini">
+                        <li><strong>Generación de Ingresos y Cohesión Social</strong><span>Organización Internacional del Trabajo (OIT) · 2021</span></li>
+                        <li><strong>Desarrollo de Proyectos a partir de Bases de Datos</strong><span>Universidad de San Buenaventura Medellín · 2020</span></li>
+                    </ul>
+
+                    <h4 class="tray_sub">Certificaciones destacadas</h4>
+                    <ul class="tray_chips">
+                        <li>Ruta Data Science e IA · Platzi · 2025</li>
+                        <li>Business Management · Platzi · 2024</li>
+                        <li>Inglés B2 · EFSET · 2022</li>
+                        <li>Energy Transition Innovation · IFP School · 2021</li>
+                        <li>Programador orientado a objetos · Fundación Carlos Slim · 2020</li>
+                        <li>Informes ejecutivos · Fundación Carlos Slim · 2020</li>
+                        <li>Oratoria y hablar en público · Platzi · 2020</li>
+                    </ul>
+                    <a class="tray_link" href="https://www.linkedin.com/in/miguel-angel-moreno-l%C3%B3pez/details/certifications/" target="_blank" rel="noopener">Ver las 20 certificaciones en LinkedIn ↗</a>
+                </section>
+            </div>
+
+            <div class="tray_vieja">
+                <p><strong>Vieja escuela.</strong> Mis primeros proyectos de código (2021–2022: React, JavaScript, juegos y
+                    APIs) siguen en GitHub.</p>
+                <a class="tray_link" href="https://github.com/Miguel-Lopez-97" target="_blank" rel="noopener">Ver en GitHub ↗</a>
             </div>
         </article>
         <section class="contact" id="contact-section">
@@ -576,7 +320,7 @@
                 <h3>Miguel Ángel Moreno López</h3>
             </div>
             <div class="footer_text down">
-                <p>© All rights reserved (2022)</p>
+                <p>© All rights reserved (2026)</p>
             </div>
         </div>
     </footer>

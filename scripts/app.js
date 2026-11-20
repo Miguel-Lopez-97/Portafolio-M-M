@@ -655,29 +655,12 @@ function time1() {
 let professionalRepository;
 let academicalRepository;
 let socialRecommendation;
-function principal() {
-  mainCarousel();
-  professionalMainCarousel();
-  professionalRepository.loadMatrixProfessional(0, 1, 2);
-  academicMainCarousel();
-  academicalRepository.loadMatrixAcademical(6, 7);
-  socialMainCarousel();
-  socialRecommendation.loadMatrixSocial(0);
-  document.getElementById("number_professional_projects").innerHTML =
-    professionalRepository.dataMatrix.length;
-  document.getElementById("number_academic_projects").innerHTML =
-    academicalRepository.dataMatrix.length;
-}
+// 2026: se quitaron del HTML los repositorios (profesionales y académicos) y las recomendaciones.
+// Sus funciones (professionalMainCarousel, academicMainCarousel, socialMainCarousel, time1, timeLine)
+// siguen arriba sin usarse; se pueden borrar en la limpieza final.
 function init() {
-  professionalRepository = new professionalMainCarousel();
-  academicalRepository = new academicMainCarousel();
-  socialRecommendation = new socialMainCarousel();
-  principal();
-  time1();
+  mainCarousel();
   setInterval(function () {
     time();
-  }, 30000);
-  setInterval(function () {
-    time1();
   }, 30000);
 }

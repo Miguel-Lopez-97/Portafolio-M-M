@@ -1,0 +1,36 @@
+/* Sistema visual 2026 — base para todo el sitio.
+   Mantiene los colores del manual de marca (definidos en Main.scss) y agrega
+   radios, sombras y espacios consistentes. Solo define variables: no cambia nada por sí solo. */
+:root {
+  /* Radios */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+  /* Sombras suaves, teñidas con el azul profundo de la marca (#023244) */
+  --shadow-xs: 0 1px 2px rgba(2, 50, 68, 0.08);
+  --shadow-sm: 0 1px 2px rgba(2, 50, 68, 0.06), 0 4px 12px rgba(2, 50, 68, 0.08);
+  --shadow-md: 0 2px 4px rgba(2, 50, 68, 0.05), 0 10px 28px rgba(2, 50, 68, 0.12);
+  --shadow-lg: 0 4px 8px rgba(2, 50, 68, 0.06), 0 22px 48px rgba(2, 50, 68, 0.16);
+
+  /* Espacios (escala de 4) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Superficies */
+  --surface: #fbfdf6;                          /* tarjetas: un punto más claro que el fondo */
+  --surface-soft: var(--colorWhiteGreen);      /* #eef4e0 */
+  --surface-tint: rgba(174, 195, 176, 0.35);   /* verde suave translúcido */
+  --border-soft: rgba(65, 88, 67, 0.16);       /* borde verde muy sutil */
+
+  /* Movimiento */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}

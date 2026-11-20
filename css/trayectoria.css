@@ -1,0 +1,252 @@
+/* Sección "Trayectoria" (2026). CSS plano; usa los colores de marca (Main.scss) y tokens.css. */
+
+.trayectoria {
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+  max-width: 1280px;
+  scroll-margin-top: 90px;
+}
+.trayectoria .title {
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+.tray_grid {
+  align-items: start;
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  width: 100%;
+}
+.tray_col {
+  background-color: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: 0;
+  padding: var(--space-6);
+}
+.tray_col_title {
+  color: var(--colorBlueTitle);
+  font-size: 22px;
+  margin-bottom: var(--space-2);
+}
+.tray_fecha {
+  color: var(--colorBlueSubTitle);
+  font-family: "Source Code Pro", monospace;
+  font-size: 13px;
+  font-weight: 500;
+}
+.tray_cargo {
+  color: var(--colorBlackText);
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.tray_lugar {
+  color: var(--colorButtonGreenBorder);
+  font-size: 15px;
+}
+.tray_desc {
+  color: var(--colorGreenBlackText);
+  font-size: 15px;
+  line-height: 1.55;
+  margin-top: 2px;
+}
+
+/* Experiencia: línea de tiempo */
+.tray_lista {
+  list-style: none;
+}
+.tray_lista li {
+  border-left: 2px solid var(--colorBackgroundGreenLightly);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-left: 7px;
+  padding: 0 0 var(--space-5) var(--space-5);
+  position: relative;
+}
+.tray_lista li:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.tray_lista li::before {
+  background-color: var(--surface);
+  border: 2px solid var(--colorButtonGreen);
+  border-radius: 50%;
+  content: "";
+  height: 10px;
+  left: -8px;
+  position: absolute;
+  top: 3px;
+  width: 10px;
+}
+.tray_lista li.actual::before {
+  background-color: var(--colorBlueTitle);
+  border-color: var(--colorBlueTitle);
+  box-shadow: 0 0 0 4px rgba(18, 69, 89, 0.15);
+}
+.tray_lista li.actual .tray_cargo {
+  color: var(--colorBlueTitle);
+}
+
+/* Formación */
+.tray_titulos {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+}
+.tray_titulos li {
+  background-color: var(--surface-tint);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-4) var(--space-5);
+}
+.tray_sub {
+  color: var(--colorBlueSubTitle);
+  font-family: "Architects Daughter", cursive;
+  font-size: 19px;
+  font-weight: normal;
+  margin-top: var(--space-3);
+}
+.tray_mini {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  list-style: none;
+}
+.tray_mini li {
+  border-left: 3px solid var(--colorButtonGreen);
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--space-3);
+}
+.tray_mini strong {
+  color: var(--colorBlackText);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+}
+.tray_mini span {
+  color: var(--colorGreenBlackText);
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  opacity: 0.85;
+}
+.tray_chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+.tray_chips li {
+  background-color: var(--colorList);
+  border-radius: var(--radius-pill);
+  color: var(--colorBlueGreenDark);
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  padding: 4px 12px;
+}
+.tray_link {
+  align-self: flex-start;
+  color: var(--colorBlueLight);
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: var(--space-2);
+  text-decoration: none;
+}
+.tray_link:hover {
+  text-decoration: underline;
+}
+.tray_link:focus-visible {
+  outline: 3px solid var(--colorBlueLight);
+  outline-offset: 3px;
+}
+
+/* Vieja escuela */
+.tray_vieja {
+  align-items: center;
+  border: 1.5px dashed var(--colorBackgroundGreenLightly);
+  border-radius: var(--radius-lg);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  width: 100%;
+}
+.tray_vieja p {
+  color: var(--colorGreenBlackText);
+  font-size: 16px;
+}
+.tray_vieja strong {
+  color: var(--colorBlueTitle);
+}
+.tray_vieja .tray_link {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .tray_grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tray_col {
+    padding: var(--space-5);
+  }
+  .tray_vieja {
+    padding: var(--space-4) var(--space-5);
+  }
+}
+
+/* Rubica: evolución de cargos dentro de la misma empresa */
+.tray_empresa > .tray_cargo {
+  letter-spacing: 0.02em;
+}
+.tray_roles {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  margin-top: var(--space-3);
+}
+.tray_lista .tray_roles li {
+  background-color: var(--surface-tint);
+  border: 0;
+  border-radius: var(--radius-md);
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+}
+.tray_lista .tray_roles li::before {
+  content: none;
+}
+.tray_rol {
+  color: var(--colorBlueTitle);
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.tray_inline {
+  color: var(--colorBlueLight);
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.tray_inline:hover {
+  text-decoration: underline;
+}
+.tray_inline:focus-visible {
+  outline: 3px solid var(--colorBlueLight);
+  outline-offset: 2px;
+}

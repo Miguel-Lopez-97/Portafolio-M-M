@@ -1,0 +1,423 @@
+/* Sección "Sitios web" (2026). CSS plano, sin Sass: se enlaza aparte en index.html.
+   Usa los colores de marca (Main.scss) y el sistema visual de tokens.css. */
+
+.websites {
+  flex-direction: column;
+  gap: var(--space-6);
+  scroll-margin-top: 90px; /* el header es fijo */
+  max-width: 1280px;
+}
+.websites .title {
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+/* Introducción + cifras */
+.sitios_intro {
+  align-items: center;
+  background-color: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  box-sizing: border-box;
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  margin: 0;
+  padding: var(--space-6) var(--space-7);
+  width: 100%;
+}
+.sitios_intro p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+.sitios_rol_texto strong {
+  color: var(--colorBlueTitle);
+}
+.sitios_cifras {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.sitios_cifra {
+  background-color: var(--surface-tint);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-2);
+  text-align: center;
+}
+.sitios_cifra strong {
+  color: var(--colorBlueTitle);
+  display: block;
+  font-family: "Source Serif Pro", serif;
+  font-size: 40px;
+  line-height: 1;
+}
+.sitios_cifra span {
+  color: var(--colorGreenBlackText);
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-top: var(--space-2);
+}
+
+/* Filtros: dos grupos tipo "segmented control" */
+.sitios_filtros {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  justify-content: space-between;
+  margin: 0;
+  width: 100%;
+}
+.sitios_filtro_grupo {
+  background-color: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  padding: var(--space-1);
+}
+.sitios_filtro {
+  background-color: transparent;
+  border: 0;
+  border-radius: var(--radius-pill);
+  color: var(--colorButtonBlue);
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  padding: var(--space-2) var(--space-4);
+  transition: background-color 0.2s var(--ease), color 0.2s var(--ease);
+}
+.sitios_filtro:hover {
+  background-color: var(--colorList);
+}
+.sitios_filtro[aria-pressed="true"] {
+  background-color: var(--colorButtonBlue);
+  box-shadow: var(--shadow-xs);
+  color: var(--colorBackgroundMain);
+}
+.sitios_filtro:focus-visible,
+.sitio_link:focus-visible,
+.sitio_preview:focus-visible {
+  outline: 3px solid var(--colorBlueLight);
+  outline-offset: 3px;
+}
+#sitios_contador {
+  color: var(--colorGreenBlackText);
+  font-size: 15px;
+}
+
+/* Lista por año */
+#sitios_lista {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-7);
+  width: 100%;
+}
+.sitios_anio {
+  display: block;
+  margin: 0;
+}
+.sitios_anio_title {
+  align-items: baseline;
+  color: var(--colorBlueTitle);
+  display: flex;
+  font-family: "Source Serif Pro", serif;
+  font-size: 34px;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+.sitios_anio_title::after {
+  align-self: center;
+  background: linear-gradient(90deg, var(--colorButtonGreen), transparent);
+  border-radius: var(--radius-pill);
+  content: "";
+  flex: 1;
+  height: 3px;
+}
+.sitios_anio_title span {
+  color: var(--colorBlueSubTitle);
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  font-weight: normal;
+}
+.sitios_grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.sitios_vacio {
+  text-align: center;
+}
+
+/* Tarjeta */
+.sitio_card {
+  background-color: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.sitio_card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Vista previa: navegador + celular */
+.sitio_preview {
+  background:
+    radial-gradient(120% 90% at 0% 0%, rgba(255, 255, 255, 0.55), transparent 60%),
+    linear-gradient(160deg, var(--colorButtonBackgroundBlueLight), var(--colorBackgroundBlueLight));
+  display: block;
+  margin: var(--space-2) var(--space-2) 0;
+  border-radius: calc(var(--radius-lg) - var(--space-2));
+  padding: var(--space-5) 60px var(--space-5) var(--space-4);
+  position: relative;
+}
+.sitio_browser {
+  background-color: #fff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+.sitio_browser_bar {
+  align-items: center;
+  background-color: var(--colorBlueGreenDark);
+  display: flex;
+  gap: 5px;
+  padding: 7px 10px;
+}
+.sitio_browser_bar span {
+  background-color: var(--colorBackgroundGreenLightly);
+  border-radius: 50%;
+  flex: none;
+  height: 7px;
+  width: 7px;
+}
+.sitio_browser_url {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-pill);
+  color: var(--colorList);
+  flex: 1;
+  font-family: "Source Code Pro", monospace;
+  font-size: 11px;
+  margin-left: 6px;
+  min-width: 0;
+  overflow: hidden;
+  padding: 2px 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sitio_browser img {
+  aspect-ratio: 16 / 10;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+.sitio_phone {
+  background-color: var(--colorBlueGreenDark);
+  border-radius: 16px;
+  bottom: var(--space-3);
+  box-shadow: var(--shadow-lg);
+  padding: 4px;
+  position: absolute;
+  right: var(--space-3);
+  width: 23%;
+}
+.sitio_phone img {
+  aspect-ratio: 9 / 19.5;
+  border-radius: 12px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+}
+/* Sin captura de escritorio: celular centrado */
+.sitio_preview.solo-movil {
+  display: flex;
+  justify-content: center;
+  padding: var(--space-5) var(--space-4);
+}
+.sitio_preview.solo-movil .sitio_phone {
+  position: static;
+  width: 38%;
+}
+
+/* Información */
+.sitio_info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-5) var(--space-5) var(--space-5);
+}
+.sitio_head {
+  align-items: baseline;
+  display: flex;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+.sitio_name {
+  font-size: 21px;
+  line-height: 1.2;
+}
+.sitio_year {
+  color: var(--colorBlueSubTitle);
+  font-family: "Source Serif Pro", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.sitio_sector {
+  color: var(--colorGreenBlackText);
+  font-size: 15px;
+  opacity: 0.85;
+}
+.sitio_rol {
+  align-self: flex-start;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  margin-top: var(--space-1);
+  padding: 3px 12px;
+}
+.rol-montaje {
+  background-color: rgba(118, 153, 121, 0.22);
+  color: var(--colorButtonGreenBorder);
+}
+.rol-rediseno {
+  background-color: var(--colorButtonBackgroundBlueLight);
+  color: var(--colorButtonBlue);
+}
+.rol-propio {
+  background-color: var(--colorBackgroundGreen);
+  color: var(--colorBackgroundMain);
+}
+.sitio_stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+.sitio_stack li {
+  background-color: var(--colorList);
+  border-radius: var(--radius-pill);
+  color: var(--colorBlueGreenDark);
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  padding: 3px 10px;
+}
+.sitio_size {
+  color: var(--colorGreenBlackText);
+  font-size: 14px;
+  opacity: 0.85;
+}
+.sitio_link {
+  align-items: center;
+  align-self: flex-start;
+  background-color: var(--colorButtonBlue);
+  border-radius: var(--radius-pill);
+  color: var(--colorBackgroundMain);
+  display: inline-flex;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  gap: 6px;
+  margin-top: auto;
+  padding: var(--space-2) var(--space-4);
+  text-decoration: none;
+  transition: background-color 0.2s var(--ease);
+}
+.sitio_info .sitio_size + .sitio_link {
+  margin-top: var(--space-3);
+}
+.sitio_link:hover {
+  background-color: var(--colorBlueGreenDark);
+}
+
+/* Sitios privados + créditos */
+.sitios_privados {
+  align-items: center;
+  background:
+    radial-gradient(90% 140% at 100% 0%, rgba(38, 145, 187, 0.35), transparent 60%),
+    var(--colorBlueGreenDark);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  box-sizing: border-box;
+  display: flex;
+  gap: var(--space-5);
+  margin: 0;
+  padding: var(--space-6) var(--space-7);
+  width: 100%;
+}
+.sitios_privados strong {
+  color: var(--colorBackgroundBlue);
+  font-family: "Source Serif Pro", serif;
+  font-size: 56px;
+  line-height: 1;
+}
+.sitios_privados p {
+  color: var(--colorBackgroundMain);
+  font-size: 18px;
+  line-height: 1.55;
+}
+.sitios_creditos {
+  background-color: var(--surface-tint);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  color: var(--colorGreenBlackText);
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.6;
+  padding: var(--space-5) var(--space-6);
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .sitios_intro {
+    grid-template-columns: 1fr;
+    padding: var(--space-5);
+  }
+  .sitios_cifra strong {
+    font-size: 32px;
+  }
+  .sitios_filtros {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sitios_filtro {
+    padding: 6px var(--space-3);
+  }
+  .sitios_grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+  .sitios_privados {
+    flex-direction: column;
+    padding: var(--space-5);
+    text-align: center;
+  }
+  .sitios_creditos {
+    padding: var(--space-4) var(--space-5);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sitio_card,
+  .sitios_filtro,
+  .sitio_link {
+    transition: none;
+  }
+  .sitio_card:hover {
+    transform: none;
+  }
+}
