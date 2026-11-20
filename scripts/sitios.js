@@ -26,7 +26,7 @@ const SITIOS = [
   { id: "uce", nombre: "Universidad Central del Este", sector: "Educación superior · República Dominicana", anio: 2025, tipo: "completo", rol: "montaje", tec: "wordpress",
     stack: ["WordPress", "Elementor"], tamano: "181 páginas · 52 entradas",
     url: "https://www.uce.edu.do/", dominio: "uce.edu.do" },
-  { id: "rubica", nombre: "Rubica", sector: "Comunicación y marketing", anio: 2025, tipo: "completo", rol: "montaje", tec: "wordpress",
+  { id: "rubica", nombre: "RUBICA", sector: "Comunicación y marketing", anio: 2025, tipo: "completo", rol: "montaje", tec: "wordpress",
     stack: ["WordPress", "Elementor", "WooCommerce"], tamano: "32 páginas · 36 entradas · 15 productos",
     url: "https://rubica.net/", dominio: "rubica.net" },
   { id: "barefoot", nombre: "Barefoot Wine LATAM", sector: "Vinos", anio: 2025, tipo: "completo", rol: "montaje", tec: "wordpress",
