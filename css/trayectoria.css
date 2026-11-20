@@ -13,7 +13,7 @@
   text-align: center;
 }
 .tray_grid {
-  align-items: start;
+  align-items: stretch;
   display: grid;
   gap: var(--space-5);
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);

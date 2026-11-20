@@ -132,7 +132,7 @@
   display: grid;
   gap: var(--space-5);
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-  align-items: start;
+  align-items: stretch;
   width: 100%;
 }
 .perfil_panel {
@@ -152,8 +152,8 @@
   line-height: 1.5;
 }
 .perfil_panel .perfil_link {
-  margin-top: var(--space-1);
-  padding-top: 0;
+  margin-top: auto;
+  padding-top: var(--space-2);
 }
 @media screen and (max-width: 1100px) {
   .perfil_grid {
